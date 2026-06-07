@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import { homeUrl, hreflangFor } from '../../lib/routes';
+import { getUi } from '../../lib/i18n';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props { lang: Locale; }
+const { lang } = Astro.props;
+const ui = getUi(lang);
+---
+<Base
+  title={`${ui.errors.not_found_title} — Vitachy`}
+  description={ui.errors.not_found_body}
+  lang={lang}
+  alternates={hreflangFor((l) => homeUrl(l))}
+  noindex
+>
+  <section class="max-w-6xl mx-auto px-5 py-24 md:py-32 text-center">
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+      {ui.errors.not_found_eyebrow}
+    </p>
+    <h1 class="display mt-4 text-[2.5rem] md:text-[3rem] leading-[1.05] font-bold">
+      {ui.errors.not_found_title}
+    </h1>
+    <p class="mt-5 text-lg leading-[1.65] text-ink-soft max-w-md mx-auto">
+      {ui.errors.not_found_body}
+    </p>
+    <div class="mt-8">
+      <a
+        href={homeUrl(lang)}
+        class="inline-flex items-center rounded-full bg-ink text-white px-7 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+      >
+        {ui.cta.go_home}
+      </a>
+    </div>
+  </section>
+</Base>

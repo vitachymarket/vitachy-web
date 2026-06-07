@@ -4,7 +4,7 @@ const LEADING_EMOJI =
   /^[\p{Extended_Pictographic}\p{Emoji_Component}\p{Variation_Selector}‍\s]+/u;
 
 const ALLCAPS_PREFIX =
-  /^([A-ZÁÉÍÓÚÜÑ0-9][A-ZÁÉÍÓÚÜÑ0-9\s\-/&"'()%]*?):\s+/;
+  /^([A-ZÁÉÍÓÚÜÑÄÖÜ0-9][A-ZÁÉÍÓÚÜÑÄÖÜ0-9\s/&"'()%]*?)\s*[:\-–—]\s+/;
 
 const ACRONYMS = [
   'BPA', 'UV', 'PVC', 'PET', 'HIPS', 'PP', 'TPR', 'ABS', 'DIY', 'XL', 'TPU',

@@ -23,17 +23,28 @@ function escapeHtml(s: string): string {
   });
 }
 
+const CONTACT_PATHS: Record<string, string> = {
+  es: '/contacto/',
+  en: '/en/contact/',
+  fr: '/fr/contact/',
+  it: '/it/contatti/',
+  de: '/de/kontakt/',
+};
+
 export async function onRequestPost(context: Context): Promise<Response> {
   const { request, env } = context;
-  const origin = new URL(request.url).origin;
-  const redirectTo = (path: string) =>
-    Response.redirect(`${origin}${path}`, 303);
+  const url = new URL(request.url);
+  const origin = url.origin;
+  const lang = url.searchParams.get('lang') ?? 'es';
+  const contactPath = CONTACT_PATHS[lang] ?? CONTACT_PATHS.es;
+  const redirectTo = (query: string) =>
+    Response.redirect(`${origin}${contactPath}${query}`, 303);
 
   let form: FormData;
   try {
     form = await request.formData();
   } catch {
-    return redirectTo('/contacto/?error=send');
+    return redirectTo('?error=send');
   }
 
   const nombre = (form.get('nombre')?.toString() ?? '').trim();
@@ -43,19 +54,19 @@ export async function onRequestPost(context: Context): Promise<Response> {
   const token = (form.get('cf-turnstile-response')?.toString() ?? '').trim();
 
   if (!nombre || !email || !mensaje) {
-    return redirectTo('/contacto/?error=missing');
+    return redirectTo('?error=missing');
   }
   if (!consentimiento) {
-    return redirectTo('/contacto/?error=consent');
+    return redirectTo('?error=consent');
   }
   if (!EMAIL_RE.test(email)) {
-    return redirectTo('/contacto/?error=email');
+    return redirectTo('?error=email');
   }
   if (!token) {
-    return redirectTo('/contacto/?error=turnstile');
+    return redirectTo('?error=turnstile');
   }
   if (nombre.length > 120 || email.length > 160 || mensaje.length > 4000) {
-    return redirectTo('/contacto/?error=missing');
+    return redirectTo('?error=missing');
   }
 
   const verifyBody = new FormData();
@@ -76,7 +87,7 @@ export async function onRequestPost(context: Context): Promise<Response> {
     verifyOk = false;
   }
   if (!verifyOk) {
-    return redirectTo('/contacto/?error=turnstile');
+    return redirectTo('?error=turnstile');
   }
 
   const text = [
@@ -109,11 +120,11 @@ export async function onRequestPost(context: Context): Promise<Response> {
       }),
     });
     if (!sendRes.ok) {
-      return redirectTo('/contacto/?error=send');
+      return redirectTo('?error=send');
     }
   } catch {
-    return redirectTo('/contacto/?error=send');
+    return redirectTo('?error=send');
   }
 
-  return redirectTo('/contacto/?ok=1');
+  return redirectTo('?ok=1');
 }

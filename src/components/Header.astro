@@ -8,30 +8,28 @@ import {
   ESTANCIAS,
   type EstanciaSlug,
 } from '../lib/routes';
+import { getUi, getFamilies } from '../lib/i18n';
 
 interface Props {
   lang?: Locale;
 }
 const { lang = 'es' } = Astro.props;
+const ui = getUi(lang);
+const families = getFamilies(lang);
 
-const familyLabels: Record<string, string> = {
-  'dispensadores-cocina': 'Dispensadores de cocina',
-  'dispensadores-bano': 'Dispensadores de baño',
-  'dispensadores-ducha': 'Dispensadores de ducha',
-  'aceiteras': 'Aceiteras',
-  'pulverizadores': 'Pulverizadores',
-  'pastilleros': 'Pastilleros',
-};
+function familyLabel(slug: string): string {
+  return families.find((f) => f.slug === slug)?.nombre ?? slug;
+}
 
 const estancias = (Object.keys(ESTANCIAS) as EstanciaSlug[]).map((key) => {
   const def = ESTANCIAS[key];
   return {
     key,
-    label: def.label,
+    label: ui.estancias[key].title,
     href: estanciaUrl(key, lang),
     families: def.families.map((slug) => ({
       slug,
-      label: familyLabels[slug] ?? slug,
+      label: familyLabel(slug),
       href: familyUrl(slug, lang),
     })),
   };
@@ -41,7 +39,7 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
 ---
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center gap-6">
-    <a href={homeUrl(lang)} class="flex items-center" aria-label="Vitachy — Inicio">
+    <a href={homeUrl(lang)} class="flex items-center" aria-label={`Vitachy — ${ui.nav.home_label}`}>
       <img
         src="/brand/logo-web.png"
         alt="Vitachy"
@@ -58,11 +56,12 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
           <a
             href={e.href}
             class="px-3 py-2 display text-[0.95rem] font-medium text-ink rounded-md hover:bg-paper-warm transition-colors"
+            aria-haspopup={e.families.length > 1 ? 'true' : undefined}
           >
             {e.label}
           </a>
           {e.families.length > 1 && (
-            <div class="nav-dropdown" role="menu" aria-label={`Familias de ${e.label}`}>
+            <div class="nav-dropdown" role="menu" aria-label={e.label}>
               {e.families.map((f) => (
                 <a
                   href={f.href}
@@ -80,7 +79,7 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
         href={aboutUrl(lang)}
         class="ml-2 px-3 py-2 display text-[0.95rem] font-medium text-ink rounded-md hover:bg-paper-warm transition-colors"
       >
-        Cada gota cuenta
+        {ui.nav.about}
       </a>
     </nav>
 
@@ -90,11 +89,11 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
       target="_blank"
       class="hidden md:inline-flex items-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold hover:bg-[var(--accent-deep)] transition-colors"
     >
-      Comprar en Amazon
+      {ui.nav.buy_amazon}
     </a>
 
     <details class="md:hidden ml-auto">
-      <summary class="list-none cursor-pointer p-2" aria-label="Abrir menú">
+      <summary class="list-none cursor-pointer p-2" aria-label={ui.nav.menu_open}>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="7" x2="21" y2="7" />
           <line x1="3" y1="12" x2="21" y2="12" />
@@ -106,14 +105,14 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
           {estancias.map((e) => (
             <a href={e.href} class="display text-base font-medium py-1">{e.label}</a>
           ))}
-          <a href={aboutUrl(lang)} class="display text-base font-medium py-1 pt-2 border-t border-line">Cada gota cuenta</a>
+          <a href={aboutUrl(lang)} class="display text-base font-medium py-1 pt-2 border-t border-line">{ui.nav.about}</a>
           <a
             href={amazonStore}
             rel="sponsored noopener"
             target="_blank"
             class="mt-2 inline-flex items-center justify-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold"
           >
-            Comprar en Amazon
+            {ui.nav.buy_amazon}
           </a>
         </nav>
       </div>

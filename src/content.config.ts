@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 const productSchema = z.object({
   asin: z.string(),
@@ -29,13 +29,6 @@ const productSchema = z.object({
   _revision_tono: z.boolean().optional(),
 });
 
-const familySchema = z.object({
-  slug: z.string(),
-  nombre: z.string(),
-  orden: z.number(),
-  descripcion_corta: z.string(),
-});
-
 const products = defineCollection({
   loader: glob({
     pattern: '*/products/*.json',
@@ -44,9 +37,4 @@ const products = defineCollection({
   schema: productSchema,
 });
 
-const families = defineCollection({
-  loader: file('src/content/es/families.json'),
-  schema: familySchema,
-});
-
-export const collections = { products, families };
+export const collections = { products };

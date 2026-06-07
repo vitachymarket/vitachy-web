@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dispensadores-cocina",
+    "slug": "dispensadores-cocina",
+    "nombre": "Dispenser per cucina",
+    "orden": 1,
+    "descripcion_corta": "Dispenser di sapone e organizer per lavello. Addio al flacone di plastica del detersivo."
+  },
+  {
+    "id": "dispensadores-bano",
+    "slug": "dispensadores-bano",
+    "nombre": "Dispenser per bagno",
+    "orden": 2,
+    "descripcion_corta": "Ricaricabili da appoggio per il lavabo. Sapone mani, gel e crema con lo stesso stile."
+  },
+  {
+    "id": "dispensadores-ducha",
+    "slug": "dispensadores-ducha",
+    "nombre": "Dispenser per doccia",
+    "orden": 3,
+    "descripcion_corta": "Fissi a parete per bagnoschiuma, shampoo e balsamo. Niente più bottiglie sul pavimento."
+  },
+  {
+    "id": "aceiteras",
+    "slug": "aceiteras",
+    "nombre": "Oliere spray",
+    "orden": 4,
+    "descripcion_corta": "Oliera 2-in-1 con spray. Nebulizzazione per air fryer, getto continuo per le insalate."
+  },
+  {
+    "id": "pulverizadores",
+    "slug": "pulverizadores",
+    "nombre": "Flaconi spray",
+    "orden": 5,
+    "descripcion_corta": "Bottiglie di vetro ricaricabili. Pulizia, piante e miscele fai-da-te senza plastica monouso."
+  },
+  {
+    "id": "pastilleros",
+    "slug": "pastilleros",
+    "nombre": "Portapillole",
+    "orden": 6,
+    "descripcion_corta": "Portapillole settimanale. Chiusura sicura e scomparti capienti."
+  }
+]

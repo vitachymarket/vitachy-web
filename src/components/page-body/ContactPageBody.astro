@@ -1,0 +1,134 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getUi } from '../../lib/i18n';
+import { LEGAL_URLS, hreflangFor } from '../../lib/routes';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props { lang: Locale; }
+const { lang } = Astro.props;
+const ui = getUi(lang);
+const alternates = hreflangFor((l) => LEGAL_URLS[l].contact);
+
+const TURNSTILE_SITE_KEY = '0x4AAAAAADgP8v7IolKcnuE-';
+
+const privacyHref = LEGAL_URLS[lang].privacy;
+const actionByLang: Record<Locale, string> = {
+  es: '/api/contact',
+  en: '/api/contact?lang=en',
+  fr: '/api/contact?lang=fr',
+  it: '/api/contact?lang=it',
+  de: '/api/contact?lang=de',
+};
+---
+<Base title={`${ui.contact.title} — Vitachy`} description={ui.contact.intro} lang={lang} alternates={alternates}>
+  <script
+    is:inline
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer
+  ></script>
+
+  <article class="max-w-3xl mx-auto px-5 pt-10 md:pt-14 pb-20">
+    <h1 class="display text-3xl md:text-[2.25rem] font-bold leading-tight mb-3">
+      {ui.contact.title}
+    </h1>
+    <p class="text-lg leading-[1.6] text-ink-soft max-w-prose mb-12">
+      {ui.contact.intro}
+    </p>
+
+    <div data-success class="mb-10 hidden rounded-2xl border border-line bg-paper-warm p-6">
+      <p class="display text-lg font-semibold mb-2">{ui.contact.success_title}</p>
+      <p class="text-ink-soft leading-[1.6]">{ui.contact.success_body}</p>
+    </div>
+
+    <div data-error class="mb-10 hidden rounded-2xl border border-line bg-paper-warm p-6">
+      <p class="display text-lg font-semibold mb-2">{ui.contact.error_title}</p>
+      <p data-error-text class="text-ink-soft leading-[1.6]"></p>
+    </div>
+
+    <form method="POST" action={actionByLang[lang]} class="grid gap-5">
+      <div class="grid gap-2">
+        <label for="nombre" class="display text-sm font-medium">{ui.contact.name}</label>
+        <input type="text" name="nombre" id="nombre" required maxlength="120" autocomplete="name"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink focus:border-ink focus:outline-none" />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="email" class="display text-sm font-medium">{ui.contact.email}</label>
+        <input type="email" name="email" id="email" required maxlength="160" autocomplete="email"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink focus:border-ink focus:outline-none" />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="mensaje" class="display text-sm font-medium">{ui.contact.message}</label>
+        <textarea name="mensaje" id="mensaje" required maxlength="4000" rows="6"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink leading-[1.55] focus:border-ink focus:outline-none resize-vertical"></textarea>
+      </div>
+
+      <label class="flex items-start gap-3 text-sm leading-[1.55] text-ink-soft cursor-pointer">
+        <input type="checkbox" name="consentimiento" value="si" required class="mt-1 h-4 w-4 accent-[var(--ink)]" />
+        <span>
+          {ui.contact.consent_pre}
+          <a href={privacyHref} class="underline hover:text-ink">{ui.contact.consent_link}</a>
+          {ui.contact.consent_post}
+        </span>
+      </label>
+
+      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-theme="light"></div>
+
+      <div>
+        <button type="submit"
+          class="inline-flex items-center rounded-full bg-ink text-white px-7 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors">
+          {ui.contact.send}
+        </button>
+      </div>
+    </form>
+
+    <section class="mt-16 pt-10 border-t border-line">
+      <h2 class="display text-xl font-semibold mb-4">{ui.contact.company_section}</h2>
+      <ul class="leading-[1.7] text-ink-soft list-none space-y-1">
+        <li>VITACHY SPAIN, S.L. — NIF B55399679</li>
+        <li>C/ Gabriel Miró 1, 4º E, 07011 Palma de Mallorca (España)</li>
+        <li><a href="mailto:hola@vitachy.com" class="underline hover:text-ink">hola@vitachy.com</a></li>
+      </ul>
+    </section>
+  </article>
+
+  <script is:inline define:vars={{
+    msgMissing: ui.contact.error_missing,
+    msgConsent: ui.contact.error_consent,
+    msgTurnstile: ui.contact.error_turnstile,
+    msgEmail: ui.contact.error_email,
+    msgSend: ui.contact.error_send,
+    consentRequired: ui.contact.consent_required_message,
+  }}>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const successEl = document.querySelector('[data-success]');
+      const errorEl = document.querySelector('[data-error]');
+      const errorTextEl = document.querySelector('[data-error-text]');
+      const form = document.querySelector('form');
+
+      if (params.has('ok')) {
+        successEl?.classList.remove('hidden');
+        form?.classList.add('hidden');
+        successEl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (params.has('error')) {
+        const messages = {
+          missing: msgMissing,
+          consent: msgConsent,
+          turnstile: msgTurnstile,
+          email: msgEmail,
+          send: msgSend,
+        };
+        errorTextEl.textContent = messages[params.get('error')] || msgSend;
+        errorEl?.classList.remove('hidden');
+        errorEl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      const consent = document.querySelector('input[name="consentimiento"]');
+      consent?.addEventListener('invalid', () => consent.setCustomValidity(consentRequired));
+      consent?.addEventListener('change', () => consent.setCustomValidity(''));
+    })();
+  </script>
+</Base>

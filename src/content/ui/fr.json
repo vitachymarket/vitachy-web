@@ -1,0 +1,113 @@
+{
+  "tagline": "Chaque goutte compte",
+  "nav": {
+    "cocina": "Cuisine",
+    "bano": "Salle de bain",
+    "hogar": "Maison",
+    "about": "Chaque goutte compte",
+    "buy_amazon": "Acheter sur Amazon",
+    "menu_open": "Ouvrir le menu",
+    "home_label": "Accueil",
+    "skip_to_content": "Aller au contenu"
+  },
+  "cta": {
+    "see_on_amazon": "Voir sur Amazon",
+    "buy_on_amazon": "Acheter sur amazon",
+    "view_catalog": "Voir le catalogue",
+    "learn_about": "Qui sommes-nous",
+    "read_more": "Lire la suite",
+    "go_home": "Retour à l'accueil"
+  },
+  "product": {
+    "price_caption_prefix": "Prix sur amazon",
+    "description": "Description",
+    "related_eyebrow_prefix": "Aussi dans"
+  },
+  "estancias": {
+    "cocina": {
+      "title": "Cuisine",
+      "subclaim_home": "Distributeurs et organisateurs pour l'évier.",
+      "description_page": "Distributeurs et organisateurs pour l'évier."
+    },
+    "bano": {
+      "title": "Salle de bain",
+      "subclaim_home": "Savon au lavabo, gel et shampoing à la douche.",
+      "description_page": "Distributeurs rechargeables pour le plan du lavabo et distributeurs muraux pour la douche."
+    },
+    "hogar": {
+      "title": "Maison",
+      "subclaim_home": "Vaporisateurs, huiliers et piluliers.",
+      "description_page": "Vaporisateurs en verre rechargeables, huiliers pulvérisateurs 2-en-1 et piluliers hebdomadaires."
+    }
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "home": {
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Chaque goutte compte.",
+    "hero_subtitle": "Remplissez, appuyez, c'est prêt. Distributeurs, huiliers et vaporisateurs conçus pour durer dix mille cycles dans votre cuisine, votre salle de bain et votre douche.",
+    "rooms_eyebrow": "Pour chaque pièce",
+    "rooms_title": "Un design qu'on remarque au quotidien.",
+    "about_eyebrow": "Chaque goutte compte",
+    "about_title": "Notre façon de penser la maison.",
+    "about_body": "Ne pas gaspiller le produit. Ne pas perdre de temps. Ne pas jeter ce qui sert encore. Le reste, on vous le laisse."
+  },
+  "footer": {
+    "tagline": "Chaque goutte compte. Un design domestique qui dure, des recharges qui font économiser, des objets qu'on a envie de garder.",
+    "catalog": "Catalogue",
+    "legal": "Mentions légales",
+    "made_in": "Fait en Espagne"
+  },
+  "legal_pages": {
+    "legal_notice": "Mentions légales",
+    "privacy_policy": "Politique de confidentialité",
+    "cookie_policy": "Politique des cookies",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Écrivez-nous. Nous vous répondrons par email dans les plus brefs délais. Si votre question concerne un achat précis, n'oubliez pas que les démarches (commande, livraison, retour, remboursement) se font depuis votre compte Amazon.",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "message": "Message",
+    "consent_pre": "J'ai lu et j'accepte la ",
+    "consent_link": "politique de confidentialité",
+    "consent_post": " et je consens au traitement de mes données pour répondre à ma demande.",
+    "consent_required_message": "Veuillez cocher cette case pour envoyer le message.",
+    "send": "Envoyer le message",
+    "success_title": "Message envoyé.",
+    "success_body": "Merci de nous avoir écrit. Nous avons bien reçu votre message et vous répondrons à l'adresse indiquée.",
+    "error_title": "Impossible d'envoyer le message.",
+    "company_section": "Données de la société",
+    "error_missing": "Des champs obligatoires sont manquants. Vérifiez et réessayez.",
+    "error_consent": "Pour envoyer le message, vous devez accepter la politique de confidentialité.",
+    "error_turnstile": "Nous n'avons pas pu vérifier que vous êtes une personne. Rechargez la page et réessayez.",
+    "error_email": "L'adresse e-mail ne semble pas valide.",
+    "error_send": "Nous n'avons pas pu remettre votre message. Réessayez dans quelques minutes ou écrivez-nous directement à hola@vitachy.com."
+  },
+  "errors": {
+    "not_found_eyebrow": "Erreur 404",
+    "not_found_title": "Cette page n'existe pas.",
+    "not_found_body": "Soit elle a été déplacée, soit elle n'a jamais existé. Retournez à l'accueil et continuez à chercher."
+  },
+  "sobre": {
+    "page_title": "Chaque goutte compte",
+    "meta_description": "Vitachy : marque espagnole d'objets fonctionnels pour la maison. Chaque goutte compte : ne pas gaspiller le produit, ne pas perdre de temps, ne pas jeter ce qui sert encore.",
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Chaque goutte compte. Les vôtres aussi.",
+    "hero_subtitle": "Trois manières de ne pas gaspiller : ni le produit, ni le temps, ni les objets. C'est Vitachy.",
+    "one_eyebrow": "Un",
+    "one_title": "Ne pas gaspiller le produit.",
+    "one_body": "Une pompe doseuse bien conçue délivre toujours la dose juste. Pas une goutte de plus. Ainsi, un flacon dure deux fois plus longtemps. Le savon, l'huile et le shampoing finissent là où ils doivent, pas dans l'évier.",
+    "two_eyebrow": "Deux",
+    "two_title": "Ne pas perdre de temps.",
+    "two_body": "Remplissez, appuyez, c'est prêt. Pas de bouchons à ouvrir, pas de jets à doser, pas de mains collantes. Nos produits sont pensés pour le geste rapide du quotidien : à la cuisine, au lavabo, à la douche.",
+    "three_eyebrow": "Trois",
+    "three_title": "Ne pas jeter ce qui sert encore.",
+    "three_body": "Des pompes qui tiennent dix mille cycles. Des bases en silicone qui amortissent le choc qui casse le verre. Des bouteilles qui se rechargent et recommencent. Acheter bien une fois plutôt que mal cinq fois.",
+    "company_eyebrow": "Qui sommes-nous",
+    "company_title": "Une marque espagnole d'objets du quotidien.",
+    "company_body": "Vitachy est une marque de VITACHY SPAIN SL, basée à Palma de Majorque et à Terrassa. Nous concevons et choisissons des produits que vous achèteriez pour votre propre maison : utilitaires, esthétiques, honnêtes."
+  }
+}

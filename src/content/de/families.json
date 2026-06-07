@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dispensadores-cocina",
+    "slug": "dispensadores-cocina",
+    "nombre": "Küchenspender",
+    "orden": 1,
+    "descripcion_corta": "Seifenspender und Organizer für die Spüle. Schluss mit der Plastikflasche fürs Spülmittel."
+  },
+  {
+    "id": "dispensadores-bano",
+    "slug": "dispensadores-bano",
+    "nombre": "Badspender",
+    "orden": 2,
+    "descripcion_corta": "Nachfüllbar für die Waschtischablage. Handseife, Duschgel und Creme im gleichen Stil."
+  },
+  {
+    "id": "dispensadores-ducha",
+    "slug": "dispensadores-ducha",
+    "nombre": "Duschspender",
+    "orden": 3,
+    "descripcion_corta": "Wandmontiert für Duschgel, Shampoo und Spülung. Keine Flaschen mehr am Boden."
+  },
+  {
+    "id": "aceiteras",
+    "slug": "aceiteras",
+    "nombre": "Ölsprüher",
+    "orden": 4,
+    "descripcion_corta": "Ölsprüher 2-in-1. Feiner Sprühnebel für die Heißluftfritteuse, Strahl für Salate."
+  },
+  {
+    "id": "pulverizadores",
+    "slug": "pulverizadores",
+    "nombre": "Sprühflaschen",
+    "orden": 5,
+    "descripcion_corta": "Nachfüllbare Glasflaschen. Reinigung, Pflanzen und DIY-Mischungen ohne Einwegplastik."
+  },
+  {
+    "id": "pastilleros",
+    "slug": "pastilleros",
+    "nombre": "Tablettenboxen",
+    "orden": 6,
+    "descripcion_corta": "Wochen-Tablettenbox. Sicherer Klick-Verschluss und große Fächer."
+  }
+]

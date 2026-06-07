@@ -1,0 +1,182 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Section from '../Section.astro';
+import ProductCard from '../ProductCard.astro';
+import { estanciaUrl, aboutUrl, hreflangFor, homeUrl, type EstanciaSlug } from '../../lib/routes';
+import { resizedAmazonImage } from '../../lib/images';
+import { getUi } from '../../lib/i18n';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const ui = getUi(lang);
+
+const allProducts = await getCollection('products', ({ id }) => id.startsWith(`${lang}/`));
+const products = allProducts.map((p) => p.data).sort((a, b) => a.orden - b.orden);
+
+const byCode = (code: string) => products.find((p) => p.codigo === code);
+const mainOf = (code: string) => {
+  const p = byCode(code);
+  const img = p?.imagenes.find((i) => i.posicion === 0) ?? p?.imagenes[0];
+  return img ? { url: img.url, alt: img.alt } : null;
+};
+
+const heroImage = mainOf('DA1');
+
+const destacados = (() => {
+  const seen = new Set<string>();
+  const out: typeof products = [];
+  for (const p of products) {
+    if (seen.has(p.familia)) continue;
+    seen.add(p.familia);
+    out.push(p);
+    if (out.length === 4) break;
+  }
+  return out;
+})();
+
+const rooms: Array<{ key: EstanciaSlug; image: { url: string; alt: string } | null }> = [
+  { key: 'cocina', image: mainOf('DC1') },
+  { key: 'bano',   image: mainOf('DB1') },
+  { key: 'hogar',  image: mainOf('P2A') },
+];
+
+const lifestyle = {
+  url: 'https://m.media-amazon.com/images/I/71IjC+4O3RL.jpg',
+  alt: ui.home.about_title,
+};
+
+const alternates = hreflangFor((l) => homeUrl(l));
+
+const organisationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Vitachy',
+  legalName: 'VITACHY SPAIN SL',
+  url: 'https://vitachy.com',
+  logo: 'https://vitachy.com/brand/logo.png',
+  taxID: 'B55399679',
+  slogan: ui.tagline,
+};
+---
+<Base
+  title={`Vitachy — ${ui.tagline}`}
+  description={ui.home.hero_subtitle}
+  lang={lang}
+  jsonLd={organisationJsonLd}
+  alternates={alternates}
+>
+  <section class="bg-[var(--accent-tint)]">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-24 grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+          {ui.home.hero_eyebrow}
+        </p>
+        <h1 class="display mt-4 text-[2.5rem] md:text-[3.4rem] leading-[1.05] font-bold">
+          {ui.home.hero_title}
+        </h1>
+        <p class="mt-5 text-lg leading-[1.65] text-ink-soft max-w-md">
+          {ui.home.hero_subtitle}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href={estanciaUrl('cocina', lang)}
+            class="inline-flex items-center rounded-full bg-ink text-white px-7 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+          >
+            {ui.cta.view_catalog}
+          </a>
+          <a
+            href={aboutUrl(lang)}
+            class="inline-flex items-center rounded-full border-[1.5px] border-ink text-ink px-7 py-3 font-semibold hover:bg-ink hover:text-white transition-colors"
+          >
+            {ui.cta.learn_about}
+          </a>
+        </div>
+      </div>
+      <div class="aspect-square bg-white border border-line rounded-2xl overflow-hidden">
+        {heroImage && (
+          <img
+            src={resizedAmazonImage(heroImage.url, 800)}
+            alt={heroImage.alt}
+            width="800"
+            height="800"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            class="h-full w-full object-contain"
+          />
+        )}
+      </div>
+    </div>
+  </section>
+
+  <Section eyebrow={ui.home.rooms_eyebrow} title={ui.home.rooms_title}>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {rooms.map((room) => (
+        <a href={estanciaUrl(room.key, lang)} class="group block">
+          <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
+            {room.image ? (
+              <img
+                src={resizedAmazonImage(room.image.url, 600)}
+                alt={room.image.alt}
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-contain transition-transform duration-[350ms] group-hover:scale-[1.04]"
+              />
+            ) : (
+              <div class="h-full w-full flex items-center justify-center text-ink-soft text-sm">{ui.estancias[room.key].title}</div>
+            )}
+          </div>
+          <h3 class="display mt-4 text-lg font-semibold">{ui.estancias[room.key].title}</h3>
+          <p class="mt-1 text-sm text-ink-soft">{ui.estancias[room.key].subclaim_home}</p>
+        </a>
+      ))}
+    </div>
+  </Section>
+
+  <Section tone="warm">
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {destacados.map((product) => (
+        <ProductCard product={product} lang={lang} />
+      ))}
+    </div>
+  </Section>
+
+  <section class="bg-paper">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 grid gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+          {ui.home.about_eyebrow}
+        </p>
+        <h2 class="display mt-3 text-3xl md:text-[2.25rem] font-bold leading-tight">
+          {ui.home.about_title}
+        </h2>
+        <p class="mt-5 text-lg leading-[1.65] text-ink-soft max-w-md">
+          {ui.home.about_body}
+        </p>
+        <a
+          href={aboutUrl(lang)}
+          class="mt-6 inline-flex items-center rounded-full border-[1.5px] border-ink text-ink px-6 py-2.5 font-semibold hover:bg-ink hover:text-white transition-colors"
+        >
+          {ui.cta.read_more}
+        </a>
+      </div>
+      <div class="aspect-[4/3] bg-paper-warm border border-line rounded-2xl overflow-hidden">
+        <img
+          src={resizedAmazonImage(lifestyle.url, 1000)}
+          alt={lifestyle.alt}
+          width="1000"
+          height="750"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+</Base>

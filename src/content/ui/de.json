@@ -1,0 +1,113 @@
+{
+  "tagline": "Jeder Tropfen zählt",
+  "nav": {
+    "cocina": "Küche",
+    "bano": "Bad",
+    "hogar": "Haushalt",
+    "about": "Jeder Tropfen zählt",
+    "buy_amazon": "Bei Amazon kaufen",
+    "menu_open": "Menü öffnen",
+    "home_label": "Startseite",
+    "skip_to_content": "Zum Inhalt springen"
+  },
+  "cta": {
+    "see_on_amazon": "Bei Amazon ansehen",
+    "buy_on_amazon": "Bei amazon kaufen",
+    "view_catalog": "Zum Katalog",
+    "learn_about": "Über uns",
+    "read_more": "Mehr lesen",
+    "go_home": "Zurück zur Startseite"
+  },
+  "product": {
+    "price_caption_prefix": "Preis bei amazon",
+    "description": "Beschreibung",
+    "related_eyebrow_prefix": "Mehr aus"
+  },
+  "estancias": {
+    "cocina": {
+      "title": "Küche",
+      "subclaim_home": "Spender und Organizer für die Spüle.",
+      "description_page": "Spender und Organizer für die Spüle."
+    },
+    "bano": {
+      "title": "Bad",
+      "subclaim_home": "Seife am Waschtisch, Duschgel und Shampoo in der Dusche.",
+      "description_page": "Nachfüllbare Spender für den Waschtisch und Wandspender für die Dusche."
+    },
+    "hogar": {
+      "title": "Haushalt",
+      "subclaim_home": "Sprühflaschen, Ölsprüher und Tablettenboxen.",
+      "description_page": "Nachfüllbare Glas-Sprühflaschen, 2-in-1 Ölsprüher und Wochen-Tablettenboxen."
+    }
+  },
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "home": {
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Jeder Tropfen zählt.",
+    "hero_subtitle": "Nachfüllen, drücken, fertig. Spender, Ölsprüher und Sprühflaschen, die zehntausend Zyklen halten — in Küche, Bad und Dusche.",
+    "rooms_eyebrow": "Für jeden Raum",
+    "rooms_title": "Design, das Sie täglich spüren.",
+    "about_eyebrow": "Jeder Tropfen zählt",
+    "about_title": "So denken wir über das Zuhause.",
+    "about_body": "Kein Produkt verschwenden. Keine Zeit verlieren. Nichts wegwerfen, was noch funktioniert. Den Rest überlassen wir Ihnen."
+  },
+  "footer": {
+    "tagline": "Jeder Tropfen zählt. Langlebiges Design fürs Zuhause, Nachfüllungen, die sparen, Dinge, die man behalten möchte.",
+    "catalog": "Katalog",
+    "legal": "Rechtliches",
+    "made_in": "Hergestellt in Spanien"
+  },
+  "legal_pages": {
+    "legal_notice": "Impressum",
+    "privacy_policy": "Datenschutzerklärung",
+    "cookie_policy": "Cookie-Richtlinie",
+    "contact": "Kontakt"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Schreiben Sie uns. Wir antworten so schnell wie möglich per E-Mail. Wenn Ihre Frage einen konkreten Einkauf betrifft, denken Sie daran: Bestellung, Versand, Rückgabe und Erstattung werden über Ihr Amazon-Konto abgewickelt.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "consent_pre": "Ich habe die ",
+    "consent_link": "Datenschutzerklärung",
+    "consent_post": " gelesen und akzeptiere die Verarbeitung meiner Daten zur Beantwortung meiner Anfrage.",
+    "consent_required_message": "Bitte aktivieren Sie dieses Kontrollkästchen, um die Nachricht zu senden.",
+    "send": "Nachricht senden",
+    "success_title": "Nachricht gesendet.",
+    "success_body": "Danke für Ihre Nachricht. Wir haben sie erhalten und antworten an die angegebene E-Mail-Adresse.",
+    "error_title": "Die Nachricht konnte nicht gesendet werden.",
+    "company_section": "Unternehmensdaten",
+    "error_missing": "Pflichtfelder fehlen. Bitte prüfen und erneut versuchen.",
+    "error_consent": "Sie müssen die Datenschutzerklärung akzeptieren, um die Nachricht zu senden.",
+    "error_turnstile": "Wir konnten nicht bestätigen, dass Sie eine Person sind. Bitte Seite neu laden und nochmal versuchen.",
+    "error_email": "Die E-Mail-Adresse scheint nicht gültig zu sein.",
+    "error_send": "Wir konnten Ihre Nachricht nicht zustellen. Bitte in einigen Minuten erneut versuchen oder direkt an hola@vitachy.com schreiben."
+  },
+  "errors": {
+    "not_found_eyebrow": "Fehler 404",
+    "not_found_title": "Diese Seite existiert nicht.",
+    "not_found_body": "Sie wurde verschoben oder war nie da. Zurück zur Startseite und weitersuchen."
+  },
+  "sobre": {
+    "page_title": "Jeder Tropfen zählt",
+    "meta_description": "Vitachy: spanische Marke für funktionale Haushaltsobjekte. Jeder Tropfen zählt: kein Produkt verschwenden, keine Zeit verlieren, nichts wegwerfen, was noch funktioniert.",
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Jeder Tropfen zählt. Ihre auch.",
+    "hero_subtitle": "Drei Arten, nichts zu verschwenden: nicht das Produkt, nicht die Zeit, nicht die Dinge. Das ist Vitachy.",
+    "one_eyebrow": "Eins",
+    "one_title": "Kein Produkt verschwenden.",
+    "one_body": "Eine gut gemachte Dosierpumpe gibt jedes Mal genau die richtige Menge ab. Keinen Tropfen mehr. So hält eine Flasche doppelt so lang. Seife, Öl und Shampoo landen, wo sie sollen — nicht im Abfluss.",
+    "two_eyebrow": "Zwei",
+    "two_title": "Keine Zeit verlieren.",
+    "two_body": "Nachfüllen, drücken, fertig. Keine Verschlüsse zum Aufdrehen, kein Dosieren, keine klebrigen Hände. Unsere Produkte sind für die schnelle Geste des Alltags gemacht — in der Küche, am Waschbecken, in der Dusche.",
+    "three_eyebrow": "Drei",
+    "three_title": "Nichts wegwerfen, was noch funktioniert.",
+    "three_body": "Pumpen, die zehntausend Zyklen halten. Silikonböden, die den Stoß abfedern, der das Glas zerbricht. Flaschen, die wieder befüllt werden und von vorn beginnen. Einmal gut kaufen statt fünfmal schlecht.",
+    "company_eyebrow": "Über uns",
+    "company_title": "Eine spanische Marke für Alltagsobjekte.",
+    "company_body": "Vitachy ist eine Marke der VITACHY SPAIN SL mit Sitz in Palma de Mallorca und Terrassa. Wir entwerfen und kuratieren Produkte, die Sie für Ihr eigenes Zuhause kaufen würden — nützlich, schön, ehrlich."
+  }
+}

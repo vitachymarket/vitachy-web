@@ -1,0 +1,113 @@
+{
+  "tagline": "Ogni goccia conta",
+  "nav": {
+    "cocina": "Cucina",
+    "bano": "Bagno",
+    "hogar": "Casa",
+    "about": "Ogni goccia conta",
+    "buy_amazon": "Compra su Amazon",
+    "menu_open": "Apri il menu",
+    "home_label": "Home",
+    "skip_to_content": "Vai al contenuto"
+  },
+  "cta": {
+    "see_on_amazon": "Vedi su Amazon",
+    "buy_on_amazon": "Compra su amazon",
+    "view_catalog": "Vedi il catalogo",
+    "learn_about": "Chi siamo",
+    "read_more": "Leggi di più",
+    "go_home": "Torna alla home"
+  },
+  "product": {
+    "price_caption_prefix": "Prezzo su amazon",
+    "description": "Descrizione",
+    "related_eyebrow_prefix": "Anche in"
+  },
+  "estancias": {
+    "cocina": {
+      "title": "Cucina",
+      "subclaim_home": "Dispenser e organizer per il lavello.",
+      "description_page": "Dispenser e organizer per il lavello."
+    },
+    "bano": {
+      "title": "Bagno",
+      "subclaim_home": "Sapone al lavabo, bagnoschiuma e shampoo nella doccia.",
+      "description_page": "Dispenser ricaricabili da appoggio per il lavabo e dispenser fissi a parete per la doccia."
+    },
+    "hogar": {
+      "title": "Casa",
+      "subclaim_home": "Flaconi spray, oliere e portapillole.",
+      "description_page": "Bottiglie spray in vetro ricaricabili, oliere 2-in-1 con spray e portapillole settimanali."
+    }
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "home": {
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Ogni goccia conta.",
+    "hero_subtitle": "Ricarica, premi, fatto. Dispenser, oliere e flaconi spray pensati per durare diecimila cicli nella tua cucina, in bagno e nella doccia.",
+    "rooms_eyebrow": "Per ogni ambiente",
+    "rooms_title": "Un design che si vede tutti i giorni.",
+    "about_eyebrow": "Ogni goccia conta",
+    "about_title": "Il nostro modo di pensare la casa.",
+    "about_body": "Non sprecare il prodotto. Non perdere tempo. Non buttare via ciò che ancora funziona. Il resto lo lasciamo a te."
+  },
+  "footer": {
+    "tagline": "Ogni goccia conta. Design domestico che dura, ricariche che fanno risparmiare, oggetti che vale la pena tenere.",
+    "catalog": "Catalogo",
+    "legal": "Legale",
+    "made_in": "Fatto in Spagna"
+  },
+  "legal_pages": {
+    "legal_notice": "Note legali",
+    "privacy_policy": "Informativa sulla privacy",
+    "cookie_policy": "Informativa sui cookie",
+    "contact": "Contatti"
+  },
+  "contact": {
+    "title": "Contatti",
+    "intro": "Scrivici. Ti risponderemo via email nel più breve tempo possibile. Se la tua richiesta riguarda un acquisto specifico, ricorda che ordini, spedizioni, resi e rimborsi si gestiscono dal tuo account Amazon.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "consent_pre": "Ho letto e accetto l'",
+    "consent_link": "informativa sulla privacy",
+    "consent_post": " e acconsento al trattamento dei miei dati per rispondere alla mia richiesta.",
+    "consent_required_message": "Seleziona questa casella per inviare il messaggio.",
+    "send": "Invia messaggio",
+    "success_title": "Messaggio inviato.",
+    "success_body": "Grazie per averci scritto. Abbiamo ricevuto il tuo messaggio e ti risponderemo all'indirizzo che hai indicato.",
+    "error_title": "Non è stato possibile inviare il messaggio.",
+    "company_section": "Dati aziendali",
+    "error_missing": "Mancano campi obbligatori. Controlla e riprova.",
+    "error_consent": "Per inviare il messaggio devi accettare l'informativa sulla privacy.",
+    "error_turnstile": "Non abbiamo potuto verificare che sei una persona. Ricarica la pagina e riprova.",
+    "error_email": "L'indirizzo email non sembra valido.",
+    "error_send": "Non siamo riusciti a consegnare il tuo messaggio. Riprova fra qualche minuto o scrivici direttamente a hola@vitachy.com."
+  },
+  "errors": {
+    "not_found_eyebrow": "Errore 404",
+    "not_found_title": "Questa pagina non esiste.",
+    "not_found_body": "O è stata spostata, oppure non è mai esistita. Torna alla home e continua a cercare."
+  },
+  "sobre": {
+    "page_title": "Ogni goccia conta",
+    "meta_description": "Vitachy: brand spagnolo di casalinghi e accessori funzionali. Ogni goccia conta: non sprecare il prodotto, non perdere tempo, non buttare via ciò che ancora funziona.",
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Ogni goccia conta. Anche le tue.",
+    "hero_subtitle": "Tre modi per non sprecare: né il prodotto, né il tempo, né gli oggetti. Questo è Vitachy.",
+    "one_eyebrow": "Uno",
+    "one_title": "Non sprecare il prodotto.",
+    "one_body": "Una pompa dosatrice ben fatta eroga sempre la dose giusta. Neanche una goccia in più. Così un flacone dura il doppio. Sapone, olio e shampoo arrivano dove devono, non nel lavandino.",
+    "two_eyebrow": "Due",
+    "two_title": "Non perdere tempo.",
+    "two_body": "Ricarica, premi, fatto. Niente tappi da svitare, niente getti da dosare, niente mani appiccicose. I nostri prodotti sono pensati per il gesto rapido di ogni giorno: in cucina, al lavabo, nella doccia.",
+    "three_eyebrow": "Tre",
+    "three_title": "Non buttare via ciò che ancora funziona.",
+    "three_body": "Pompe che reggono diecimila cicli. Basi in silicone che attutiscono il colpo che rompe il vetro. Bottiglie che si ricaricano e ricominciano. Comprare bene una volta invece che male cinque.",
+    "company_eyebrow": "Chi siamo",
+    "company_title": "Un brand spagnolo di oggetti quotidiani.",
+    "company_body": "Vitachy è un brand di VITACHY SPAIN SL, con sede a Palma di Maiorca e a Terrassa. Progettiamo e selezioniamo prodotti che compreresti per la tua casa: utili, belli, onesti."
+  }
+}

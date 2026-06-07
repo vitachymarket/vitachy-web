@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dispensadores-cocina",
+    "slug": "dispensadores-cocina",
+    "nombre": "Distributeurs de cuisine",
+    "orden": 1,
+    "descripcion_corta": "Distributeurs de savon et organisateurs d'évier. Adieu la bouteille de liquide vaisselle en plastique."
+  },
+  {
+    "id": "dispensadores-bano",
+    "slug": "dispensadores-bano",
+    "nombre": "Distributeurs de salle de bain",
+    "orden": 2,
+    "descripcion_corta": "Rechargeables pour le plan du lavabo. Savon pour les mains, gel et crème dans le même style."
+  },
+  {
+    "id": "dispensadores-ducha",
+    "slug": "dispensadores-ducha",
+    "nombre": "Distributeurs de douche",
+    "orden": 3,
+    "descripcion_corta": "Fixés au mur, pour gel douche, shampoing et après-shampoing. Plus de bouteilles au sol."
+  },
+  {
+    "id": "aceiteras",
+    "slug": "aceiteras",
+    "nombre": "Huiliers spray",
+    "orden": 4,
+    "descripcion_corta": "Huilier pulvérisateur 2-en-1. Spray pour l'air fryer, jet continu pour les salades."
+  },
+  {
+    "id": "pulverizadores",
+    "slug": "pulverizadores",
+    "nombre": "Vaporisateurs",
+    "orden": 5,
+    "descripcion_corta": "Bouteilles en verre rechargeables. Nettoyage, plantes et mélanges maison, sans plastique jetable."
+  },
+  {
+    "id": "pastilleros",
+    "slug": "pastilleros",
+    "nombre": "Piluliers",
+    "orden": 6,
+    "descripcion_corta": "Pilulier hebdomadaire. Fermeture sûre et compartiments spacieux."
+  }
+]

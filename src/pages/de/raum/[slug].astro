@@ -1,0 +1,15 @@
+---
+import EstanciaPageBody from '../../../components/page-body/EstanciaPageBody.astro';
+import { ESTANCIAS, ESTANCIA_SLUG_BY_LANG, type EstanciaSlug } from '../../../lib/routes';
+
+export async function getStaticPaths() {
+  return (Object.keys(ESTANCIAS) as EstanciaSlug[]).map((key) => ({
+    params: { slug: ESTANCIA_SLUG_BY_LANG.de[key] },
+    props: { estanciaKey: key },
+  }));
+}
+
+interface Props { estanciaKey: EstanciaSlug; }
+const { estanciaKey } = Astro.props as Props;
+---
+<EstanciaPageBody lang="de" estanciaKey={estanciaKey} />

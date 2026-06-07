@@ -247,11 +247,19 @@ export function estanciaUrl(slug: EstanciaSlug, lang: Locale): string {
 
 export function hreflangFor(
   build: (lang: Locale) => string,
-): Array<{ lang: Locale | 'x-default'; href: string }> {
-  const out: Array<{ lang: Locale | 'x-default'; href: string }> = [];
+): Array<{ hreflang: string; href: string }> {
+  const out: Array<{ hreflang: string; href: string }> = [];
   for (const lang of LOCALES) {
-    out.push({ lang, href: build(lang) });
+    out.push({ hreflang: lang, href: `https://vitachy.com${build(lang)}` });
   }
-  out.push({ lang: 'x-default', href: build(DEFAULT_LOCALE) });
+  out.push({ hreflang: 'x-default', href: `https://vitachy.com${build(DEFAULT_LOCALE)}` });
   return out;
 }
+
+export const LEGAL_URLS: Record<Locale, { legal: string; privacy: string; cookies: string; contact: string }> = {
+  es: { legal: '/aviso-legal/',          privacy: '/politica-privacidad/',         cookies: '/politica-cookies/',     contact: '/contacto/' },
+  en: { legal: '/en/legal-notice/',      privacy: '/en/privacy-policy/',           cookies: '/en/cookie-policy/',     contact: '/en/contact/' },
+  fr: { legal: '/fr/mentions-legales/',  privacy: '/fr/politique-confidentialite/', cookies: '/fr/politique-cookies/', contact: '/fr/contact/' },
+  it: { legal: '/it/note-legali/',       privacy: '/it/informativa-privacy/',      cookies: '/it/informativa-cookie/', contact: '/it/contatti/' },
+  de: { legal: '/de/impressum/',         privacy: '/de/datenschutz/',              cookies: '/de/cookie-richtlinie/', contact: '/de/kontakt/' },
+};

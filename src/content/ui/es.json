@@ -1,42 +1,52 @@
 {
-  "site": {
-    "tagline": "Cada gota cuenta",
-    "brand_short": "Vitachy"
-  },
+  "tagline": "Cada gota cuenta",
   "nav": {
-    "kitchen": "Cocina",
-    "bathroom": "Baño",
-    "shower": "Ducha",
-    "cleaning": "Limpieza",
+    "cocina": "Cocina",
+    "bano": "Baño",
+    "hogar": "Hogar",
     "about": "Cada gota cuenta",
     "buy_amazon": "Comprar en Amazon",
     "menu_open": "Abrir menú",
-    "menu_close": "Cerrar menú",
-    "home": "Inicio",
+    "home_label": "Inicio",
     "skip_to_content": "Saltar al contenido"
   },
   "cta": {
     "see_on_amazon": "Ver en Amazon",
-    "buy_on_amazon": "Comprar en amazon.es",
-    "learn_more": "Conózcanos",
+    "buy_on_amazon": "Comprar en amazon",
+    "view_catalog": "Ver el catálogo",
+    "learn_about": "Conózcanos",
     "read_more": "Leer más",
-    "view_family": "Ver familia",
-    "view_all_reviews": "Ver todas las reseñas en Amazon"
+    "go_home": "Volver al inicio"
   },
   "product": {
-    "rating_suffix": "reseñas",
-    "price_caption": "Precio en amazon.es",
-    "no_price": "Precio en Amazon",
-    "features": "Características",
+    "price_caption_prefix": "Precio en amazon",
     "description": "Descripción",
-    "related": "También en la misma familia",
-    "reviews": "Reseñas",
-    "updated_on": "Actualizado el"
+    "related_eyebrow_prefix": "También en"
+  },
+  "estancias": {
+    "cocina": {
+      "title": "Cocina",
+      "subclaim_home": "Dispensadores y organizadores para el fregadero.",
+      "description_page": "Dispensadores y organizadores para el fregadero."
+    },
+    "bano": {
+      "title": "Baño",
+      "subclaim_home": "Jabón en el lavabo, gel y champú en la ducha.",
+      "description_page": "Dispensadores recargables para el lavabo y dispensadores fijos para la pared de la ducha."
+    },
+    "hogar": {
+      "title": "Hogar",
+      "subclaim_home": "Pulverizadores, aceiteras y pastilleros.",
+      "description_page": "Pulverizadores de cristal recargables, aceiteras pulverizadoras y pastilleros semanales."
+    }
+  },
+  "breadcrumb": {
+    "home": "Inicio"
   },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Cada gota cuenta.",
-    "hero_subtitle": "Rellene, pulse, listo. Productos que ahorran jabón, aceite y plástico, pensados para durar diez mil ciclos en su cocina, baño y ducha.",
+    "hero_subtitle": "Rellene, pulse, listo. Dispensadores, aceiteras y pulverizadores pensados para durar diez mil ciclos en su cocina, baño y ducha.",
     "rooms_eyebrow": "Para cada estancia",
     "rooms_title": "Diseño que se nota a diario.",
     "about_eyebrow": "Cada gota cuenta",
@@ -47,10 +57,7 @@
     "tagline": "Cada gota cuenta. Diseño doméstico que dura, recargas que ahorran, objetos que valen la pena cuidar.",
     "catalog": "Catálogo",
     "legal": "Legal",
-    "company_name": "VITACHY SPAIN SL",
-    "company_id": "B55399679",
-    "locations": "Palma de Mallorca · Terrassa",
-    "made_in_spain": "Hecho en España"
+    "made_in": "Hecho en España"
   },
   "legal_pages": {
     "legal_notice": "Aviso legal",
@@ -60,35 +67,47 @@
   },
   "contact": {
     "title": "Contacto",
+    "intro": "Escríbanos. Le responderemos por correo electrónico en el plazo más breve posible. Si su consulta es sobre una compra concreta, recuerde que las gestiones (pedido, envío, devolución, reembolso) se hacen desde su cuenta de Amazon.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
-    "consent": "He leído y acepto la política de privacidad.",
-    "send": "Enviar",
-    "success": "Mensaje enviado. Gracias por escribirnos.",
-    "error": "No se ha podido enviar el mensaje. Inténtelo de nuevo en un momento."
+    "consent_pre": "He leído y acepto la ",
+    "consent_link": "política de privacidad",
+    "consent_post": " y consiento el tratamiento de mis datos para responder a mi consulta.",
+    "consent_required_message": "Disculpe, tiene que seleccionar esta casilla para enviar el mensaje.",
+    "send": "Enviar mensaje",
+    "success_title": "Mensaje enviado.",
+    "success_body": "Gracias por escribirnos. Hemos recibido su mensaje y le contestaremos al correo que nos ha facilitado.",
+    "error_title": "No se ha podido enviar el mensaje.",
+    "company_section": "Datos de la empresa",
+    "error_missing": "Faltan campos obligatorios. Revíselo y pruebe de nuevo.",
+    "error_consent": "Para enviar el mensaje debe aceptar la política de privacidad.",
+    "error_turnstile": "No hemos podido verificar que sea una persona. Refresque la página e inténtelo otra vez.",
+    "error_email": "El correo electrónico no parece válido.",
+    "error_send": "No hemos podido entregar su mensaje. Inténtelo en unos minutos o escríbanos directamente a hola@vitachy.com."
   },
   "errors": {
-    "not_found_title": "Página no encontrada",
-    "not_found_body": "La página que busca no existe o se ha movido. Vuelva al inicio.",
-    "back_home": "Volver al inicio"
+    "not_found_eyebrow": "Error 404",
+    "not_found_title": "Esta página no existe.",
+    "not_found_body": "O se ha movido, o nunca estuvo. Vuelva al inicio y siga buscando."
   },
-  "rooms": {
-    "kitchen": {
-      "title": "Cocina",
-      "claim": "Dispensadores y aceiteras recargables."
-    },
-    "bathroom": {
-      "title": "Baño",
-      "claim": "Jabón y crema sin botes por el suelo."
-    },
-    "shower": {
-      "title": "Ducha",
-      "claim": "Gel, champú y acondicionador a la pared."
-    },
-    "cleaning": {
-      "title": "Limpieza",
-      "claim": "Pulverizadores que se rellenan, no se tiran."
-    }
+  "sobre": {
+    "page_title": "Cada gota cuenta",
+    "meta_description": "Vitachy: marca española de menaje y accesorios funcionales para la casa. Cada gota cuenta: no desperdiciar producto, no perder tiempo, no tirar lo que aún sirve.",
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Cada gota cuenta. También las suyas.",
+    "hero_subtitle": "Tres formas de no desperdiciar: ni producto, ni tiempo, ni objetos. Eso es Vitachy.",
+    "one_eyebrow": "Uno",
+    "one_title": "No desperdiciar producto.",
+    "one_body": "Una bomba dosificadora bien hecha entrega siempre la dosis justa. Ni una gota más. Así, un bote dura el doble. El jabón, el aceite y el champú llegan a su destino y no al fregadero.",
+    "two_eyebrow": "Dos",
+    "two_title": "No perder el tiempo.",
+    "two_body": "Rellene, pulse, listo. Sin tapones que abrir, sin chorros que medir, sin manos pegajosas. Nuestros productos están pensados para el gesto rápido del día a día: en la cocina, en el lavabo, en la ducha.",
+    "three_eyebrow": "Tres",
+    "three_title": "No tirar lo que aún sirve.",
+    "three_body": "Bombas que aguantan diez mil ciclos. Bases de silicona que evitan el golpe que rompe el cristal. Botellas que se rellenan y vuelven a empezar. Comprar bien una vez en lugar de comprar mal cinco.",
+    "company_eyebrow": "Quiénes somos",
+    "company_title": "Una marca española de objetos cotidianos.",
+    "company_body": "Vitachy es una marca de VITACHY SPAIN SL, con base en Palma de Mallorca y Terrassa. Diseñamos y seleccionamos productos que comprarías para tu propia casa: utilitarios, estéticos, honestos."
   }
 }

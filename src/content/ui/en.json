@@ -1,0 +1,113 @@
+{
+  "tagline": "Every drop matters",
+  "nav": {
+    "cocina": "Kitchen",
+    "bano": "Bathroom",
+    "hogar": "Home",
+    "about": "Every drop matters",
+    "buy_amazon": "Buy on Amazon",
+    "menu_open": "Open menu",
+    "home_label": "Home",
+    "skip_to_content": "Skip to content"
+  },
+  "cta": {
+    "see_on_amazon": "View on Amazon",
+    "buy_on_amazon": "Buy on amazon",
+    "view_catalog": "Browse the catalogue",
+    "learn_about": "About us",
+    "read_more": "Read more",
+    "go_home": "Back to home"
+  },
+  "product": {
+    "price_caption_prefix": "Price on amazon",
+    "description": "Description",
+    "related_eyebrow_prefix": "More from"
+  },
+  "estancias": {
+    "cocina": {
+      "title": "Kitchen",
+      "subclaim_home": "Dispensers and organisers for the sink.",
+      "description_page": "Dispensers and organisers for the sink."
+    },
+    "bano": {
+      "title": "Bathroom",
+      "subclaim_home": "Hand soap at the basin, shower gel on the wall.",
+      "description_page": "Refillable countertop dispensers for the basin and wall-mounted dispensers for the shower."
+    },
+    "hogar": {
+      "title": "Home",
+      "subclaim_home": "Spray bottles, oil sprayers and pill organisers.",
+      "description_page": "Refillable glass spray bottles, 2-in-1 oil sprayers and weekly pill organisers."
+    }
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "home": {
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Every drop matters.",
+    "hero_subtitle": "Refill, press, done. Dispensers, oil sprayers and spray bottles built to last ten thousand cycles in your kitchen, bathroom and shower.",
+    "rooms_eyebrow": "For every room",
+    "rooms_title": "Design you notice every day.",
+    "about_eyebrow": "Every drop matters",
+    "about_title": "How we think about the home.",
+    "about_body": "Don't waste the product. Don't waste time. Don't throw out what still works. The rest we leave to you."
+  },
+  "footer": {
+    "tagline": "Every drop matters. Long-lasting home design, refills that save, objects worth caring for.",
+    "catalog": "Catalogue",
+    "legal": "Legal",
+    "made_in": "Made in Spain"
+  },
+  "legal_pages": {
+    "legal_notice": "Legal notice",
+    "privacy_policy": "Privacy policy",
+    "cookie_policy": "Cookie policy",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Drop us a line and we'll get back to you by email as soon as we can. If your question is about a specific purchase, remember that orders, shipping, returns and refunds are handled from your Amazon account.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "consent_pre": "I have read and accept the ",
+    "consent_link": "privacy policy",
+    "consent_post": " and consent to my data being processed to answer my query.",
+    "consent_required_message": "Please tick this box to send your message.",
+    "send": "Send message",
+    "success_title": "Message sent.",
+    "success_body": "Thanks for getting in touch. We've received your message and will reply to the email address you provided.",
+    "error_title": "We couldn't send your message.",
+    "company_section": "Company details",
+    "error_missing": "Some required fields are missing. Please check and try again.",
+    "error_consent": "You must accept the privacy policy to send the message.",
+    "error_turnstile": "We couldn't verify you're a person. Refresh the page and try again.",
+    "error_email": "The email address doesn't look valid.",
+    "error_send": "We couldn't deliver your message. Try again in a few minutes or email us directly at hola@vitachy.com."
+  },
+  "errors": {
+    "not_found_eyebrow": "Error 404",
+    "not_found_title": "This page doesn't exist.",
+    "not_found_body": "Either it has moved or it was never here. Head back home and keep looking."
+  },
+  "sobre": {
+    "page_title": "Every drop matters",
+    "meta_description": "Vitachy: Spanish brand of functional homeware. Every drop matters: don't waste the product, don't waste time, don't throw out what still works.",
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Every drop matters. Yours too.",
+    "hero_subtitle": "Three ways not to waste: not the product, not the time, not the objects. That's Vitachy.",
+    "one_eyebrow": "One",
+    "one_title": "Don't waste the product.",
+    "one_body": "A well-made dosing pump delivers exactly the right amount every time. Not a drop more. A bottle lasts twice as long. Soap, oil and shampoo end up where they should, not in the sink.",
+    "two_eyebrow": "Two",
+    "two_title": "Don't waste time.",
+    "two_body": "Refill, press, done. No caps to unscrew, no streams to aim, no sticky hands. Our products are made for the quick gesture of daily life: in the kitchen, at the basin, in the shower.",
+    "three_eyebrow": "Three",
+    "three_title": "Don't throw out what still works.",
+    "three_body": "Pumps that last ten thousand cycles. Silicone bases that absorb the bump that breaks the glass. Bottles that refill and start over. Buy once well, instead of badly five times.",
+    "company_eyebrow": "About us",
+    "company_title": "A Spanish brand of everyday objects.",
+    "company_body": "Vitachy is a brand by VITACHY SPAIN SL, based in Palma de Mallorca and Terrassa. We design and curate products you would buy for your own home: useful, beautiful, honest."
+  }
+}

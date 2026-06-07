@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dispensadores-cocina",
+    "slug": "dispensadores-cocina",
+    "nombre": "Kitchen dispensers",
+    "orden": 1,
+    "descripcion_corta": "Soap dispensers and sink organisers. No more plastic dishwashing bottle."
+  },
+  {
+    "id": "dispensadores-bano",
+    "slug": "dispensadores-bano",
+    "nombre": "Bathroom dispensers",
+    "orden": 2,
+    "descripcion_corta": "Refillable countertop dispensers for hand soap, body wash and lotion."
+  },
+  {
+    "id": "dispensadores-ducha",
+    "slug": "dispensadores-ducha",
+    "nombre": "Shower dispensers",
+    "orden": 3,
+    "descripcion_corta": "Wall-mounted dispensers for shower gel, shampoo and conditioner. No more bottles on the floor."
+  },
+  {
+    "id": "aceiteras",
+    "slug": "aceiteras",
+    "nombre": "Oil sprayers",
+    "orden": 4,
+    "descripcion_corta": "2-in-1 spray oil bottle. Spray mode for air fryer, stream mode for salads."
+  },
+  {
+    "id": "pulverizadores",
+    "slug": "pulverizadores",
+    "nombre": "Spray bottles",
+    "orden": 5,
+    "descripcion_corta": "Refillable glass spray bottles. For cleaning, plants and homemade mixes without single-use plastic."
+  },
+  {
+    "id": "pastilleros",
+    "slug": "pastilleros",
+    "nombre": "Pill organisers",
+    "orden": 6,
+    "descripcion_corta": "Weekly pill organiser. Secure lid and spacious compartments."
+  }
+]

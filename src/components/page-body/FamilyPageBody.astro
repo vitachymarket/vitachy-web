@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Section from '../Section.astro';
+import ProductCard from '../ProductCard.astro';
+import { productUrl, familyUrl, hreflangFor, type ProductCode, type FamilySlug } from '../../lib/routes';
+import { getUi, type FamilyEntry } from '../../lib/i18n';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+  family: FamilyEntry;
+}
+const { lang, family } = Astro.props;
+const ui = getUi(lang);
+
+const allProducts = await getCollection('products', ({ id, data }) =>
+  id.startsWith(`${lang}/`) && data.familia === family.slug,
+);
+const products = allProducts.map((p) => p.data).sort((a, b) => a.orden - b.orden);
+
+const alternates = hreflangFor((l) => familyUrl(family.slug as FamilySlug, l));
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ui.breadcrumb.home, item: 'https://vitachy.com/' },
+    { '@type': 'ListItem', position: 2, name: family.nombre, item: `https://vitachy.com${Astro.url.pathname}` },
+  ],
+};
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: family.nombre,
+  itemListElement: products.map((p, idx) => ({
+    '@type': 'ListItem',
+    position: idx + 1,
+    url: `https://vitachy.com${productUrl(p.codigo as ProductCode, lang)}`,
+    name: p.nombre_corto ?? p.titulo,
+  })),
+};
+---
+<Base
+  title={`${family.nombre} — Vitachy`}
+  description={family.descripcion_corta}
+  lang={lang}
+  jsonLd={[breadcrumbJsonLd, itemListJsonLd]}
+  alternates={alternates}
+>
+  <Section title={family.nombre} tone="warm">
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft -mt-6 mb-10">
+      {family.descripcion_corta}
+    </p>
+    {products.length > 0 ? (
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {products.map((product) => (
+          <ProductCard product={product} lang={lang} />
+        ))}
+      </div>
+    ) : (
+      <p class="text-ink-soft">—</p>
+    )}
+  </Section>
+</Base>

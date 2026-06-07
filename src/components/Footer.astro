@@ -1,21 +1,25 @@
 ---
 import type { Locale } from '../lib/marketplaces';
 import { familyUrl, aboutUrl } from '../lib/routes';
+import { getUi, getFamilies } from '../lib/i18n';
 
 interface Props {
   lang?: Locale;
 }
 const { lang = 'es' } = Astro.props;
+const ui = getUi(lang);
+const families = getFamilies(lang).slice().sort((a, b) => a.orden - b.orden);
+
 const year = new Date().getFullYear();
 
-const families = [
-  { slug: 'dispensadores-cocina', label: 'Dispensadores de cocina' },
-  { slug: 'dispensadores-bano',   label: 'Dispensadores de baño' },
-  { slug: 'dispensadores-ducha',  label: 'Dispensadores de ducha' },
-  { slug: 'aceiteras',            label: 'Aceiteras' },
-  { slug: 'pulverizadores',       label: 'Pulverizadores' },
-  { slug: 'pastilleros',          label: 'Pastilleros' },
-] as const;
+const legalPrefixes: Record<Locale, { legal: string; privacy: string; cookies: string; contact: string }> = {
+  es: { legal: '/aviso-legal/',  privacy: '/politica-privacidad/', cookies: '/politica-cookies/', contact: '/contacto/' },
+  en: { legal: '/en/legal-notice/', privacy: '/en/privacy-policy/', cookies: '/en/cookie-policy/', contact: '/en/contact/' },
+  fr: { legal: '/fr/mentions-legales/', privacy: '/fr/politique-confidentialite/', cookies: '/fr/politique-cookies/', contact: '/fr/contact/' },
+  it: { legal: '/it/note-legali/', privacy: '/it/informativa-privacy/', cookies: '/it/informativa-cookie/', contact: '/it/contatti/' },
+  de: { legal: '/de/impressum/', privacy: '/de/datenschutz/', cookies: '/de/cookie-richtlinie/', contact: '/de/kontakt/' },
+};
+const lp = legalPrefixes[lang];
 ---
 <footer class="bg-paper-warm border-t border-line mt-24">
   <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-3">
@@ -30,8 +34,7 @@ const families = [
         loading="lazy"
       />
       <p class="mt-4 text-sm text-ink-soft max-w-xs">
-        Cada gota cuenta. Diseño doméstico que dura, recargas que ahorran,
-        objetos que valen la pena cuidar.
+        {ui.footer.tagline}
       </p>
       <p class="mt-6 text-xs text-ink-soft leading-relaxed">
         VITACHY SPAIN SL · B55399679<br />
@@ -41,25 +44,25 @@ const families = [
 
     <div>
       <h3 class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft mb-4">
-        Catálogo
+        {ui.footer.catalog}
       </h3>
       <ul class="space-y-2 text-sm">
         {families.map((f) => (
-          <li><a href={familyUrl(f.slug, lang)} class="hover:underline">{f.label}</a></li>
+          <li><a href={familyUrl(f.slug as never, lang)} class="hover:underline">{f.nombre}</a></li>
         ))}
-        <li class="pt-1"><a href={aboutUrl(lang)} class="hover:underline">Cada gota cuenta</a></li>
+        <li class="pt-1"><a href={aboutUrl(lang)} class="hover:underline">{ui.nav.about}</a></li>
       </ul>
     </div>
 
     <div>
       <h3 class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft mb-4">
-        Legal
+        {ui.footer.legal}
       </h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="/aviso-legal/" class="hover:underline">Aviso legal</a></li>
-        <li><a href="/politica-privacidad/" class="hover:underline">Política de privacidad</a></li>
-        <li><a href="/politica-cookies/" class="hover:underline">Política de cookies</a></li>
-        <li><a href="/contacto/" class="hover:underline">Contacto</a></li>
+        <li><a href={lp.legal} class="hover:underline">{ui.legal_pages.legal_notice}</a></li>
+        <li><a href={lp.privacy} class="hover:underline">{ui.legal_pages.privacy_policy}</a></li>
+        <li><a href={lp.cookies} class="hover:underline">{ui.legal_pages.cookie_policy}</a></li>
+        <li><a href={lp.contact} class="hover:underline">{ui.legal_pages.contact}</a></li>
       </ul>
     </div>
   </div>
@@ -67,7 +70,7 @@ const families = [
   <div class="border-t border-line">
     <div class="max-w-6xl mx-auto px-5 py-4 text-xs text-ink-soft flex flex-wrap gap-2 justify-between">
       <span>&copy; {year} VITACHY SPAIN SL</span>
-      <span>Hecho en España</span>
+      <span>{ui.footer.made_in}</span>
     </div>
   </div>
 </footer>

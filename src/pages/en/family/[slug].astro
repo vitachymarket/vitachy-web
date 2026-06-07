@@ -1,0 +1,17 @@
+---
+import FamilyPageBody from '../../../components/page-body/FamilyPageBody.astro';
+import { FAMILY_SLUG_BY_LANG, type FamilySlug } from '../../../lib/routes';
+import { getFamilies, type FamilyEntry } from '../../../lib/i18n';
+
+export async function getStaticPaths() {
+  const families = getFamilies('en');
+  return families.map((entry) => ({
+    params: { slug: FAMILY_SLUG_BY_LANG.en[entry.slug as FamilySlug] },
+    props: { family: entry },
+  }));
+}
+
+interface Props { family: FamilyEntry; }
+const { family } = Astro.props as Props;
+---
+<FamilyPageBody lang="en" family={family} />

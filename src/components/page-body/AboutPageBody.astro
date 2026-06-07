@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import Section from '../Section.astro';
+import { getUi } from '../../lib/i18n';
+import { aboutUrl, hreflangFor } from '../../lib/routes';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const ui = getUi(lang);
+const sobre = ui.sobre;
+const alternates = hreflangFor((l) => aboutUrl(l));
+---
+<Base
+  title={`${sobre.page_title} — Vitachy`}
+  description={sobre.meta_description}
+  lang={lang}
+  alternates={alternates}
+>
+  <section class="bg-[var(--accent-tint)]">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+        {sobre.hero_eyebrow}
+      </p>
+      <h1 class="display mt-4 text-[2.25rem] md:text-[3rem] leading-[1.05] font-bold max-w-3xl">
+        {sobre.hero_title}
+      </h1>
+      <p class="mt-6 text-lg md:text-xl leading-[1.55] text-ink-soft max-w-2xl">
+        {sobre.hero_subtitle}
+      </p>
+    </div>
+  </section>
+
+  <Section title={sobre.one_title} eyebrow={sobre.one_eyebrow}>
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      {sobre.one_body}
+    </p>
+  </Section>
+
+  <Section title={sobre.two_title} eyebrow={sobre.two_eyebrow} tone="warm">
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      {sobre.two_body}
+    </p>
+  </Section>
+
+  <Section title={sobre.three_title} eyebrow={sobre.three_eyebrow}>
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      {sobre.three_body}
+    </p>
+  </Section>
+
+  <section class="bg-paper-warm">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 grid gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+          {sobre.company_eyebrow}
+        </p>
+        <h2 class="display mt-3 text-2xl md:text-3xl font-bold leading-tight">
+          {sobre.company_title}
+        </h2>
+        <p class="mt-5 text-lg leading-[1.65] text-ink-soft max-w-md">
+          {sobre.company_body}
+        </p>
+      </div>
+      <div class="aspect-[4/3] bg-white border border-line rounded-2xl"></div>
+    </div>
+  </section>
+</Base>

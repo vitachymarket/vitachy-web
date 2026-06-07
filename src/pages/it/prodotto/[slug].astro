@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import ProductPageBody from '../../../components/page-body/ProductPageBody.astro';
+import { PRODUCT_SLUG_BY_LANG, type ProductCode } from '../../../lib/routes';
+
+export async function getStaticPaths() {
+  const all = await getCollection('products', ({ id }) => id.startsWith('it/'));
+  return all.map((entry) => {
+    const code = entry.data.codigo as ProductCode;
+    const slug = `${code.toLowerCase()}-${PRODUCT_SLUG_BY_LANG.it[code]}`;
+    return { params: { slug }, props: { product: entry.data } };
+  });
+}
+
+const { product } = Astro.props as any;
+---
+<ProductPageBody lang="it" product={product} />
