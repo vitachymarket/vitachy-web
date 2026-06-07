@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dispensadores-cocina",
+    "slug": "dispensadores-cocina",
+    "nombre": "Dispensadores de cocina",
+    "orden": 1,
+    "descripcion_corta": "Dispensadores de jabón y organizadores para fregadero. Adiós al bote de plástico del lavavajillas."
+  },
+  {
+    "id": "dispensadores-bano",
+    "slug": "dispensadores-bano",
+    "nombre": "Dispensadores de baño",
+    "orden": 2,
+    "descripcion_corta": "Recargables para encimera de lavabo. Jabón de manos, gel y crema con la misma estética."
+  },
+  {
+    "id": "dispensadores-ducha",
+    "slug": "dispensadores-ducha",
+    "nombre": "Dispensadores de ducha",
+    "orden": 3,
+    "descripcion_corta": "Fijos a pared para gel, champú y acondicionador. Sin botellas por el suelo."
+  },
+  {
+    "id": "aceiteras",
+    "slug": "aceiteras",
+    "nombre": "Aceiteras",
+    "orden": 4,
+    "descripcion_corta": "Aceitera pulverizadora 2 en 1. Spray para air fryer y chorro para ensaladas."
+  },
+  {
+    "id": "pulverizadores",
+    "slug": "pulverizadores",
+    "nombre": "Pulverizadores",
+    "orden": 5,
+    "descripcion_corta": "Botellas de cristal recargables. Limpieza, plantas y mezclas caseras sin plástico de usar y tirar."
+  },
+  {
+    "id": "pastilleros",
+    "slug": "pastilleros",
+    "nombre": "Pastilleros",
+    "orden": 6,
+    "descripcion_corta": "Pastillero semanal organizador. Cierre seguro y compartimentos amplios."
+  }
+]

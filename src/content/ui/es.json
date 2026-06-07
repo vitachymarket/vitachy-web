@@ -1,0 +1,94 @@
+{
+  "site": {
+    "tagline": "Cada gota cuenta",
+    "brand_short": "Vitachy"
+  },
+  "nav": {
+    "kitchen": "Cocina",
+    "bathroom": "Baño",
+    "shower": "Ducha",
+    "cleaning": "Limpieza",
+    "about": "Cada gota cuenta",
+    "buy_amazon": "Comprar en Amazon",
+    "menu_open": "Abrir menú",
+    "menu_close": "Cerrar menú",
+    "home": "Inicio",
+    "skip_to_content": "Saltar al contenido"
+  },
+  "cta": {
+    "see_on_amazon": "Ver en Amazon",
+    "buy_on_amazon": "Comprar en amazon.es",
+    "learn_more": "Conózcanos",
+    "read_more": "Leer más",
+    "view_family": "Ver familia",
+    "view_all_reviews": "Ver todas las reseñas en Amazon"
+  },
+  "product": {
+    "rating_suffix": "reseñas",
+    "price_caption": "Precio en amazon.es",
+    "no_price": "Precio en Amazon",
+    "features": "Características",
+    "description": "Descripción",
+    "related": "También en la misma familia",
+    "reviews": "Reseñas",
+    "updated_on": "Actualizado el"
+  },
+  "home": {
+    "hero_eyebrow": "Vitachy",
+    "hero_title": "Cada gota cuenta.",
+    "hero_subtitle": "Rellene, pulse, listo. Productos que ahorran jabón, aceite y plástico, pensados para durar diez mil ciclos en su cocina, baño y ducha.",
+    "rooms_eyebrow": "Para cada estancia",
+    "rooms_title": "Diseño que se nota a diario.",
+    "about_eyebrow": "Cada gota cuenta",
+    "about_title": "Nuestra forma de entender la casa.",
+    "about_body": "No desperdiciar producto. No perder el tiempo. No tirar lo que aún sirve. Lo demás se lo dejamos a usted."
+  },
+  "footer": {
+    "tagline": "Cada gota cuenta. Diseño doméstico que dura, recargas que ahorran, objetos que valen la pena cuidar.",
+    "catalog": "Catálogo",
+    "legal": "Legal",
+    "company_name": "VITACHY SPAIN SL",
+    "company_id": "B55399679",
+    "locations": "Palma de Mallorca · Terrassa",
+    "made_in_spain": "Hecho en España"
+  },
+  "legal_pages": {
+    "legal_notice": "Aviso legal",
+    "privacy_policy": "Política de privacidad",
+    "cookie_policy": "Política de cookies",
+    "contact": "Contacto"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "consent": "He leído y acepto la política de privacidad.",
+    "send": "Enviar",
+    "success": "Mensaje enviado. Gracias por escribirnos.",
+    "error": "No se ha podido enviar el mensaje. Inténtelo de nuevo en un momento."
+  },
+  "errors": {
+    "not_found_title": "Página no encontrada",
+    "not_found_body": "La página que busca no existe o se ha movido. Vuelva al inicio.",
+    "back_home": "Volver al inicio"
+  },
+  "rooms": {
+    "kitchen": {
+      "title": "Cocina",
+      "claim": "Dispensadores y aceiteras recargables."
+    },
+    "bathroom": {
+      "title": "Baño",
+      "claim": "Jabón y crema sin botes por el suelo."
+    },
+    "shower": {
+      "title": "Ducha",
+      "claim": "Gel, champú y acondicionador a la pared."
+    },
+    "cleaning": {
+      "title": "Limpieza",
+      "claim": "Pulverizadores que se rellenan, no se tiran."
+    }
+  }
+}
