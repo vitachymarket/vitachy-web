@@ -12,6 +12,15 @@ const products = allProducts
   .map((p) => p.data)
   .sort((a, b) => a.orden - b.orden);
 
+const byCode = (code: string) => products.find((p) => p.codigo === code);
+const mainOf = (code: string) => {
+  const p = byCode(code);
+  const img = p?.imagenes.find((i) => i.posicion === 0) ?? p?.imagenes[0];
+  return img ? { url: img.url, alt: img.alt } : null;
+};
+
+const heroImage = mainOf('DA1');
+
 const destacados = (() => {
   const seen = new Set<string>();
   const out: typeof products = [];
@@ -24,11 +33,16 @@ const destacados = (() => {
   return out;
 })();
 
-const rooms: Array<{ key: EstanciaSlug; title: string; subclaim: string }> = [
-  { key: 'cocina', title: 'Cocina', subclaim: 'Dispensadores y organizadores para el fregadero.' },
-  { key: 'bano',   title: 'Baño',   subclaim: 'Jabón en el lavabo, gel y champú en la ducha.' },
-  { key: 'hogar',  title: 'Hogar',  subclaim: 'Pulverizadores, aceiteras y pastilleros.' },
+const rooms: Array<{ key: EstanciaSlug; title: string; subclaim: string; image: { url: string; alt: string } | null }> = [
+  { key: 'cocina', title: 'Cocina', subclaim: 'Dispensadores y organizadores para el fregadero.', image: mainOf('DC1') },
+  { key: 'bano',   title: 'Baño',   subclaim: 'Jabón en el lavabo, gel y champú en la ducha.',    image: mainOf('DB1') },
+  { key: 'hogar',  title: 'Hogar',  subclaim: 'Pulverizadores, aceiteras y pastilleros.',         image: mainOf('P2A') },
 ];
+
+const lifestyle = {
+  url: 'https://m.media-amazon.com/images/I/71IjC+4O3RL.jpg',
+  alt: 'Dispensadores Vitachy de gel, champú y acondicionador en una pared de ducha',
+};
 
 const organisationJsonLd = {
   '@context': 'https://schema.org',
@@ -74,8 +88,19 @@ const organisationJsonLd = {
           </a>
         </div>
       </div>
-      <div class="aspect-square bg-white border border-line rounded-2xl flex items-center justify-center text-ink-soft text-sm">
-        Imagen lifestyle próximamente
+      <div class="aspect-square bg-white border border-line rounded-2xl overflow-hidden">
+        {heroImage && (
+          <img
+            src={heroImage.url}
+            alt={heroImage.alt}
+            width="1000"
+            height="1000"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            class="h-full w-full object-contain"
+          />
+        )}
       </div>
     </div>
   </section>
@@ -84,8 +109,20 @@ const organisationJsonLd = {
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {rooms.map((room) => (
         <a href={estanciaUrl(room.key, lang)} class="group block">
-          <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden flex items-center justify-center text-ink-soft text-sm">
-            {room.title}
+          <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
+            {room.image ? (
+              <img
+                src={room.image.url}
+                alt={room.image.alt}
+                width="800"
+                height="800"
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-contain transition-transform duration-[350ms] group-hover:scale-[1.04]"
+              />
+            ) : (
+              <div class="h-full w-full flex items-center justify-center text-ink-soft text-sm">{room.title}</div>
+            )}
           </div>
           <h3 class="display mt-4 text-lg font-semibold">{room.title}</h3>
           <p class="mt-1 text-sm text-ink-soft">{room.subclaim}</p>
@@ -122,8 +159,16 @@ const organisationJsonLd = {
           Leer más
         </a>
       </div>
-      <div class="aspect-[4/3] bg-paper-warm border border-line rounded-2xl flex items-center justify-center text-ink-soft text-sm">
-        Imagen editorial próximamente
+      <div class="aspect-[4/3] bg-paper-warm border border-line rounded-2xl overflow-hidden">
+        <img
+          src={lifestyle.url}
+          alt={lifestyle.alt}
+          width="1000"
+          height="750"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover"
+        />
       </div>
     </div>
   </section>
