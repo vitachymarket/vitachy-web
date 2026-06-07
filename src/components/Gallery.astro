@@ -1,4 +1,6 @@
 ---
+import { resizedAmazonImage } from '../lib/images';
+
 interface Image {
   url: string;
   posicion: number;
@@ -19,10 +21,11 @@ const main = sorted[0];
     {main ? (
       <img
         data-main
-        src={main.url}
+        data-full={main.url}
+        src={resizedAmazonImage(main.url, 800)}
         alt={main.alt}
-        width="1000"
-        height="1000"
+        width="800"
+        height="800"
         loading="eager"
         fetchpriority="high"
         decoding="async"
@@ -41,15 +44,17 @@ const main = sorted[0];
         <button
           type="button"
           data-thumb
-          data-src={img.url}
+          data-src={resizedAmazonImage(img.url, 800)}
           data-alt={img.alt}
           data-active={idx === 0 ? 'true' : 'false'}
           aria-label={`Ver imagen ${idx + 1} de ${sorted.length}`}
           class="gallery-thumb aspect-square overflow-hidden rounded-xl bg-paper-warm"
         >
           <img
-            src={img.url}
+            src={resizedAmazonImage(img.url, 200)}
             alt=""
+            width="160"
+            height="160"
             loading="lazy"
             decoding="async"
             class="h-full w-full object-contain pointer-events-none"

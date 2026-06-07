@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import Section from '../components/Section.astro';
 import ProductCard from '../components/ProductCard.astro';
 import { estanciaUrl, aboutUrl, ESTANCIAS, type EstanciaSlug } from '../lib/routes';
+import { resizedAmazonImage } from '../lib/images';
 
 const lang = 'es' as const;
 
@@ -91,10 +92,10 @@ const organisationJsonLd = {
       <div class="aspect-square bg-white border border-line rounded-2xl overflow-hidden">
         {heroImage && (
           <img
-            src={heroImage.url}
+            src={resizedAmazonImage(heroImage.url, 800)}
             alt={heroImage.alt}
-            width="1000"
-            height="1000"
+            width="800"
+            height="800"
             loading="eager"
             fetchpriority="high"
             decoding="async"
@@ -112,10 +113,10 @@ const organisationJsonLd = {
           <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
             {room.image ? (
               <img
-                src={room.image.url}
+                src={resizedAmazonImage(room.image.url, 600)}
                 alt={room.image.alt}
-                width="800"
-                height="800"
+                width="600"
+                height="600"
                 loading="lazy"
                 decoding="async"
                 class="h-full w-full object-contain transition-transform duration-[350ms] group-hover:scale-[1.04]"
@@ -161,7 +162,7 @@ const organisationJsonLd = {
       </div>
       <div class="aspect-[4/3] bg-paper-warm border border-line rounded-2xl overflow-hidden">
         <img
-          src={lifestyle.url}
+          src={resizedAmazonImage(lifestyle.url, 1000)}
           alt={lifestyle.alt}
           width="1000"
           height="750"

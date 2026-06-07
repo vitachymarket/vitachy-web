@@ -2,6 +2,7 @@
 import type { Locale } from '../lib/marketplaces';
 import { formatPrice } from '../lib/marketplaces';
 import { productUrl, type ProductCode } from '../lib/routes';
+import { resizedAmazonImage } from '../lib/images';
 
 interface ProductLike {
   asin: string;
@@ -29,10 +30,10 @@ const priceText = product.precio !== null ? formatPrice(product.precio, lang) : 
   <a href={url} class="block aspect-square bg-paper-warm border border-line rounded-xl mb-4 overflow-hidden">
     {main ? (
       <img
-        src={main.url}
+        src={resizedAmazonImage(main.url, 400)}
         alt={main.alt}
-        width="1000"
-        height="1000"
+        width="400"
+        height="400"
         loading="lazy"
         decoding="async"
         class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
