@@ -1,0 +1,73 @@
+---
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+
+const nav = [
+  { label: 'Cocina', href: '/#cocina' },
+  { label: 'Baño', href: '/#bano' },
+  { label: 'Ducha', href: '/#ducha' },
+  { label: 'Limpieza', href: '/#limpieza' },
+  { label: 'Cada gota cuenta', href: '/sobre-vitachy/' },
+];
+---
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center gap-6">
+    <a href="/" class="flex items-center" aria-label="Vitachy — Inicio">
+      <img
+        src="/brand/logo.png"
+        alt="Vitachy"
+        width="120"
+        height="32"
+        class="h-7 w-auto"
+        decoding="async"
+      />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 ml-auto" aria-label="Principal">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class="display text-[0.95rem] font-medium text-ink hover:text-accent-deep transition-colors"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <a
+      href="https://www.amazon.es/stores/Vitachy/page/"
+      rel="sponsored noopener"
+      target="_blank"
+      class="hidden md:inline-flex items-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+    >
+      Comprar en Amazon
+    </a>
+
+    <details class="md:hidden ml-auto">
+      <summary class="list-none cursor-pointer p-2" aria-label="Abrir menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </summary>
+      <div class="absolute left-0 right-0 top-16 bg-white border-b border-line shadow-sm">
+        <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-col gap-3" aria-label="Móvil">
+          {nav.map((item) => (
+            <a href={item.href} class="display text-base font-medium py-1">{item.label}</a>
+          ))}
+          <a
+            href="https://www.amazon.es/stores/Vitachy/page/"
+            rel="sponsored noopener"
+            target="_blank"
+            class="mt-2 inline-flex items-center justify-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold"
+          >
+            Comprar en Amazon
+          </a>
+        </nav>
+      </div>
+    </details>
+  </div>
+</header>

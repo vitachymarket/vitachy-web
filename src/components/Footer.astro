@@ -1,0 +1,62 @@
+---
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+const year = new Date().getFullYear();
+---
+<footer class="bg-paper-warm border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-3">
+    <div>
+      <img
+        src="/brand/logo.png"
+        alt="Vitachy"
+        width="120"
+        height="32"
+        class="h-7 w-auto"
+        decoding="async"
+        loading="lazy"
+      />
+      <p class="mt-4 text-sm text-ink-soft max-w-xs">
+        Cada gota cuenta. Diseño doméstico que dura, recargas que ahorran,
+        objetos que valen la pena cuidar.
+      </p>
+      <p class="mt-6 text-xs text-ink-soft leading-relaxed">
+        VITACHY SPAIN SL · B55399679<br />
+        Palma de Mallorca · Terrassa
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft mb-4">
+        Catálogo
+      </h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/#cocina" class="hover:underline">Cocina</a></li>
+        <li><a href="/#bano" class="hover:underline">Baño</a></li>
+        <li><a href="/#ducha" class="hover:underline">Ducha</a></li>
+        <li><a href="/#limpieza" class="hover:underline">Limpieza</a></li>
+        <li><a href="/sobre-vitachy/" class="hover:underline">Cada gota cuenta</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft mb-4">
+        Legal
+      </h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/aviso-legal/" class="hover:underline">Aviso legal</a></li>
+        <li><a href="/politica-privacidad/" class="hover:underline">Política de privacidad</a></li>
+        <li><a href="/politica-cookies/" class="hover:underline">Política de cookies</a></li>
+        <li><a href="/contacto/" class="hover:underline">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 py-4 text-xs text-ink-soft flex flex-wrap gap-2 justify-between">
+      <span>&copy; {year} VITACHY SPAIN SL</span>
+      <span>Hecho en España</span>
+    </div>
+  </div>
+</footer>

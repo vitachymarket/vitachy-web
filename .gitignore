@@ -144,3 +144,9 @@ vite.config.ts.timestamp-*
 
 # Astro
 .astro/
+
+# Claude Code local settings
+.claude/
+
+# Docs internos (contienen IP/puerto del backend; repo es publico)
+docs/
