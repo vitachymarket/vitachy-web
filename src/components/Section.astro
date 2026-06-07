@@ -1,0 +1,36 @@
+---
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  id?: string;
+  tone?: 'paper' | 'warm' | 'tint';
+}
+
+const { eyebrow, title, id, tone = 'paper' } = Astro.props;
+
+const bg =
+  tone === 'warm'
+    ? 'bg-paper-warm'
+    : tone === 'tint'
+      ? 'bg-[var(--accent-tint)]'
+      : 'bg-paper';
+---
+<section id={id} class={bg}>
+  <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+    {(eyebrow || title) && (
+      <header class="mb-10">
+        {eyebrow && (
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+            {eyebrow}
+          </p>
+        )}
+        {title && (
+          <h2 class="display mt-3 text-3xl md:text-[2.25rem] font-bold leading-tight">
+            {title}
+          </h2>
+        )}
+      </header>
+    )}
+    <slot />
+  </div>
+</section>

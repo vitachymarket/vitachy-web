@@ -171,13 +171,52 @@ export const PRODUCT_SLUG_BY_LANG: Record<Locale, Record<ProductCode, string>> =
   },
 };
 
-export const ROUTE_PREFIXES: Record<Locale, { family: string; product: string; about: string }> = {
-  es: { family: 'familia',   product: 'producto', about: 'sobre-vitachy' },
-  en: { family: 'family',    product: 'product',  about: 'about-vitachy' },
-  fr: { family: 'famille',   product: 'produit',  about: 'a-propos' },
-  it: { family: 'famiglia',  product: 'prodotto', about: 'chi-siamo' },
-  de: { family: 'familie',   product: 'produkt',  about: 'ueber-vitachy' },
+export const ROUTE_PREFIXES: Record<Locale, { family: string; product: string; about: string; estancia: string }> = {
+  es: { family: 'familia',   product: 'producto', about: 'sobre-vitachy', estancia: 'estancia' },
+  en: { family: 'family',    product: 'product',  about: 'about-vitachy', estancia: 'room' },
+  fr: { family: 'famille',   product: 'produit',  about: 'a-propos',      estancia: 'piece' },
+  it: { family: 'famiglia',  product: 'prodotto', about: 'chi-siamo',     estancia: 'ambiente' },
+  de: { family: 'familie',   product: 'produkt',  about: 'ueber-vitachy', estancia: 'raum' },
 };
+
+export type EstanciaSlug = 'cocina' | 'bano' | 'hogar';
+
+export const ESTANCIAS: Record<EstanciaSlug, {
+  label: string;
+  description: string;
+  families: FamilySlug[];
+}> = {
+  cocina: {
+    label: 'Cocina',
+    description: 'Dispensadores y organizadores para el fregadero.',
+    families: ['dispensadores-cocina'],
+  },
+  bano: {
+    label: 'Baño',
+    description: 'Dispensadores recargables para el lavabo y dispensadores fijos para la pared de la ducha.',
+    families: ['dispensadores-bano', 'dispensadores-ducha'],
+  },
+  hogar: {
+    label: 'Hogar',
+    description: 'Pulverizadores de cristal recargables, aceiteras pulverizadoras y pastilleros semanales.',
+    families: ['pulverizadores', 'aceiteras', 'pastilleros'],
+  },
+};
+
+export const ESTANCIA_SLUG_BY_LANG: Record<Locale, Record<EstanciaSlug, string>> = {
+  es: { cocina: 'cocina', bano: 'bano', hogar: 'hogar' },
+  en: { cocina: 'kitchen', bano: 'bathroom', hogar: 'home' },
+  fr: { cocina: 'cuisine', bano: 'salle-de-bain', hogar: 'maison' },
+  it: { cocina: 'cucina', bano: 'bagno', hogar: 'casa' },
+  de: { cocina: 'kueche', bano: 'badezimmer', hogar: 'haushalt' },
+};
+
+export function familyToEstancia(family: FamilySlug): EstanciaSlug {
+  for (const [slug, def] of Object.entries(ESTANCIAS) as [EstanciaSlug, (typeof ESTANCIAS)[EstanciaSlug]][]) {
+    if (def.families.includes(family)) return slug;
+  }
+  return 'hogar';
+}
 
 function langPrefix(lang: Locale): string {
   return lang === DEFAULT_LOCALE ? '' : `/${lang}`;
@@ -199,6 +238,11 @@ export function homeUrl(lang: Locale): string {
 
 export function aboutUrl(lang: Locale): string {
   return `${langPrefix(lang)}/${ROUTE_PREFIXES[lang].about}/`;
+}
+
+export function estanciaUrl(slug: EstanciaSlug, lang: Locale): string {
+  const localised = ESTANCIA_SLUG_BY_LANG[lang][slug];
+  return `${langPrefix(lang)}/${ROUTE_PREFIXES[lang].estancia}/${localised}/`;
 }
 
 export function hreflangFor(

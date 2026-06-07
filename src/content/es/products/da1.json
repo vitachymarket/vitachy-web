@@ -3,6 +3,7 @@
   "asin": "B0FG1HXX9D",
   "codigo": "DA1",
   "familia": "aceiteras",
+  "orden": 7,
   "titulo": "Vitachy Aceitera 2 en 1 con Pulverizador y Dispensador de Vidrio 470ml - Spray Aceite Cocina para Freidora de Aire con Base de Silicona Antideslizante y Antigolpes - Vinagrera Antigoteo y Rellenable",
   "nombre_corto": "Aceitera 2 en 1",
   "bullets": [
@@ -13,7 +14,43 @@
     "✅ GRAN CAPACIDAD Y SEGURIDAD CERTIFICADA: Con 470ml, olvídese de rellenar constantemente. Fabricada en vidrio libre de plomo y materiales de grado alimentario certificados por la UE, es perfecta para aceite de oliva, vinagre, soja o vino de cocinar."
   ],
   "descripcion_html": "<p>Descubra la revolución en su cocina con la aceitera 2 en 1 VITACHY. ¿Cansado de tener la encimera llena de botellas pegajosas? Esta aceitera combina elegancia y funcionalidad en un solo dispositivo. Diseñada para el cocinero moderno: no es solo un utensilio, es la solución definitiva para cocinar, freír en freidora de aire y aliñar.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/71w-4OoznCL.jpg",
+      "posicion": 0,
+      "alt": "Aceitera 2 en 1 con pulverizador"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71Ec2o6WhHL.jpg",
+      "posicion": 1,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71Nh2AVCttL.jpg",
+      "posicion": 2,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71-fU5AtyVL.jpg",
+      "posicion": 3,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71mIVpBSo-L.jpg",
+      "posicion": 4,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81toxcIspsL.jpg",
+      "posicion": 5,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71ZwKkmH6CL.jpg",
+      "posicion": 6,
+      "alt": "Aceitera 2 en 1 con pulverizador - vista 6"
+    }
+  ],
   "precio": 10.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FG1HXX9D",

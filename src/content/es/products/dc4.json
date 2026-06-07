@@ -4,6 +4,7 @@
   "asin": "B0FHBK19YQ",
   "codigo": "DC4",
   "familia": "dispensadores-cocina",
+  "orden": 4,
   "titulo": "Organizador de Fregadero VITACHY Negro – Dispensador de Jabón de Cocina 4 en 1, Dosificador de Lavavajillas y Manos, Estropajero y Soporte de Bayeta – Set de Accesorios para Encimera Ahorro Espacio",
   "nombre_corto": "Organizador 4 en 1",
   "bullets": [
@@ -14,7 +15,38 @@
     "📏 COMPACTO PARA CUALQUIER ENCIMERA: Con medidas de 18 x 10,5 x 14,5 cm, este set de accesorios optimiza el espacio al máximo. Ideal para cocinas pequeñas o fregaderos con poco margen, eliminando el ruido visual de las botellas sueltas."
   ],
   "descripcion_html": "<p>El set de accesorios definitivo para tu encimera. ¿Tu fregadero está siempre rodeado de botellas de plástico, esponjas húmedas y bayetas desordenadas? El organizador de fregadero VITACHY pone fin al caos visual unificando todas las herramientas de limpieza en un diseño elegante y robusto. Pensado para cocinas modernas que buscan funcionalidad.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/71J8Lt16cOL.jpg",
+      "posicion": 0,
+      "alt": "Organizador 4 en 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71T-uq-0CqL.jpg",
+      "posicion": 1,
+      "alt": "Organizador 4 en 1 - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71ptTzIIEkL.jpg",
+      "posicion": 2,
+      "alt": "Organizador 4 en 1 - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71iLzFagF7L.jpg",
+      "posicion": 3,
+      "alt": "Organizador 4 en 1 - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71usGvHbPrL.jpg",
+      "posicion": 4,
+      "alt": "Organizador 4 en 1 - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71hnBa-lPGL.jpg",
+      "posicion": 5,
+      "alt": "Organizador 4 en 1 - vista 5"
+    }
+  ],
   "precio": 17.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FHBK19YQ",

@@ -4,6 +4,7 @@
   "asin": "B0DV6KWBJV",
   "codigo": "DB1",
   "familia": "dispensadores-bano",
+  "orden": 6,
   "titulo": "VITACHY Dispensador de Jabón de Cerámica Blanco y Dorado 350ml, Dosificador de Jabón Líquido Estilo Vintage para Baño y Cocina, Diseño 'Pure Soap' Elegante y Recargable para Manos y Loción",
   "nombre_corto": "Dispensador Pure Soap",
   "bullets": [
@@ -14,7 +15,43 @@
     "📦 PACKAGING PROTECTOR: El producto se entrega en una caja de cartón rígido y dentro de una bolsa de burbujas, asegurando que la pieza llegue a su casa en perfectas condiciones."
   ],
   "descripcion_html": "<p>Este elegante dispensador de jabón de manos decorativo es la adición perfecta para cualquier baño. Con un cuerpo de cerámica esmaltada en blanco y una bomba cromada en oro, este dispensador no solo es funcional, sino también un hermoso elemento decorativo. El diseño reproduce las palabras PURE SOAP y tiene la forma clásica de una pastilla de jabón de Marsella.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/618RdJp391L.jpg",
+      "posicion": 0,
+      "alt": "Dispensador Pure Soap"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71Z2RuPrsqL.jpg",
+      "posicion": 1,
+      "alt": "Dispensador Pure Soap - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71oMazeyOSL.jpg",
+      "posicion": 2,
+      "alt": "Dispensador Pure Soap - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61uliJsjXSL.jpg",
+      "posicion": 3,
+      "alt": "Dispensador Pure Soap - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81CDOqV8pEL.jpg",
+      "posicion": 4,
+      "alt": "Dispensador Pure Soap - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61Ovw9VHPJL.jpg",
+      "posicion": 5,
+      "alt": "Dispensador Pure Soap - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71i9C6iuSmL.jpg",
+      "posicion": 6,
+      "alt": "Dispensador Pure Soap - vista 6"
+    }
+  ],
   "precio": 13.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0DV6KWBJV",

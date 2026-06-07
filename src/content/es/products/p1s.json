@@ -4,6 +4,7 @@
   "asin": "B0DWLKHXWG",
   "codigo": "P1S",
   "familia": "pulverizadores",
+  "orden": 15,
   "titulo": "Vitachy Pack 2 Pulverizadores de Vidrio 500ml con Base de Silicona Antideslizante - Botella Spray de Cristal con Cabezal Reforzado y Boquilla 3 Posiciones para Limpieza y Plantas - Salmón/Gris",
   "nombre_corto": "Pulverizador salmón",
   "bullets": [
@@ -14,7 +15,43 @@
     "📦 ENVÍO SEGURO GARANTIZADO: Entregamos tu set en una caja premium con protección de espuma a medida. Nos aseguramos de que el cristal llegue en perfectas condiciones, listo para organizar tu hogar."
   ],
   "descripcion_html": "<p>2 pulverizadores de vidrio de 500ml con base de silicona extraíble y bomba con 2 modos de pulverización. Ideal para pulverizar cualquier tipo de líquido con base agua o aceite. Perfecto para limpieza, jardinería y cuidado de mascotas. Girando la boquilla puede cambiar entre modo concentrado o atomización.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/71+n7xghvQL.jpg",
+      "posicion": 0,
+      "alt": "Pulverizador salmon"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71qtnzaVa0L.jpg",
+      "posicion": 1,
+      "alt": "Pulverizador salmon - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81fnJTBG2YL.jpg",
+      "posicion": 2,
+      "alt": "Pulverizador salmon - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81hyRP2Qf+L.jpg",
+      "posicion": 3,
+      "alt": "Pulverizador salmon - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81ytRx0XRtL.jpg",
+      "posicion": 4,
+      "alt": "Pulverizador salmon - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81N569HVF7L.jpg",
+      "posicion": 5,
+      "alt": "Pulverizador salmon - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/812ojxpEBPL.jpg",
+      "posicion": 6,
+      "alt": "Pulverizador salmon - vista 6"
+    }
+  ],
   "precio": 15.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0DWLKHXWG",

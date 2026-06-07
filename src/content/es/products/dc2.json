@@ -4,6 +4,7 @@
   "asin": "B0DCLH4G9J",
   "codigo": "DC2",
   "familia": "dispensadores-cocina",
+  "orden": 2,
   "titulo": "VITACHY Dispensador de Jabón Cocina 2 en 1 con Organizador Fregadero, Dosificador Jabón Lavavajillas Manual de Gran Capacidad 450ml, Soporte Estropajo y Bayeta Ergonómico para Artritis, Negro",
   "nombre_corto": "Jabonera con organizador",
   "bullets": [
@@ -14,7 +15,43 @@
     "💪 MATERIALES DE ALTA RESISTENCIA: Fabricado en HIPS y PP de grado alimenticio, resistente a impactos y agentes químicos. Totalmente desmontable en segundos para una limpieza profunda y rápida."
   ],
   "descripcion_html": "<p>Dispensador de jabón de lavavajillas con bandeja de almacenamiento. La cabeza de la jabonera fluye con suavidad hacia abajo mientras la bomba deposita una cantidad justa de lavavajillas. Indicada para personas mayores: apenas hay que hacer fuerza.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/61Dj8usheIL.jpg",
+      "posicion": 0,
+      "alt": "Jabonera con organizador"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/7153et8nRbL.jpg",
+      "posicion": 1,
+      "alt": "Jabonera con organizador - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71V6R0kGGdL.jpg",
+      "posicion": 2,
+      "alt": "Jabonera con organizador - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71shqtCobTL.jpg",
+      "posicion": 3,
+      "alt": "Jabonera con organizador - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71pZ-X4YpvL.jpg",
+      "posicion": 4,
+      "alt": "Jabonera con organizador - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71xvBptn4hL.jpg",
+      "posicion": 5,
+      "alt": "Jabonera con organizador - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71rAbwUYwDL.jpg",
+      "posicion": 6,
+      "alt": "Jabonera con organizador - vista 6"
+    }
+  ],
   "precio": 12.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0DCLH4G9J",

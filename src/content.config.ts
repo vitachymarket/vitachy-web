@@ -5,6 +5,7 @@ const productSchema = z.object({
   asin: z.string(),
   codigo: z.string(),
   familia: z.string(),
+  orden: z.number(),
   titulo: z.string(),
   nombre_corto: z.string().optional(),
   bullets: z.array(z.string()),

@@ -1,0 +1,67 @@
+---
+import type { Locale } from '../lib/marketplaces';
+import { formatPrice } from '../lib/marketplaces';
+import { productUrl, type ProductCode } from '../lib/routes';
+
+interface ProductLike {
+  asin: string;
+  codigo: string;
+  nombre_corto?: string;
+  titulo: string;
+  precio: number | null;
+  currency: string;
+  amazon_url: string;
+  imagenes: Array<{ url: string; posicion: number; alt: string }>;
+}
+
+interface Props {
+  product: ProductLike;
+  lang?: Locale;
+}
+
+const { product, lang = 'es' } = Astro.props;
+const url = productUrl(product.codigo as ProductCode, lang);
+const main = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
+const displayName = product.nombre_corto ?? product.titulo;
+const priceText = product.precio !== null ? formatPrice(product.precio, lang) : null;
+---
+<article class="group bg-paper border border-line rounded-2xl p-5 flex flex-col hover:shadow-[0_14px_36px_-16px_rgba(22,20,15,.18)] transition-all hover:-translate-y-[3px]">
+  <a href={url} class="block aspect-square bg-paper-warm border border-line rounded-xl mb-4 overflow-hidden">
+    {main ? (
+      <img
+        src={main.url}
+        alt={main.alt}
+        width="1000"
+        height="1000"
+        loading="lazy"
+        decoding="async"
+        class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+      />
+    ) : (
+      <div class="h-full w-full flex items-center justify-center text-ink-soft text-xs">
+        {product.codigo}
+      </div>
+    )}
+  </a>
+
+  <h3 class="display text-base md:text-lg font-semibold leading-snug">
+    <a href={url} class="hover:underline underline-offset-4">{displayName}</a>
+  </h3>
+
+  <div class="mt-auto pt-4 flex items-end justify-between gap-3">
+    {priceText && (
+      <p class="display text-lg font-semibold text-ink leading-none">{priceText}</p>
+    )}
+    <a
+      href={product.amazon_url}
+      rel="sponsored noopener"
+      target="_blank"
+      class="inline-flex items-center rounded-full bg-ink text-white px-4 py-2 text-xs font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+    >
+      Ver en Amazon
+      <svg aria-hidden="true" viewBox="0 0 20 20" class="ml-1.5 h-3 w-3" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 13L13 7M13 7H8M13 7V12" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+</article>

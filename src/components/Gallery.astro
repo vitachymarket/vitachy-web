@@ -1,0 +1,104 @@
+---
+interface Image {
+  url: string;
+  posicion: number;
+  alt: string;
+}
+
+interface Props {
+  images: Image[];
+  codigo: string;
+}
+
+const { images, codigo } = Astro.props;
+const sorted = [...images].sort((a, b) => a.posicion - b.posicion);
+const main = sorted[0];
+---
+<div class="gallery">
+  <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
+    {main ? (
+      <img
+        data-main
+        src={main.url}
+        alt={main.alt}
+        width="1000"
+        height="1000"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        class="h-full w-full object-contain"
+      />
+    ) : (
+      <div class="h-full w-full flex items-center justify-center text-ink-soft">
+        <span class="text-sm">Imagen de {codigo} próximamente</span>
+      </div>
+    )}
+  </div>
+
+  {sorted.length > 1 && (
+    <div class="mt-4 grid grid-cols-7 gap-2">
+      {sorted.map((img, idx) => (
+        <button
+          type="button"
+          data-thumb
+          data-src={img.url}
+          data-alt={img.alt}
+          data-active={idx === 0 ? 'true' : 'false'}
+          aria-label={`Ver imagen ${idx + 1} de ${sorted.length}`}
+          class="gallery-thumb aspect-square overflow-hidden rounded-xl bg-paper-warm"
+        >
+          <img
+            src={img.url}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            class="h-full w-full object-contain pointer-events-none"
+          />
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
+<style>
+  .gallery-thumb {
+    border: 2px solid var(--line);
+    transition: border-color 180ms ease, transform 180ms ease;
+    cursor: pointer;
+  }
+  .gallery-thumb:hover {
+    border-color: var(--ink-soft);
+    transform: translateY(-1px);
+  }
+  .gallery-thumb[data-active='true'] {
+    border-color: var(--ink);
+  }
+  .gallery-thumb[data-active='true']:hover {
+    border-color: var(--ink);
+    transform: none;
+  }
+  .gallery-thumb:focus-visible {
+    outline: 2.5px solid var(--ink);
+    outline-offset: 3px;
+  }
+</style>
+
+<script>
+  for (const gallery of document.querySelectorAll<HTMLElement>('.gallery')) {
+    const main = gallery.querySelector<HTMLImageElement>('[data-main]');
+    if (!main) continue;
+    const thumbs = gallery.querySelectorAll<HTMLButtonElement>('[data-thumb]');
+    thumbs.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const src = btn.dataset.src;
+        const alt = btn.dataset.alt ?? '';
+        if (!src) return;
+        main.src = src;
+        main.alt = alt;
+        thumbs.forEach((b) => {
+          b.dataset.active = b === btn ? 'true' : 'false';
+        });
+      });
+    });
+  }
+</script>

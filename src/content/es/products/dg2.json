@@ -3,6 +3,7 @@
   "asin": "B0F9ZXHY7P",
   "codigo": "DG2",
   "familia": "dispensadores-ducha",
+  "orden": 13,
   "titulo": "VITACHY 3 Uds Dispensador 500ml Jabon Ducha Pared Sin Taladro Adhesivo. Botes Rellenables Dosificador Jabonera Gel Champu con Soporte. Wall Soap Shower Dispenser",
   "nombre_corto": "Pack de 3 dispensadores azules",
   "bullets": [
@@ -14,7 +15,38 @@
     "PEGATINAS DE ALTO CONTRASTE: etiquetas fácilmente legibles sin esfuerzo. Se incluyen 2 juegos de 12 pegatinas de PVC, 6 con fondo blanco y otras 6 con fondo negro."
   ],
   "descripcion_html": "<p>Solución de 3 dispensadores de jabón para su uso en la ducha o en cualquier espacio donde necesite tener un dispensador a mano. Contenido del paquete: 3 dispensadores de PET con bomba de jabón, 3 soportes de aluminio para pegar en la pared con adhesivo incluido o fijar con tacos y tornillos, y 2 juegos de 6 pegatinas de alto contraste.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/71z3Lo-KnTL.jpg",
+      "posicion": 0,
+      "alt": "Pack de 3 dispensadores azules para ducha"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61k-IKy14QL.jpg",
+      "posicion": 1,
+      "alt": "Pack de 3 dispensadores azules para ducha - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71O-hdWHHQL.jpg",
+      "posicion": 2,
+      "alt": "Pack de 3 dispensadores azules para ducha - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61Z1MpmjNXL.jpg",
+      "posicion": 3,
+      "alt": "Pack de 3 dispensadores azules para ducha - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81x2E87eZ5L.jpg",
+      "posicion": 4,
+      "alt": "Pack de 3 dispensadores azules para ducha - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71gmK+rau2L.jpg",
+      "posicion": 5,
+      "alt": "Pack de 3 dispensadores azules para ducha - vista 5"
+    }
+  ],
   "precio": 16.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0F9ZXHY7P",

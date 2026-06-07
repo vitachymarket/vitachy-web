@@ -4,6 +4,7 @@
   "asin": "B0FGGKRFX1",
   "codigo": "P2A",
   "familia": "pulverizadores",
+  "orden": 16,
   "titulo": "Vitachy Pack 2 Pulverizadores Vidrio Ámbar 500ml con Base de Silicona, Botellas Spray de Cristal para Limpieza, Plantas y Aceites Esenciales, Incluye Etiquetas y Rotulador (Azul y Eucalipto)",
   "nombre_corto": "Pulverizador azul y eucalipto",
   "bullets": [
@@ -14,7 +15,43 @@
     "🏷️ SET COMPLETO PARA ORGANIZAR TU HOGAR: Recibe 2 botellas de 500ml listas para usar, acompañadas de etiquetas de pizarra y rotulador. Organiza tus preparados de limpieza DIY, cuidado de mascotas o jardín con un estilo profesional, elegante y ordenado."
   ],
   "descripcion_html": "<p>2 pulverizadores de vidrio ámbar de 500ml con base de silicona extraíble y bomba con 2 modos de pulverización. Ideal para pulverizar cualquier tipo de líquido con base agua o aceite. Perfecto para limpieza, jardinería y cuidado de mascotas. Girando la boquilla puede cambiar entre modo concentrado o atomización.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
+      "posicion": 0,
+      "alt": "Pulverizador azul y eucalipto"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71YwQhV5xlL.jpg",
+      "posicion": 1,
+      "alt": "Pulverizador azul y eucalipto - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81aONwAhnEL.jpg",
+      "posicion": 2,
+      "alt": "Pulverizador azul y eucalipto - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
+      "posicion": 3,
+      "alt": "Pulverizador azul y eucalipto - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
+      "posicion": 4,
+      "alt": "Pulverizador azul y eucalipto - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
+      "posicion": 5,
+      "alt": "Pulverizador azul y eucalipto - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71aziE9ifFL.jpg",
+      "posicion": 6,
+      "alt": "Pulverizador azul y eucalipto - vista 6"
+    }
+  ],
   "precio": 16.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FGGKRFX1",

@@ -1,9 +1,21 @@
 ---
+import type { Locale } from '../lib/marketplaces';
+import { familyUrl, aboutUrl } from '../lib/routes';
+
 interface Props {
-  lang?: string;
+  lang?: Locale;
 }
 const { lang = 'es' } = Astro.props;
 const year = new Date().getFullYear();
+
+const families = [
+  { slug: 'dispensadores-cocina', label: 'Dispensadores de cocina' },
+  { slug: 'dispensadores-bano',   label: 'Dispensadores de baño' },
+  { slug: 'dispensadores-ducha',  label: 'Dispensadores de ducha' },
+  { slug: 'aceiteras',            label: 'Aceiteras' },
+  { slug: 'pulverizadores',       label: 'Pulverizadores' },
+  { slug: 'pastilleros',          label: 'Pastilleros' },
+] as const;
 ---
 <footer class="bg-paper-warm border-t border-line mt-24">
   <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-3">
@@ -32,11 +44,10 @@ const year = new Date().getFullYear();
         Catálogo
       </h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="/#cocina" class="hover:underline">Cocina</a></li>
-        <li><a href="/#bano" class="hover:underline">Baño</a></li>
-        <li><a href="/#ducha" class="hover:underline">Ducha</a></li>
-        <li><a href="/#limpieza" class="hover:underline">Limpieza</a></li>
-        <li><a href="/sobre-vitachy/" class="hover:underline">Cada gota cuenta</a></li>
+        {families.map((f) => (
+          <li><a href={familyUrl(f.slug, lang)} class="hover:underline">{f.label}</a></li>
+        ))}
+        <li class="pt-1"><a href={aboutUrl(lang)} class="hover:underline">Cada gota cuenta</a></li>
       </ul>
     </div>
 

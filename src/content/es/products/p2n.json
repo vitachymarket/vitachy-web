@@ -4,6 +4,7 @@
   "asin": "B0FGGKFW82",
   "codigo": "P2N",
   "familia": "pulverizadores",
+  "orden": 8,
   "titulo": "Vitachy Pack de 2 Botella Spray Pulverizador Cristal 500ml, Bote Spray Vidrio Ámbar con Base de Silicona para Limpieza Hogar y Plantas. Botes Spray Vacíos Rellenables, Glass Spray Bottle",
   "nombre_corto": "Pulverizador ámbar chocolate",
   "bullets": [
@@ -15,7 +16,43 @@
     "♻️ EMBALAJE ECOLÓGICO SIN PLÁSTICOS: Diseñado a medida con cartón protector estructurado para asegurar que las botellas lleguen intactas. Un empaque 100% sostenible y libre de plástico."
   ],
   "descripcion_html": "<p>Pack completo y listo para usar: 2 botes de vidrio ámbar vacíos y rellenables, 2 fundas protectoras de silicona, 2 tapones de baquelita para un cierre hermético, 4 etiquetas de pizarra adhesivas y 1 rotulador de tiza líquida. Máxima protección anticaídas: cada botella tiene una base de silicona de alta calidad que absorbe los impactos.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
+      "posicion": 0,
+      "alt": "Pulverizador ambar chocolate"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71YwQhV5xlL.jpg",
+      "posicion": 1,
+      "alt": "Pulverizador ambar chocolate - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81aONwAhnEL.jpg",
+      "posicion": 2,
+      "alt": "Pulverizador ambar chocolate - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
+      "posicion": 3,
+      "alt": "Pulverizador ambar chocolate - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
+      "posicion": 4,
+      "alt": "Pulverizador ambar chocolate - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
+      "posicion": 5,
+      "alt": "Pulverizador ambar chocolate - vista 5"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71aziE9ifFL.jpg",
+      "posicion": 6,
+      "alt": "Pulverizador ambar chocolate - vista 6"
+    }
+  ],
   "precio": 17.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FGGKFW82",

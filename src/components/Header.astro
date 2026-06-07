@@ -1,20 +1,47 @@
 ---
+import type { Locale } from '../lib/marketplaces';
+import {
+  estanciaUrl,
+  aboutUrl,
+  homeUrl,
+  familyUrl,
+  ESTANCIAS,
+  type EstanciaSlug,
+} from '../lib/routes';
+
 interface Props {
-  lang?: string;
+  lang?: Locale;
 }
 const { lang = 'es' } = Astro.props;
 
-const nav = [
-  { label: 'Cocina', href: '/#cocina' },
-  { label: 'Baño', href: '/#bano' },
-  { label: 'Ducha', href: '/#ducha' },
-  { label: 'Limpieza', href: '/#limpieza' },
-  { label: 'Cada gota cuenta', href: '/sobre-vitachy/' },
-];
+const familyLabels: Record<string, string> = {
+  'dispensadores-cocina': 'Dispensadores de cocina',
+  'dispensadores-bano': 'Dispensadores de baño',
+  'dispensadores-ducha': 'Dispensadores de ducha',
+  'aceiteras': 'Aceiteras',
+  'pulverizadores': 'Pulverizadores',
+  'pastilleros': 'Pastilleros',
+};
+
+const estancias = (Object.keys(ESTANCIAS) as EstanciaSlug[]).map((key) => {
+  const def = ESTANCIAS[key];
+  return {
+    key,
+    label: def.label,
+    href: estanciaUrl(key, lang),
+    families: def.families.map((slug) => ({
+      slug,
+      label: familyLabels[slug] ?? slug,
+      href: familyUrl(slug, lang),
+    })),
+  };
+});
+
+const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
 ---
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center gap-6">
-    <a href="/" class="flex items-center" aria-label="Vitachy — Inicio">
+    <a href={homeUrl(lang)} class="flex items-center" aria-label="Vitachy — Inicio">
       <img
         src="/brand/logo.png"
         alt="Vitachy"
@@ -25,19 +52,40 @@ const nav = [
       />
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 ml-auto" aria-label="Principal">
-      {nav.map((item) => (
-        <a
-          href={item.href}
-          class="display text-[0.95rem] font-medium text-ink hover:text-accent-deep transition-colors"
-        >
-          {item.label}
-        </a>
+    <nav class="hidden md:flex items-center gap-1 ml-auto" aria-label="Principal">
+      {estancias.map((e) => (
+        <div class="nav-group relative">
+          <a
+            href={e.href}
+            class="px-3 py-2 display text-[0.95rem] font-medium text-ink rounded-md hover:bg-paper-warm transition-colors"
+          >
+            {e.label}
+          </a>
+          {e.families.length > 1 && (
+            <div class="nav-dropdown" role="menu" aria-label={`Familias de ${e.label}`}>
+              {e.families.map((f) => (
+                <a
+                  href={f.href}
+                  role="menuitem"
+                  class="block px-3 py-2 text-sm display text-ink rounded-md hover:bg-paper-warm transition-colors whitespace-nowrap"
+                >
+                  {f.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
       ))}
+      <a
+        href={aboutUrl(lang)}
+        class="ml-2 px-3 py-2 display text-[0.95rem] font-medium text-ink rounded-md hover:bg-paper-warm transition-colors"
+      >
+        Cada gota cuenta
+      </a>
     </nav>
 
     <a
-      href="https://www.amazon.es/stores/Vitachy/page/"
+      href={amazonStore}
       rel="sponsored noopener"
       target="_blank"
       class="hidden md:inline-flex items-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold hover:bg-[var(--accent-deep)] transition-colors"
@@ -55,11 +103,12 @@ const nav = [
       </summary>
       <div class="absolute left-0 right-0 top-16 bg-white border-b border-line shadow-sm">
         <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-col gap-3" aria-label="Móvil">
-          {nav.map((item) => (
-            <a href={item.href} class="display text-base font-medium py-1">{item.label}</a>
+          {estancias.map((e) => (
+            <a href={e.href} class="display text-base font-medium py-1">{e.label}</a>
           ))}
+          <a href={aboutUrl(lang)} class="display text-base font-medium py-1 pt-2 border-t border-line">Cada gota cuenta</a>
           <a
-            href="https://www.amazon.es/stores/Vitachy/page/"
+            href={amazonStore}
             rel="sponsored noopener"
             target="_blank"
             class="mt-2 inline-flex items-center justify-center rounded-full bg-ink text-white px-5 py-2 text-sm font-semibold"
@@ -71,3 +120,37 @@ const nav = [
     </details>
   </div>
 </header>
+
+<style>
+  .nav-group::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+  }
+  .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 220px;
+    padding: 0.375rem;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    box-shadow: 0 14px 36px -16px rgba(22, 20, 15, 0.18);
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity 150ms ease,
+      visibility 150ms ease;
+    z-index: 50;
+  }
+  .nav-group:hover .nav-dropdown,
+  .nav-group:focus-within .nav-dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>

@@ -3,6 +3,7 @@
   "asin": "B0FGJMVJ54",
   "codigo": "DB2",
   "familia": "dispensadores-bano",
+  "orden": 12,
   "titulo": "VITACHY 2 Uds Dispensador Jabon Baño Cocina Ducha Vidrio Ámbar 500ml Base Silicona Negro Dosificador Acero Inoxidable",
   "nombre_corto": "Pack de 2 dispensadores ámbar",
   "bullets": [
@@ -13,7 +14,13 @@
     "PRESENTACIÓN: el producto se sirve dentro de una caja con las botellas de vidrio protegidas con una bolsa de burbujas."
   ],
   "descripcion_html": "<p>Eleva la estética y funcionalidad de tu hogar o negocio con este pack de 2 dispensadores de jabón de vidrio ámbar. Con un diseño elegante y materiales de alta calidad, estos dispensadores son perfectos para cualquier espacio, desde baños y cocinas hasta entornos profesionales. Incluyen bombas de acero inoxidable y bases de silicona.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/712jhdr-7xL.jpg",
+      "posicion": 0,
+      "alt": "Pack de 2 dispensadores ambar"
+    }
+  ],
   "precio": 17.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FGJMVJ54",

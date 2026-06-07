@@ -3,6 +3,7 @@
   "asin": "B0F6YMX6NP",
   "codigo": "DC3",
   "familia": "dispensadores-cocina",
+  "orden": 3,
   "titulo": "VITACHY Dispensador Jabon Cocina Negro con Dosificador de Lavavajillas y de Jabón de Manos. Organizador de Fregadero con Soporte de Bayeta Dish Soap Dispenser for Kitchen",
   "nombre_corto": "Dispensador con bayeta",
   "bullets": [
@@ -14,7 +15,38 @@
     "AHORRO: la dosificación de jabón es siempre la misma. El ahorro de jabón de lavavajillas y de jabón de manos es substancial."
   ],
   "descripcion_html": "<p>Set de limpieza para el fregadero que combina un dispensador de jabón de lavavajillas por presión, un dispensador de jabón de manos y un organizador para colocar la bayeta y el estropajo, todo en uno. Fabricado con plásticos técnicos y un soporte de acero inoxidable que le confieren gran resistencia y durabilidad.</p>",
-  "imagenes": [],
+  "imagenes": [
+    {
+      "url": "https://m.media-amazon.com/images/I/81OBGQ5FQfL.jpg",
+      "posicion": 0,
+      "alt": "Dispensador con bayeta"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71APsbuglkL.jpg",
+      "posicion": 1,
+      "alt": "Dispensador con bayeta - vista 1"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71kshgjF8uL.jpg",
+      "posicion": 2,
+      "alt": "Dispensador con bayeta - vista 2"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71V3wgtbAQL.jpg",
+      "posicion": 3,
+      "alt": "Dispensador con bayeta - vista 3"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71yWsDw1wjL.jpg",
+      "posicion": 4,
+      "alt": "Dispensador con bayeta - vista 4"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71HTgX4zlBL.jpg",
+      "posicion": 5,
+      "alt": "Dispensador con bayeta - vista 5"
+    }
+  ],
   "precio": 16.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0F6YMX6NP",

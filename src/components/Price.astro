@@ -1,0 +1,26 @@
+---
+import { formatPrice, type Locale } from '../lib/marketplaces';
+
+interface Props {
+  value: number | null;
+  lang?: Locale;
+  caption?: string;
+  align?: 'left' | 'center';
+}
+
+const { value, lang = 'es', caption, align = 'left' } = Astro.props;
+
+if (value === null) {
+  // no render when price is null
+}
+
+const formatted = value !== null ? formatPrice(value, lang) : null;
+---
+{formatted && (
+  <div class={align === 'center' ? 'text-center' : ''}>
+    <p class="display text-xl font-semibold leading-none text-ink">{formatted}</p>
+    {caption && (
+      <p class="mt-1 text-xs text-ink-soft">{caption}</p>
+    )}
+  </div>
+)}

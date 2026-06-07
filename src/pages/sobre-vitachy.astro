@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import Section from '../components/Section.astro';
+
+const lang = 'es' as const;
+---
+<Base
+  title="Cada gota cuenta — Vitachy"
+  description="Vitachy: marca española de menaje y accesorios funcionales para la casa. Cada gota cuenta: no desperdiciar producto, no perder tiempo, no tirar lo que aún sirve."
+  lang={lang}
+>
+  <!-- COPY PROVISIONAL: Texto definitivo lo aportará el propietario. -->
+
+  <section class="bg-[var(--accent-tint)]">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+        Vitachy
+      </p>
+      <h1 class="display mt-4 text-[2.25rem] md:text-[3rem] leading-[1.05] font-bold max-w-3xl">
+        Cada gota cuenta. También las suyas.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl leading-[1.55] text-ink-soft max-w-2xl">
+        Tres formas de no desperdiciar: ni producto, ni tiempo, ni objetos.
+        Eso es Vitachy.
+      </p>
+    </div>
+  </section>
+
+  <Section title="No desperdiciar producto." eyebrow="Uno">
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      Una bomba dosificadora bien hecha entrega siempre la dosis justa.
+      Ni una gota más. Así, un bote dura el doble. El jabón, el aceite
+      y el champú llegan a su destino y no al fregadero.
+    </p>
+  </Section>
+
+  <Section title="No perder el tiempo." eyebrow="Dos" tone="warm">
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      Rellene, pulse, listo. Sin tapones que abrir, sin chorros que
+      medir, sin manos pegajosas. Nuestros productos están pensados
+      para el gesto rápido del día a día: en la cocina, en el lavabo,
+      en la ducha.
+    </p>
+  </Section>
+
+  <Section title="No tirar lo que aún sirve." eyebrow="Tres">
+    <p class="max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      Bombas que aguantan diez mil ciclos. Bases de silicona que evitan
+      el golpe que rompe el cristal. Botellas que se rellenan y vuelven
+      a empezar. Comprar bien una vez en lugar de comprar mal cinco.
+    </p>
+  </Section>
+
+  <section class="bg-paper-warm">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 grid gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+          Quiénes somos
+        </p>
+        <h2 class="display mt-3 text-2xl md:text-3xl font-bold leading-tight">
+          Una marca española de objetos cotidianos.
+        </h2>
+        <p class="mt-5 text-lg leading-[1.65] text-ink-soft max-w-md">
+          Vitachy es una marca de VITACHY SPAIN SL, con base en Palma
+          de Mallorca y Terrassa. Diseñamos y seleccionamos productos
+          que comprarías para tu propia casa: utilitarios, estéticos,
+          honestos.
+        </p>
+      </div>
+      <div class="aspect-[4/3] bg-white border border-line rounded-2xl flex items-center justify-center text-ink-soft text-sm">
+        Imagen lifestyle próximamente
+      </div>
+    </div>
+  </section>
+</Base>
