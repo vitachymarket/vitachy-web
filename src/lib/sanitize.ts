@@ -6,6 +6,12 @@ const LEADING_EMOJI =
 const ALLCAPS_PREFIX =
   /^([A-ZÁÉÍÓÚÜÑ0-9][A-ZÁÉÍÓÚÜÑ0-9\s\-/&"'()%]*?):\s+/;
 
+const ACRONYMS = [
+  'BPA', 'UV', 'PVC', 'PET', 'HIPS', 'PP', 'TPR', 'ABS', 'DIY', 'XL', 'TPU',
+] as const;
+
+const ACRONYM_REGEX = new RegExp(`\\b(?:${ACRONYMS.join('|')})\\b`, 'gi');
+
 function escapeHtml(s: string): string {
   return s
     .replace(/&/g, '&amp;')
@@ -21,6 +27,10 @@ function titleCasePrefix(prefix: string): string {
   return first + rest;
 }
 
+function restoreAcronyms(text: string): string {
+  return text.replace(ACRONYM_REGEX, (match) => match.toUpperCase());
+}
+
 export interface CleanedBullet {
   html: string;
   hadPrefix: boolean;
@@ -31,10 +41,13 @@ export function cleanBullet(raw: string): CleanedBullet {
   const match = stripped.match(ALLCAPS_PREFIX);
 
   if (!match) {
-    return { html: escapeHtml(stripped), hadPrefix: false };
+    return {
+      html: escapeHtml(restoreAcronyms(stripped)),
+      hadPrefix: false,
+    };
   }
 
-  const prefix = titleCasePrefix(match[1]);
+  const prefix = restoreAcronyms(titleCasePrefix(match[1]));
   let rest = stripped.slice(match[0].length);
   if (rest.length > 0) {
     const firstChar = rest.charAt(0);
@@ -43,6 +56,7 @@ export function cleanBullet(raw: string): CleanedBullet {
       rest = upper + rest.slice(1);
     }
   }
+  rest = restoreAcronyms(rest);
 
   return {
     html: `<strong>${escapeHtml(prefix)}.</strong> ${escapeHtml(rest)}`,
