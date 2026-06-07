@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+
+const TURNSTILE_SITE_KEY = '0x4AAAAAADgP8v7IolKcnuE-';
+---
+<Base
+  title="Contacto — Vitachy"
+  description="Escríbanos. Atendemos su consulta por correo electrónico en el plazo más breve posible."
+>
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer
+  ></script>
+
+  <article class="max-w-3xl mx-auto px-5 pt-10 md:pt-14 pb-20">
+    <h1 class="display text-3xl md:text-[2.25rem] font-bold leading-tight mb-3">
+      Contacto
+    </h1>
+    <p class="text-lg leading-[1.6] text-ink-soft max-w-prose mb-12">
+      Escríbanos. Le responderemos por correo electrónico en el plazo más
+      breve posible. Si su consulta es sobre una compra concreta, recuerde
+      que las gestiones (pedido, envío, devolución, reembolso) se hacen
+      desde su cuenta de Amazon.
+    </p>
+
+    <div data-success class="mb-10 hidden rounded-2xl border border-line bg-paper-warm p-6">
+      <p class="display text-lg font-semibold mb-2">Mensaje enviado.</p>
+      <p class="text-ink-soft leading-[1.6]">
+        Gracias por escribirnos. Hemos recibido su mensaje y le contestaremos
+        al correo que nos ha facilitado.
+      </p>
+    </div>
+
+    <div data-error class="mb-10 hidden rounded-2xl border border-line bg-paper-warm p-6">
+      <p class="display text-lg font-semibold mb-2">No se ha podido enviar el mensaje.</p>
+      <p data-error-text class="text-ink-soft leading-[1.6]"></p>
+    </div>
+
+    <form
+      method="POST"
+      action="/api/contact"
+      class="grid gap-5"
+      novalidate
+    >
+      <div class="grid gap-2">
+        <label for="nombre" class="display text-sm font-medium">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          required
+          maxlength="120"
+          autocomplete="name"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink focus:border-ink focus:outline-none"
+        />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="email" class="display text-sm font-medium">Correo electrónico</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          maxlength="160"
+          autocomplete="email"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink focus:border-ink focus:outline-none"
+        />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="mensaje" class="display text-sm font-medium">Mensaje</label>
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          required
+          maxlength="4000"
+          rows="6"
+          class="rounded-lg border border-line bg-paper px-4 py-3 text-ink leading-[1.55] focus:border-ink focus:outline-none resize-vertical"
+        ></textarea>
+      </div>
+
+      <label class="flex items-start gap-3 text-sm leading-[1.55] text-ink-soft cursor-pointer">
+        <input
+          type="checkbox"
+          name="consentimiento"
+          value="si"
+          required
+          class="mt-1 h-4 w-4 accent-[var(--ink)]"
+        />
+        <span>
+          He leído y acepto la
+          <a href="/politica-privacidad/" class="underline hover:text-ink">política de privacidad</a>
+          y consiento el tratamiento de mis datos para responder a mi consulta.
+        </span>
+      </label>
+
+      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-theme="light"></div>
+
+      <div>
+        <button
+          type="submit"
+          class="inline-flex items-center rounded-full bg-ink text-white px-7 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+        >
+          Enviar mensaje
+        </button>
+      </div>
+    </form>
+
+    <section class="mt-16 pt-10 border-t border-line">
+      <h2 class="display text-xl font-semibold mb-4">Datos de la empresa</h2>
+      <ul class="leading-[1.7] text-ink-soft list-none space-y-1">
+        <li>VITACHY SPAIN, S.L. — NIF B55399679</li>
+        <li>C/ Gabriel Miró 1, 4º E, 07011 Palma de Mallorca (España)</li>
+        <li>
+          <a href="mailto:hola@vitachy.com" class="underline hover:text-ink">hola@vitachy.com</a>
+        </li>
+      </ul>
+    </section>
+  </article>
+
+  <script is:inline>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const successEl = document.querySelector('[data-success]');
+      const errorEl = document.querySelector('[data-error]');
+      const errorTextEl = document.querySelector('[data-error-text]');
+      const form = document.querySelector('form[action="/api/contact"]');
+
+      if (params.has('ok')) {
+        successEl?.classList.remove('hidden');
+        form?.classList.add('hidden');
+        successEl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (params.has('error')) {
+        const code = params.get('error');
+        const messages = {
+          missing: 'Faltan campos obligatorios. Revíselo y pruebe de nuevo.',
+          consent: 'Para enviar el mensaje debe aceptar la política de privacidad.',
+          turnstile: 'No hemos podido verificar que sea una persona. Refresque la página e inténtelo otra vez.',
+          email: 'El correo electrónico no parece válido.',
+          send: 'No hemos podido entregar su mensaje. Inténtelo en unos minutos o escríbanos directamente a hola@vitachy.com.',
+        };
+        errorTextEl.textContent = messages[code] || messages.send;
+        errorEl?.classList.remove('hidden');
+        errorEl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    })();
+  </script>
+</Base>
