@@ -145,6 +145,11 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADgP8v7IolKcnuE-';
         errorEl?.classList.remove('hidden');
         errorEl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
+
+      const consent = document.querySelector('input[name="consentimiento"]');
+      const consentMsg = 'Disculpe, tiene que seleccionar esta casilla para enviar el mensaje.';
+      consent?.addEventListener('invalid', () => consent.setCustomValidity(consentMsg));
+      consent?.addEventListener('change', () => consent.setCustomValidity(''));
     })();
   </script>
 </Base>
