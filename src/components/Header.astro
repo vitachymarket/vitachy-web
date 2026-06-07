@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '../lib/marketplaces';
+import { LOCALES } from '../lib/marketplaces';
 import {
   estanciaUrl,
   aboutUrl,
@@ -10,12 +11,46 @@ import {
 } from '../lib/routes';
 import { getUi, getFamilies } from '../lib/i18n';
 
+interface Alternate { hreflang: string; href: string; }
+
 interface Props {
   lang?: Locale;
+  alternates?: Alternate[];
 }
-const { lang = 'es' } = Astro.props;
+const { lang = 'es', alternates } = Astro.props;
 const ui = getUi(lang);
 const families = getFamilies(lang);
+
+const langLabels: Record<Locale, string> = {
+  es: 'Español',
+  en: 'English',
+  fr: 'Français',
+  it: 'Italiano',
+  de: 'Deutsch',
+};
+const shortCodes: Record<Locale, string> = {
+  es: 'ES', en: 'EN', fr: 'FR', it: 'IT', de: 'DE',
+};
+
+// Build per-locale links. Use the alternates if provided (page-aware switching),
+// otherwise fall back to the home URL in each locale.
+function urlForLang(target: Locale): string {
+  if (alternates) {
+    const match = alternates.find((a) => a.hreflang === target);
+    if (match) {
+      try { return new URL(match.href).pathname + new URL(match.href).search; } catch { return match.href; }
+    }
+  }
+  return homeUrl(target);
+}
+
+const langSwitch = LOCALES.map((target) => ({
+  code: target,
+  label: langLabels[target],
+  short: shortCodes[target],
+  href: urlForLang(target),
+  active: target === lang,
+}));
 
 function familyLabel(slug: string): string {
   return families.find((f) => f.slug === slug)?.nombre ?? slug;
@@ -83,6 +118,38 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
       </a>
     </nav>
 
+    <div class="nav-group relative hidden md:block">
+      <button
+        type="button"
+        class="inline-flex items-center gap-1 px-3 py-2 display text-[0.95rem] font-medium text-ink rounded-md hover:bg-paper-warm transition-colors"
+        aria-haspopup="true"
+        aria-label={`Language — ${langLabels[lang]}`}
+      >
+        {shortCodes[lang]}
+        <svg aria-hidden="true" viewBox="0 0 12 12" class="h-2.5 w-2.5 nav-chevron">
+          <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="nav-dropdown" role="menu" aria-label="Languages">
+        {langSwitch.map((l) => (
+          <a
+            href={l.href}
+            role="menuitem"
+            hreflang={l.code}
+            lang={l.code}
+            aria-current={l.active ? 'true' : undefined}
+            class:list={[
+              'block px-3 py-2 text-sm display rounded-md hover:bg-paper-warm transition-colors whitespace-nowrap',
+              l.active ? 'text-ink font-semibold' : 'text-ink-soft',
+            ]}
+          >
+            <span class="inline-block w-7 mr-1 text-xs uppercase tracking-wide opacity-70">{l.short}</span>
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </div>
+
     <a
       href={amazonStore}
       rel="sponsored noopener"
@@ -106,6 +173,26 @@ const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
             <a href={e.href} class="display text-base font-medium py-1">{e.label}</a>
           ))}
           <a href={aboutUrl(lang)} class="display text-base font-medium py-1 pt-2 border-t border-line">{ui.nav.about}</a>
+          <div class="pt-3 border-t border-line">
+            <p class="text-xs uppercase tracking-[0.14em] text-ink-soft mb-2">Idiomas / Languages</p>
+            <div class="flex flex-wrap gap-2">
+              {langSwitch.map((l) => (
+                <a
+                  href={l.href}
+                  hreflang={l.code}
+                  lang={l.code}
+                  aria-current={l.active ? 'true' : undefined}
+                  class:list={[
+                    'inline-flex items-center gap-1 px-3 py-1.5 rounded-full border text-sm',
+                    l.active ? 'border-ink text-ink font-semibold' : 'border-line text-ink-soft',
+                  ]}
+                >
+                  <span class="text-xs uppercase tracking-wide opacity-70">{l.short}</span>
+                  <span>{l.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
           <a
             href={amazonStore}
             rel="sponsored noopener"

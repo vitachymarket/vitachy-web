@@ -3,6 +3,7 @@ import type { Locale } from '../lib/marketplaces';
 import { formatPrice } from '../lib/marketplaces';
 import { productUrl, type ProductCode } from '../lib/routes';
 import { resizedAmazonImage } from '../lib/images';
+import { getUi } from '../lib/i18n';
 
 interface ProductLike {
   asin: string;
@@ -21,6 +22,7 @@ interface Props {
 }
 
 const { product, lang = 'es' } = Astro.props;
+const ui = getUi(lang);
 const url = productUrl(product.codigo as ProductCode, lang);
 const main = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
 const displayName = product.nombre_corto ?? product.titulo;
@@ -59,7 +61,7 @@ const priceText = product.precio !== null ? formatPrice(product.precio, lang) : 
       target="_blank"
       class="inline-flex items-center rounded-full bg-ink text-white px-4 py-2 text-xs font-semibold hover:bg-[var(--accent-deep)] transition-colors"
     >
-      Ver en Amazon
+      {ui.cta.see_on_amazon}
       <svg aria-hidden="true" viewBox="0 0 20 20" class="ml-1.5 h-3 w-3" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M7 13L13 7M13 7H8M13 7V12" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
