@@ -68,8 +68,10 @@ const estanciaHref = estanciaUrl(estanciaKey, lang);
 
 const cleanedBullets = product.bullets.map((b) => cleanBullet(b));
 const cleanedDescription = cleanDescriptionHtml(product.descripcion_html);
+const descriptionText = cleanedDescription.replace(/<[^>]+>/g, '').trim();
 
 const priceText = product.precio !== null ? formatPrice(product.precio, lang) : null;
+const mainImage = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
 
 const allProducts = await getCollection('products', ({ id, data }) => {
   return id.startsWith(`${lang}/`) && data.familia === product.familia && data.codigo !== product.codigo;
@@ -82,7 +84,8 @@ const productJsonLd: Record<string, unknown> = {
   sku: product.codigo,
   name: product.titulo,
   brand: { '@type': 'Brand', name: 'Vitachy' },
-  description: product.descripcion_html.replace(/<[^>]+>/g, '').slice(0, 200),
+  description: descriptionText.slice(0, 200),
+  ...(product.imagenes.length > 0 ? { image: product.imagenes.map((i) => i.url) } : {}),
   offers: {
     '@type': 'Offer',
     url: product.amazon_url,
@@ -111,12 +114,24 @@ const breadcrumbJsonLd = {
   ],
 };
 
-const description = product.bullets[0]?.replace(/^[^a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]+/, '').slice(0, 155) ?? product.titulo.slice(0, 155);
+function truncateAtWord(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const slice = text.slice(0, max);
+  const lastSpace = slice.lastIndexOf(' ');
+  const cut = lastSpace > Math.floor(max * 0.6) ? lastSpace : max;
+  return slice.slice(0, cut).replace(/[.,;:]$/, '') + '…';
+}
+
+const description = truncateAtWord(
+  descriptionText.length > 0 ? descriptionText : product.titulo,
+  155,
+);
 ---
 <Base
   title={`${product.nombre_corto ?? product.titulo} — Vitachy`}
   description={description}
   type="product"
+  image={mainImage?.url}
   jsonLd={[productJsonLd, breadcrumbJsonLd]}
 >
   <div class="max-w-6xl mx-auto px-5 pt-10 md:pt-14">

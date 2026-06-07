@@ -1,4 +1,9 @@
 ---
+interface Alternate {
+  hreflang: string;
+  href: string;
+}
+
 interface Props {
   title: string;
   description: string;
@@ -6,39 +11,57 @@ interface Props {
   image?: string;
   type?: 'website' | 'article' | 'product';
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  alternates?: Alternate[];
+  noindex?: boolean;
 }
 
 const {
   title,
   description,
   canonicalPath,
-  image = '/brand/og-default.jpg',
+  image,
   type = 'website',
   jsonLd,
+  alternates,
+  noindex = false,
 } = Astro.props;
 
 const base = 'https://vitachy.com';
 const path = canonicalPath ?? Astro.url.pathname;
 const canonical = new URL(path, base).toString();
-const imageUrl = image.startsWith('http') ? image : new URL(image, base).toString();
+const imageUrl = image
+  ? image.startsWith('http')
+    ? image
+    : new URL(image, base).toString()
+  : null;
 const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+const finalAlternates: Alternate[] = alternates ?? [
+  { hreflang: 'es', href: canonical },
+  { hreflang: 'x-default', href: canonical },
+];
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex,nofollow" />}
 <link rel="canonical" href={canonical} />
+
+{finalAlternates.map((alt) => (
+  <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+))}
 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:type" content={type} />
-<meta property="og:image" content={imageUrl} />
+{imageUrl && <meta property="og:image" content={imageUrl} />}
 <meta property="og:site_name" content="Vitachy" />
 <meta property="og:locale" content="es_ES" />
 
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={imageUrl} />
+{imageUrl && <meta name="twitter:image" content={imageUrl} />}
 
 {jsonLdArray.map((data) => (
   <script type="application/ld+json" set:html={JSON.stringify(data)} />

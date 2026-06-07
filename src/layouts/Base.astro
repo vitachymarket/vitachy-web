@@ -5,6 +5,11 @@ import Seo from '../components/Seo.astro';
 import type { Locale } from '../lib/marketplaces';
 import '../styles/global.css';
 
+interface Alternate {
+  hreflang: string;
+  href: string;
+}
+
 interface Props {
   title?: string;
   description?: string;
@@ -12,6 +17,8 @@ interface Props {
   image?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   type?: 'website' | 'article' | 'product';
+  alternates?: Alternate[];
+  noindex?: boolean;
 }
 
 const {
@@ -21,6 +28,8 @@ const {
   image,
   jsonLd,
   type = 'website',
+  alternates,
+  noindex = false,
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -45,6 +54,8 @@ const {
       image={image}
       jsonLd={jsonLd}
       type={type}
+      alternates={alternates}
+      noindex={noindex}
     />
   </head>
   <body class="bg-paper text-ink antialiased">

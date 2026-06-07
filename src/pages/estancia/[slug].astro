@@ -6,8 +6,10 @@ import {
   ESTANCIAS,
   ESTANCIA_SLUG_BY_LANG,
   homeUrl,
+  productUrl,
   type EstanciaSlug,
   type FamilySlug,
+  type ProductCode,
 } from '../../lib/routes';
 
 const lang = 'es' as const;
@@ -54,11 +56,23 @@ const breadcrumbJsonLd = {
     },
   ],
 };
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: estancia.label,
+  itemListElement: products.map((p, idx) => ({
+    '@type': 'ListItem',
+    position: idx + 1,
+    url: `https://vitachy.com${productUrl(p.codigo as ProductCode, lang)}`,
+    name: p.nombre_corto ?? p.titulo,
+  })),
+};
 ---
 <Base
   title={`${estancia.label} — Vitachy`}
   description={estancia.description}
-  jsonLd={breadcrumbJsonLd}
+  jsonLd={[breadcrumbJsonLd, itemListJsonLd]}
 >
   <div class="max-w-6xl mx-auto px-5 pt-10 md:pt-14">
     <nav class="text-xs text-ink-soft" aria-label="Migas de pan">
