@@ -12,11 +12,11 @@ export const MARKETPLACES = {
   de: { tld: 'de',    locale: 'de-DE', currency: 'EUR' },
 } as const satisfies Record<Locale, { tld: string; locale: string; currency: string }>;
 
-export function formatPrice(value: number, lang: Locale): string {
+export function formatPrice(value: number, lang: Locale, currency?: string): string {
   const mp = MARKETPLACES[lang];
   return new Intl.NumberFormat(mp.locale, {
     style: 'currency',
-    currency: mp.currency,
+    currency: currency ?? mp.currency,
   }).format(value);
 }
 

@@ -55,7 +55,7 @@ const cleanedBullets = product.bullets.map((b) => cleanBullet(b));
 const cleanedDescription = cleanDescriptionHtml(product.descripcion_html);
 const descriptionText = cleanedDescription.replace(/<[^>]+>/g, '').trim();
 
-const priceText = product.precio !== null ? formatPrice(product.precio, lang) : null;
+const priceText = product.precio !== null ? formatPrice(product.precio, lang, product.currency) : null;
 const mainImage = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
 
 const allProducts = await getCollection('products', ({ id, data }) =>
