@@ -171,12 +171,12 @@ export const PRODUCT_SLUG_BY_LANG: Record<Locale, Record<ProductCode, string>> =
   },
 };
 
-export const ROUTE_PREFIXES: Record<Locale, { family: string; product: string; about: string; estancia: string }> = {
-  es: { family: 'familia',   product: 'producto', about: 'sobre-vitachy', estancia: 'estancia' },
-  en: { family: 'family',    product: 'product',  about: 'about-vitachy', estancia: 'room' },
-  fr: { family: 'famille',   product: 'produit',  about: 'a-propos',      estancia: 'piece' },
-  it: { family: 'famiglia',  product: 'prodotto', about: 'chi-siamo',     estancia: 'ambiente' },
-  de: { family: 'familie',   product: 'produkt',  about: 'ueber-vitachy', estancia: 'raum' },
+export const ROUTE_PREFIXES: Record<Locale, { family: string; product: string; about: string; estancia: string; catalog: string }> = {
+  es: { family: 'familia',   product: 'producto', about: 'sobre-vitachy', estancia: 'estancia', catalog: 'catalogo' },
+  en: { family: 'family',    product: 'product',  about: 'about-vitachy', estancia: 'room',     catalog: 'catalog' },
+  fr: { family: 'famille',   product: 'produit',  about: 'a-propos',      estancia: 'piece',    catalog: 'catalogue' },
+  it: { family: 'famiglia',  product: 'prodotto', about: 'chi-siamo',     estancia: 'ambiente', catalog: 'catalogo' },
+  de: { family: 'familie',   product: 'produkt',  about: 'ueber-vitachy', estancia: 'raum',     catalog: 'katalog' },
 };
 
 export type EstanciaSlug = 'cocina' | 'bano' | 'hogar';
@@ -238,6 +238,10 @@ export function homeUrl(lang: Locale): string {
 
 export function aboutUrl(lang: Locale): string {
   return `${langPrefix(lang)}/${ROUTE_PREFIXES[lang].about}/`;
+}
+
+export function catalogUrl(lang: Locale): string {
+  return `${langPrefix(lang)}/${ROUTE_PREFIXES[lang].catalog}/`;
 }
 
 export function estanciaUrl(slug: EstanciaSlug, lang: Locale): string {

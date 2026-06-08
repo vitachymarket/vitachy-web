@@ -43,6 +43,10 @@
   "breadcrumb": {
     "home": "Startseite"
   },
+  "catalog": {
+    "title": "Katalog",
+    "intro": "Alle Vitachy-Produkte nach Familien geordnet. Langlebige Pumpen, Nachfüllungen, die sparen, Dinge, die man behalten möchte."
+  },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Jeder Tropfen zählt.",

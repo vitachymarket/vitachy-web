@@ -43,6 +43,10 @@
   "breadcrumb": {
     "home": "Inicio"
   },
+  "catalog": {
+    "title": "Catálogo",
+    "intro": "Todos los productos Vitachy organizados por familias. Bombas duraderas, recargas que ahorran, objetos que valen la pena cuidar."
+  },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Cada gota cuenta.",

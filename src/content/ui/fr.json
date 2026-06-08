@@ -43,6 +43,10 @@
   "breadcrumb": {
     "home": "Accueil"
   },
+  "catalog": {
+    "title": "Catalogue",
+    "intro": "Tous les produits Vitachy organisés par famille. Pompes durables, recharges qui font économiser, objets qu'on a envie de garder."
+  },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Chaque goutte compte.",

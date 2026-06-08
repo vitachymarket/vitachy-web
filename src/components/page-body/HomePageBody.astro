@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Section from '../Section.astro';
 import ProductCard from '../ProductCard.astro';
-import { estanciaUrl, aboutUrl, hreflangFor, homeUrl, type EstanciaSlug } from '../../lib/routes';
+import { estanciaUrl, aboutUrl, catalogUrl, hreflangFor, homeUrl, type EstanciaSlug } from '../../lib/routes';
 import { resizedAmazonImage } from '../../lib/images';
 import { getUi } from '../../lib/i18n';
 import type { Locale } from '../../lib/marketplaces';
@@ -79,7 +79,7 @@ const organisationJsonLd = {
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a
-            href={estanciaUrl('cocina', lang)}
+            href={catalogUrl(lang)}
             class="inline-flex items-center rounded-full bg-ink text-white px-7 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors"
           >
             {ui.cta.view_catalog}

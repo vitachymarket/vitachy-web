@@ -43,6 +43,10 @@
   "breadcrumb": {
     "home": "Home"
   },
+  "catalog": {
+    "title": "Catalogo",
+    "intro": "Tutti i prodotti Vitachy organizzati per famiglia. Pompe che durano, ricariche che fanno risparmiare, oggetti che vale la pena tenere."
+  },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Ogni goccia conta.",

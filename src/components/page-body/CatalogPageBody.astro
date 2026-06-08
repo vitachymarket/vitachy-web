@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../ProductCard.astro';
+import {
+  homeUrl,
+  catalogUrl,
+  productUrl,
+  familyUrl,
+  hreflangFor,
+  type ProductCode,
+  type FamilySlug,
+} from '../../lib/routes';
+import { getUi, getFamilies } from '../../lib/i18n';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const ui = getUi(lang);
+
+const allProducts = await getCollection('products', ({ id }) => id.startsWith(`${lang}/`));
+const products = allProducts.map((p) => p.data).sort((a, b) => a.orden - b.orden);
+
+const families = getFamilies(lang).slice().sort((a, b) => a.orden - b.orden);
+
+const productsByFamily = new Map<string, typeof products>();
+for (const f of families) {
+  productsByFamily.set(f.slug, products.filter((p) => p.familia === f.slug));
+}
+
+const alternates = hreflangFor((l) => catalogUrl(l));
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ui.breadcrumb.home, item: 'https://vitachy.com/' },
+    { '@type': 'ListItem', position: 2, name: ui.catalog.title, item: `https://vitachy.com${Astro.url.pathname}` },
+  ],
+};
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: ui.catalog.title,
+  itemListElement: products.map((p, idx) => ({
+    '@type': 'ListItem',
+    position: idx + 1,
+    url: `https://vitachy.com${productUrl(p.codigo as ProductCode, lang)}`,
+    name: p.nombre_corto ?? p.titulo,
+  })),
+};
+---
+<Base
+  title={`${ui.catalog.title} — Vitachy`}
+  description={ui.catalog.intro}
+  lang={lang}
+  jsonLd={[breadcrumbJsonLd, itemListJsonLd]}
+  alternates={alternates}
+>
+  <div class="max-w-6xl mx-auto px-5 pt-10 md:pt-14">
+    <nav class="text-xs text-ink-soft" aria-label={ui.breadcrumb.home}>
+      <a href={homeUrl(lang)} class="hover:underline">{ui.breadcrumb.home}</a>
+      <span class="mx-2" aria-hidden="true">›</span>
+      <span class="text-ink">{ui.catalog.title}</span>
+    </nav>
+  </div>
+
+  <section class="max-w-6xl mx-auto px-5 pt-6 pb-10 md:pb-14">
+    <h1 class="display text-3xl md:text-[2.25rem] font-bold leading-tight">
+      {ui.catalog.title}
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg leading-[1.65] text-ink-soft">
+      {ui.catalog.intro}
+    </p>
+  </section>
+
+  {families.map((family) => {
+    const fp = productsByFamily.get(family.slug) ?? [];
+    if (fp.length === 0) return null;
+    return (
+      <section class="max-w-6xl mx-auto px-5 pb-14 md:pb-20">
+        <header class="mb-8 flex items-baseline justify-between gap-4 flex-wrap">
+          <div>
+            <h2 class="display text-2xl md:text-3xl font-bold leading-tight">
+              <a href={familyUrl(family.slug as FamilySlug, lang)} class="hover:underline underline-offset-4">
+                {family.nombre}
+              </a>
+            </h2>
+            <p class="mt-2 text-base leading-[1.6] text-ink-soft max-w-2xl">
+              {family.descripcion_corta}
+            </p>
+          </div>
+        </header>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {fp.map((product) => (
+            <ProductCard product={product} lang={lang} />
+          ))}
+        </div>
+      </section>
+    );
+  })}
+</Base>

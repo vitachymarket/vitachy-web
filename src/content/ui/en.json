@@ -43,6 +43,10 @@
   "breadcrumb": {
     "home": "Home"
   },
+  "catalog": {
+    "title": "Catalogue",
+    "intro": "All Vitachy products organised by family. Long-lasting pumps, refills that save, objects worth caring for."
+  },
   "home": {
     "hero_eyebrow": "Vitachy",
     "hero_title": "Every drop matters.",
