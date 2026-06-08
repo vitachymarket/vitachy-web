@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/61d2VgYPrUL.jpg",
       "posicion": 1,
-      "alt": "Pure Soap ceramic dispenser - vista 1"
+      "alt": "Pure Soap ceramic dispenser - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/718psYjHcxL.jpg",
       "posicion": 2,
-      "alt": "Pure Soap ceramic dispenser - vista 2"
+      "alt": "Pure Soap ceramic dispenser - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61uliJsjXSL.jpg",
       "posicion": 3,
-      "alt": "Pure Soap ceramic dispenser - vista 3"
+      "alt": "Pure Soap ceramic dispenser - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81CDOqV8pEL.jpg",
       "posicion": 4,
-      "alt": "Pure Soap ceramic dispenser - vista 4"
+      "alt": "Pure Soap ceramic dispenser - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/618WrvnyAzL.jpg",
       "posicion": 5,
-      "alt": "Pure Soap ceramic dispenser - vista 5"
+      "alt": "Pure Soap ceramic dispenser - view 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71i9C6iuSmL.jpg",
       "posicion": 6,
-      "alt": "Pure Soap ceramic dispenser - vista 6"
+      "alt": "Pure Soap ceramic dispenser - view 6"
     }
   ],
   "precio": 14.03,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0DV6KWBJV",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

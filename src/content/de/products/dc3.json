@@ -24,27 +24,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/711Yo2ZrGqL.jpg",
       "posicion": 1,
-      "alt": "Seifenspender mit Tuchhalter - vista 1"
+      "alt": "Seifenspender mit Tuchhalter - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71bDS9B2zyL.jpg",
       "posicion": 2,
-      "alt": "Seifenspender mit Tuchhalter - vista 2"
+      "alt": "Seifenspender mit Tuchhalter - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71FKhN64W2L.jpg",
       "posicion": 3,
-      "alt": "Seifenspender mit Tuchhalter - vista 3"
+      "alt": "Seifenspender mit Tuchhalter - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71a2yaizEHL.jpg",
       "posicion": 4,
-      "alt": "Seifenspender mit Tuchhalter - vista 4"
+      "alt": "Seifenspender mit Tuchhalter - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71JpPGJW0FL.jpg",
       "posicion": 5,
-      "alt": "Seifenspender mit Tuchhalter - vista 5"
+      "alt": "Seifenspender mit Tuchhalter - Ansicht 5"
     }
   ],
   "precio": 22.22,
@@ -52,5 +52,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0F6YMX6NP",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

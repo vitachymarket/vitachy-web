@@ -20,37 +20,37 @@
     {
       "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
       "posicion": 0,
-      "alt": "Pulverizador ambar chocolate"
+      "alt": "Pulverizador ámbar chocolate"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71YwQhV5xlL.jpg",
       "posicion": 1,
-      "alt": "Pulverizador ambar chocolate - vista 1"
+      "alt": "Pulverizador ámbar chocolate - vista 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81aONwAhnEL.jpg",
       "posicion": 2,
-      "alt": "Pulverizador ambar chocolate - vista 2"
+      "alt": "Pulverizador ámbar chocolate - vista 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
       "posicion": 3,
-      "alt": "Pulverizador ambar chocolate - vista 3"
+      "alt": "Pulverizador ámbar chocolate - vista 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
       "posicion": 4,
-      "alt": "Pulverizador ambar chocolate - vista 4"
+      "alt": "Pulverizador ámbar chocolate - vista 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Pulverizador ambar chocolate - vista 5"
+      "alt": "Pulverizador ámbar chocolate - vista 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71aziE9ifFL.jpg",
       "posicion": 6,
-      "alt": "Pulverizador ambar chocolate - vista 6"
+      "alt": "Pulverizador ámbar chocolate - vista 6"
     }
   ],
   "precio": 17.95,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.es/dp/B0FGGKFW82",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

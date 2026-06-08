@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71vQPG3jhxL.jpg",
       "posicion": 1,
-      "alt": "Soap dispenser with tray - vista 1"
+      "alt": "Soap dispenser with tray - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71cmkb3ThaL.jpg",
       "posicion": 2,
-      "alt": "Soap dispenser with tray - vista 2"
+      "alt": "Soap dispenser with tray - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71kjvOVrp2L.jpg",
       "posicion": 3,
-      "alt": "Soap dispenser with tray - vista 3"
+      "alt": "Soap dispenser with tray - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71OT7whMoJL.jpg",
       "posicion": 4,
-      "alt": "Soap dispenser with tray - vista 4"
+      "alt": "Soap dispenser with tray - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71QFo7pheTL.jpg",
       "posicion": 5,
-      "alt": "Soap dispenser with tray - vista 5"
+      "alt": "Soap dispenser with tray - view 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/715oU6gNreL.jpg",
       "posicion": 6,
-      "alt": "Soap dispenser with tray - vista 6"
+      "alt": "Soap dispenser with tray - view 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0DCLH4G9J",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

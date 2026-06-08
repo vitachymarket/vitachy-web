@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71rGxAf+-LL.jpg",
       "posicion": 1,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 1"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/714CDSP2z8L.jpg",
       "posicion": 2,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 2"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61qGM1PO9qL.jpg",
       "posicion": 3,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 3"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81H5HVY-zFL.jpg",
       "posicion": 4,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 4"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61MiaSQV11L.jpg",
       "posicion": 5,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 5"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71dekC0gmXL.jpg",
       "posicion": 6,
-      "alt": "Amberglas-Seifenspender, 2er-Set - vista 6"
+      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 6"
     }
   ],
   "precio": 21.99,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FGJMVJ54",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

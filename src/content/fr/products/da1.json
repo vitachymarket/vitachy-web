@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71Rk5A71KLL.jpg",
       "posicion": 1,
-      "alt": "Huilier spray 2-en-1 - vista 1"
+      "alt": "Huilier spray 2-en-1 - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/711M1Lyup6L.jpg",
       "posicion": 2,
-      "alt": "Huilier spray 2-en-1 - vista 2"
+      "alt": "Huilier spray 2-en-1 - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71oaKA7PnrL.jpg",
       "posicion": 3,
-      "alt": "Huilier spray 2-en-1 - vista 3"
+      "alt": "Huilier spray 2-en-1 - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71dumma3x9L.jpg",
       "posicion": 4,
-      "alt": "Huilier spray 2-en-1 - vista 4"
+      "alt": "Huilier spray 2-en-1 - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81oU+ZTqC5L.jpg",
       "posicion": 5,
-      "alt": "Huilier spray 2-en-1 - vista 5"
+      "alt": "Huilier spray 2-en-1 - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71yGQ+tVYxL.jpg",
       "posicion": 6,
-      "alt": "Huilier spray 2-en-1 - vista 6"
+      "alt": "Huilier spray 2-en-1 - vue 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0FG1HXX9D",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

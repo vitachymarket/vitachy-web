@@ -25,32 +25,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/719+ioJedrL.jpg",
       "posicion": 1,
-      "alt": "Doppelter Seifenspender - vista 1"
+      "alt": "Doppelter Seifenspender - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71aYLGTfBIL.jpg",
       "posicion": 2,
-      "alt": "Doppelter Seifenspender - vista 2"
+      "alt": "Doppelter Seifenspender - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71LrwMbEWYL.jpg",
       "posicion": 3,
-      "alt": "Doppelter Seifenspender - vista 3"
+      "alt": "Doppelter Seifenspender - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71PfcFITyhL.jpg",
       "posicion": 4,
-      "alt": "Doppelter Seifenspender - vista 4"
+      "alt": "Doppelter Seifenspender - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71S34X-0kiL.jpg",
       "posicion": 5,
-      "alt": "Doppelter Seifenspender - vista 5"
+      "alt": "Doppelter Seifenspender - Ansicht 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71gOsqSP-PL.jpg",
       "posicion": 6,
-      "alt": "Doppelter Seifenspender - vista 6"
+      "alt": "Doppelter Seifenspender - Ansicht 6"
     }
   ],
   "precio": 18.99,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0CYR66B4T",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

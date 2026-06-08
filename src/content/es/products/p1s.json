@@ -19,37 +19,37 @@
     {
       "url": "https://m.media-amazon.com/images/I/71+n7xghvQL.jpg",
       "posicion": 0,
-      "alt": "Pulverizador salmon"
+      "alt": "Pulverizador salmón"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71qtnzaVa0L.jpg",
       "posicion": 1,
-      "alt": "Pulverizador salmon - vista 1"
+      "alt": "Pulverizador salmón - vista 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81fnJTBG2YL.jpg",
       "posicion": 2,
-      "alt": "Pulverizador salmon - vista 2"
+      "alt": "Pulverizador salmón - vista 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81hyRP2Qf+L.jpg",
       "posicion": 3,
-      "alt": "Pulverizador salmon - vista 3"
+      "alt": "Pulverizador salmón - vista 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81ytRx0XRtL.jpg",
       "posicion": 4,
-      "alt": "Pulverizador salmon - vista 4"
+      "alt": "Pulverizador salmón - vista 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81N569HVF7L.jpg",
       "posicion": 5,
-      "alt": "Pulverizador salmon - vista 5"
+      "alt": "Pulverizador salmón - vista 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/812ojxpEBPL.jpg",
       "posicion": 6,
-      "alt": "Pulverizador salmon - vista 6"
+      "alt": "Pulverizador salmón - vista 6"
     }
   ],
   "precio": 15.99,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.es/dp/B0DWLKHXWG",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": false
 }

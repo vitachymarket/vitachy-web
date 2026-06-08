@@ -24,27 +24,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/71yh2NXFbbL.jpg",
       "posicion": 1,
-      "alt": "Sink organiser 4-in-1 - vista 1"
+      "alt": "Sink organiser 4-in-1 - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71pjNIdTGUL.jpg",
       "posicion": 2,
-      "alt": "Sink organiser 4-in-1 - vista 2"
+      "alt": "Sink organiser 4-in-1 - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/711ilDT3HSL.jpg",
       "posicion": 3,
-      "alt": "Sink organiser 4-in-1 - vista 3"
+      "alt": "Sink organiser 4-in-1 - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/7152OlNRz5L.jpg",
       "posicion": 4,
-      "alt": "Sink organiser 4-in-1 - vista 4"
+      "alt": "Sink organiser 4-in-1 - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71bJqJYOSML.jpg",
       "posicion": 5,
-      "alt": "Sink organiser 4-in-1 - vista 5"
+      "alt": "Sink organiser 4-in-1 - view 5"
     }
   ],
   "precio": 17.2,
@@ -52,5 +52,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0FHBK19YQ",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

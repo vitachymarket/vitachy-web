@@ -25,27 +25,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/71uhVN9+PxL.jpg",
       "posicion": 1,
-      "alt": "Distributeur avec chiffon - vista 1"
+      "alt": "Distributeur avec chiffon - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71u5Wj7xcnL.jpg",
       "posicion": 2,
-      "alt": "Distributeur avec chiffon - vista 2"
+      "alt": "Distributeur avec chiffon - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71eCqexEa8L.jpg",
       "posicion": 3,
-      "alt": "Distributeur avec chiffon - vista 3"
+      "alt": "Distributeur avec chiffon - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71w0wtdg8GL.jpg",
       "posicion": 4,
-      "alt": "Distributeur avec chiffon - vista 4"
+      "alt": "Distributeur avec chiffon - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71uxNEg2XmL.jpg",
       "posicion": 5,
-      "alt": "Distributeur avec chiffon - vista 5"
+      "alt": "Distributeur avec chiffon - vue 5"
     }
   ],
   "precio": null,
@@ -53,5 +53,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0F6YMX6NP",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

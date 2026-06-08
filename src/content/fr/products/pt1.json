@@ -24,22 +24,22 @@
     {
       "url": "https://m.media-amazon.com/images/I/61VKHYMsnML.jpg",
       "posicion": 1,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vista 1"
+      "alt": "Pilulier hebdomadaire, lot de 2 - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71vEjMC9noL.jpg",
       "posicion": 2,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vista 2"
+      "alt": "Pilulier hebdomadaire, lot de 2 - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61r6WE8BNIL.jpg",
       "posicion": 3,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vista 3"
+      "alt": "Pilulier hebdomadaire, lot de 2 - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81wyYI5ndaL.jpg",
       "posicion": 4,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vista 4"
+      "alt": "Pilulier hebdomadaire, lot de 2 - vue 4"
     }
   ],
   "precio": 8.99,
@@ -47,5 +47,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0FGG7LS85",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

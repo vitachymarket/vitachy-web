@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/712q+DjCeoL.jpg",
       "posicion": 1,
-      "alt": "Distributeur avec bac - vista 1"
+      "alt": "Distributeur avec bac - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71L6C8giyDL.jpg",
       "posicion": 2,
-      "alt": "Distributeur avec bac - vista 2"
+      "alt": "Distributeur avec bac - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71hrmBUzulL.jpg",
       "posicion": 3,
-      "alt": "Distributeur avec bac - vista 3"
+      "alt": "Distributeur avec bac - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71pTDXQ95ML.jpg",
       "posicion": 4,
-      "alt": "Distributeur avec bac - vista 4"
+      "alt": "Distributeur avec bac - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71eWnNJBCVL.jpg",
       "posicion": 5,
-      "alt": "Distributeur avec bac - vista 5"
+      "alt": "Distributeur avec bac - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71DkmTQgQnL.jpg",
       "posicion": 6,
-      "alt": "Distributeur avec bac - vista 6"
+      "alt": "Distributeur avec bac - vue 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0DCLH4G9J",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71rGxAf+-LL.jpg",
       "posicion": 1,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 1"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/714CDSP2z8L.jpg",
       "posicion": 2,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 2"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61qGM1PO9qL.jpg",
       "posicion": 3,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 3"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81H5HVY-zFL.jpg",
       "posicion": 4,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 4"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61MiaSQV11L.jpg",
       "posicion": 5,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 5"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71dekC0gmXL.jpg",
       "posicion": 6,
-      "alt": "Amber glass soap dispenser, pack of 2 - vista 6"
+      "alt": "Amber glass soap dispenser, pack of 2 - view 6"
     }
   ],
   "precio": 17.2,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0FGJMVJ54",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

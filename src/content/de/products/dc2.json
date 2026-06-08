@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71WAyVFyfSL.jpg",
       "posicion": 1,
-      "alt": "Seifenspender mit Ablage - vista 1"
+      "alt": "Seifenspender mit Ablage - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71X3r66+2SL.jpg",
       "posicion": 2,
-      "alt": "Seifenspender mit Ablage - vista 2"
+      "alt": "Seifenspender mit Ablage - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71aGEI9Q6bL.jpg",
       "posicion": 3,
-      "alt": "Seifenspender mit Ablage - vista 3"
+      "alt": "Seifenspender mit Ablage - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71XgHmPktcL.jpg",
       "posicion": 4,
-      "alt": "Seifenspender mit Ablage - vista 4"
+      "alt": "Seifenspender mit Ablage - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71rEoA1qJLL.jpg",
       "posicion": 5,
-      "alt": "Seifenspender mit Ablage - vista 5"
+      "alt": "Seifenspender mit Ablage - Ansicht 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71md7wWP7kL.jpg",
       "posicion": 6,
-      "alt": "Seifenspender mit Ablage - vista 6"
+      "alt": "Seifenspender mit Ablage - Ansicht 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0DCLH4G9J",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

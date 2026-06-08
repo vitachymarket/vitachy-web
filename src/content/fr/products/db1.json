@@ -26,32 +26,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/610XgVFQu2L.jpg",
       "posicion": 1,
-      "alt": "Distributeur céramique Pure Soap - vista 1"
+      "alt": "Distributeur céramique Pure Soap - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71XPfNRusBL.jpg",
       "posicion": 2,
-      "alt": "Distributeur céramique Pure Soap - vista 2"
+      "alt": "Distributeur céramique Pure Soap - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61uliJsjXSL.jpg",
       "posicion": 3,
-      "alt": "Distributeur céramique Pure Soap - vista 3"
+      "alt": "Distributeur céramique Pure Soap - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81CDOqV8pEL.jpg",
       "posicion": 4,
-      "alt": "Distributeur céramique Pure Soap - vista 4"
+      "alt": "Distributeur céramique Pure Soap - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61BXFAzhjtL.jpg",
       "posicion": 5,
-      "alt": "Distributeur céramique Pure Soap - vista 5"
+      "alt": "Distributeur céramique Pure Soap - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71i9C6iuSmL.jpg",
       "posicion": 6,
-      "alt": "Distributeur céramique Pure Soap - vista 6"
+      "alt": "Distributeur céramique Pure Soap - vue 6"
     }
   ],
   "precio": null,
@@ -59,5 +59,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0DV6KWBJV",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

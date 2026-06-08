@@ -25,32 +25,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71BCE-UVNNL.jpg",
       "posicion": 1,
-      "alt": "Amber spray bottle, chocolate - vista 1"
+      "alt": "Amber spray bottle, chocolate - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YzlGDSkML.jpg",
       "posicion": 2,
-      "alt": "Amber spray bottle, chocolate - vista 2"
+      "alt": "Amber spray bottle, chocolate - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
       "posicion": 3,
-      "alt": "Amber spray bottle, chocolate - vista 3"
+      "alt": "Amber spray bottle, chocolate - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
       "posicion": 4,
-      "alt": "Amber spray bottle, chocolate - vista 4"
+      "alt": "Amber spray bottle, chocolate - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Amber spray bottle, chocolate - vista 5"
+      "alt": "Amber spray bottle, chocolate - view 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71qXxX4ZvNL.jpg",
       "posicion": 6,
-      "alt": "Amber spray bottle, chocolate - vista 6"
+      "alt": "Amber spray bottle, chocolate - view 6"
     }
   ],
   "precio": 17.18,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0FGGKFW82",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

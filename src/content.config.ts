@@ -25,6 +25,7 @@ const productSchema = z.object({
   rating: z.number().nullable(),
   total_resenas: z.number().nullable(),
   actualizado: z.string(),
+  en_stock: z.boolean().default(true),
   _placeholder: z.boolean().optional(),
   _revision_tono: z.boolean().optional(),
 });

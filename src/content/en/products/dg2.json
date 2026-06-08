@@ -26,27 +26,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/61pyzIErI1L.jpg",
       "posicion": 1,
-      "alt": "Blue shower dispenser set, pack of 3 - vista 1"
+      "alt": "Blue shower dispenser set, pack of 3 - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71Pr8aOdbrL.jpg",
       "posicion": 2,
-      "alt": "Blue shower dispenser set, pack of 3 - vista 2"
+      "alt": "Blue shower dispenser set, pack of 3 - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61fTLQauCIL.jpg",
       "posicion": 3,
-      "alt": "Blue shower dispenser set, pack of 3 - vista 3"
+      "alt": "Blue shower dispenser set, pack of 3 - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81iEDEulwZL.jpg",
       "posicion": 4,
-      "alt": "Blue shower dispenser set, pack of 3 - vista 4"
+      "alt": "Blue shower dispenser set, pack of 3 - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71+BhvX3zaL.jpg",
       "posicion": 5,
-      "alt": "Blue shower dispenser set, pack of 3 - vista 5"
+      "alt": "Blue shower dispenser set, pack of 3 - view 5"
     }
   ],
   "precio": 16.39,
@@ -54,5 +54,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0F9ZXHY7P",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

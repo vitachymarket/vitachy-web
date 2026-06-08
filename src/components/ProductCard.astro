@@ -14,6 +14,7 @@ interface ProductLike {
   currency: string;
   amazon_url: string;
   imagenes: Array<{ url: string; posicion: number; alt: string }>;
+  en_stock?: boolean;
 }
 
 interface Props {
@@ -27,9 +28,10 @@ const url = productUrl(product.codigo as ProductCode, lang);
 const main = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
 const displayName = product.nombre_corto ?? product.titulo;
 const priceText = product.precio !== null ? formatPrice(product.precio, lang, product.currency) : null;
+const inStock = product.en_stock !== false;
 ---
 <article class="group bg-paper border border-line rounded-2xl p-5 flex flex-col hover:shadow-[0_14px_36px_-16px_rgba(22,20,15,.18)] transition-all hover:-translate-y-[3px]">
-  <a href={url} class="block aspect-square bg-paper-warm border border-line rounded-xl mb-4 overflow-hidden">
+  <a href={url} class="block relative aspect-square bg-paper-warm border border-line rounded-xl mb-4 overflow-hidden">
     {main ? (
       <img
         src={resizedAmazonImage(main.url, 400)}
@@ -38,12 +40,20 @@ const priceText = product.precio !== null ? formatPrice(product.precio, lang, pr
         height="400"
         loading="lazy"
         decoding="async"
-        class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+        class:list={[
+          'h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]',
+          !inStock && 'opacity-70',
+        ]}
       />
     ) : (
       <div class="h-full w-full flex items-center justify-center text-ink-soft text-xs">
         {product.codigo}
       </div>
+    )}
+    {!inStock && (
+      <span class="absolute top-2 left-2 inline-flex items-center rounded-full bg-ink/85 text-white text-[0.65rem] font-semibold uppercase tracking-[0.08em] px-2.5 py-1 backdrop-blur-sm">
+        {ui.product.out_of_stock_badge}
+      </span>
     )}
   </a>
 
@@ -55,16 +65,27 @@ const priceText = product.precio !== null ? formatPrice(product.precio, lang, pr
     {priceText && (
       <p class="display text-lg font-semibold text-ink leading-none">{priceText}</p>
     )}
-    <a
-      href={product.amazon_url}
-      rel="sponsored noopener"
-      target="_blank"
-      class="inline-flex items-center rounded-full bg-ink text-white px-4 py-2 text-xs font-semibold hover:bg-[var(--accent-deep)] transition-colors"
-    >
-      {ui.cta.see_on_amazon}
-      <svg aria-hidden="true" viewBox="0 0 20 20" class="ml-1.5 h-3 w-3" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M7 13L13 7M13 7H8M13 7V12" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </a>
+    {inStock ? (
+      <a
+        href={product.amazon_url}
+        rel="sponsored noopener"
+        target="_blank"
+        class="inline-flex items-center rounded-full bg-ink text-white px-4 py-2 text-xs font-semibold hover:bg-[var(--accent-deep)] transition-colors"
+      >
+        {ui.cta.see_on_amazon}
+        <svg aria-hidden="true" viewBox="0 0 20 20" class="ml-1.5 h-3 w-3" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13L13 7M13 7H8M13 7V12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    ) : (
+      <a
+        href={product.amazon_url}
+        rel="sponsored noopener"
+        target="_blank"
+        class="inline-flex items-center rounded-full border border-line text-ink-soft px-4 py-2 text-xs font-medium hover:border-ink hover:text-ink transition-colors"
+      >
+        {ui.cta.see_on_amazon}
+      </a>
+    )}
   </div>
 </article>

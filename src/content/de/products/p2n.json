@@ -25,32 +25,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71ijsA-J1JL.jpg",
       "posicion": 1,
-      "alt": "Amber Sprühflasche, Schokolade - vista 1"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81xUR4+o8tL.jpg",
       "posicion": 2,
-      "alt": "Amber Sprühflasche, Schokolade - vista 2"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
       "posicion": 3,
-      "alt": "Amber Sprühflasche, Schokolade - vista 3"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
       "posicion": 4,
-      "alt": "Amber Sprühflasche, Schokolade - vista 4"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Amber Sprühflasche, Schokolade - vista 5"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71JWVBIogwL.jpg",
       "posicion": 6,
-      "alt": "Amber Sprühflasche, Schokolade - vista 6"
+      "alt": "Amber Sprühflasche, Schokolade - Ansicht 6"
     }
   ],
   "precio": null,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FGGKFW82",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

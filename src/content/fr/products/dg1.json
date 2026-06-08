@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/81n0ATXSBsL.jpg",
       "posicion": 1,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 1"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71mgTHU6XkL.jpg",
       "posicion": 2,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 2"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71a+gPs0qAL.jpg",
       "posicion": 3,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 3"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71rPA6htFsL.jpg",
       "posicion": 4,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 4"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/616errPsEiL.jpg",
       "posicion": 5,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 5"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61Zaouy4CeL.jpg",
       "posicion": 6,
-      "alt": "Pack de 3 distributeurs douche noirs - vista 6"
+      "alt": "Pack de 3 distributeurs douche noirs - vue 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0F4FZ1DGK",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

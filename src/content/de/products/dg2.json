@@ -27,27 +27,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/61jYegIkJTL.jpg",
       "posicion": 1,
-      "alt": "Set mit 3 blauen Duschspendern - vista 1"
+      "alt": "Set mit 3 blauen Duschspendern - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71URYp9XBJL.jpg",
       "posicion": 2,
-      "alt": "Set mit 3 blauen Duschspendern - vista 2"
+      "alt": "Set mit 3 blauen Duschspendern - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61FPVrKpWgL.jpg",
       "posicion": 3,
-      "alt": "Set mit 3 blauen Duschspendern - vista 3"
+      "alt": "Set mit 3 blauen Duschspendern - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81vovGkxFkL.jpg",
       "posicion": 4,
-      "alt": "Set mit 3 blauen Duschspendern - vista 4"
+      "alt": "Set mit 3 blauen Duschspendern - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71wprZHAULL.jpg",
       "posicion": 5,
-      "alt": "Set mit 3 blauen Duschspendern - vista 5"
+      "alt": "Set mit 3 blauen Duschspendern - Ansicht 5"
     }
   ],
   "precio": 20.99,
@@ -55,5 +55,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0F9ZXHY7P",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

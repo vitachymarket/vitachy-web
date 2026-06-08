@@ -19,37 +19,37 @@
     {
       "url": "https://m.media-amazon.com/images/I/715L3L7Y48L.jpg",
       "posicion": 0,
-      "alt": "Pack de 3 dispensadores negros para ducha"
+      "alt": "Pack de 3 dispensadores negros"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81GqU1DrryL.jpg",
       "posicion": 1,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 1"
+      "alt": "Pack de 3 dispensadores negros - vista 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71IjC+4O3RL.jpg",
       "posicion": 2,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 2"
+      "alt": "Pack de 3 dispensadores negros - vista 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71JUmIkNgEL.jpg",
       "posicion": 3,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 3"
+      "alt": "Pack de 3 dispensadores negros - vista 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/7153RvF9lRL.jpg",
       "posicion": 4,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 4"
+      "alt": "Pack de 3 dispensadores negros - vista 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61krAxs-9BL.jpg",
       "posicion": 5,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 5"
+      "alt": "Pack de 3 dispensadores negros - vista 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61+8RCgZlOL.jpg",
       "posicion": 6,
-      "alt": "Pack de 3 dispensadores negros para ducha - vista 6"
+      "alt": "Pack de 3 dispensadores negros - vista 6"
     }
   ],
   "precio": 17.95,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.es/dp/B0F4FZ1DGK",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

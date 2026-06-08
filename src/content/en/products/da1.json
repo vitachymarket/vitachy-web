@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/719VucbO1tL.jpg",
       "posicion": 1,
-      "alt": "Oil sprayer 2-in-1 - vista 1"
+      "alt": "Oil sprayer 2-in-1 - view 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71GMbBYAC8L.jpg",
       "posicion": 2,
-      "alt": "Oil sprayer 2-in-1 - vista 2"
+      "alt": "Oil sprayer 2-in-1 - view 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/710HB5xGOEL.jpg",
       "posicion": 3,
-      "alt": "Oil sprayer 2-in-1 - vista 3"
+      "alt": "Oil sprayer 2-in-1 - view 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71YJXORRXfL.jpg",
       "posicion": 4,
-      "alt": "Oil sprayer 2-in-1 - vista 4"
+      "alt": "Oil sprayer 2-in-1 - view 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/819uI6IgDBL.jpg",
       "posicion": 5,
-      "alt": "Oil sprayer 2-in-1 - vista 5"
+      "alt": "Oil sprayer 2-in-1 - view 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71BuTpblsOL.jpg",
       "posicion": 6,
-      "alt": "Oil sprayer 2-in-1 - vista 6"
+      "alt": "Oil sprayer 2-in-1 - view 6"
     }
   ],
   "precio": 11.41,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.co.uk/dp/B0FG1HXX9D",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

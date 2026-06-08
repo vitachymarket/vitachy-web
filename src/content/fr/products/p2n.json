@@ -25,32 +25,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71Ibhs8Zn1L.jpg",
       "posicion": 1,
-      "alt": "Vaporisateur ambré chocolat - vista 1"
+      "alt": "Vaporisateur ambré chocolat - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81Q0Ht7FQiL.jpg",
       "posicion": 2,
-      "alt": "Vaporisateur ambré chocolat - vista 2"
+      "alt": "Vaporisateur ambré chocolat - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
       "posicion": 3,
-      "alt": "Vaporisateur ambré chocolat - vista 3"
+      "alt": "Vaporisateur ambré chocolat - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
       "posicion": 4,
-      "alt": "Vaporisateur ambré chocolat - vista 4"
+      "alt": "Vaporisateur ambré chocolat - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Vaporisateur ambré chocolat - vista 5"
+      "alt": "Vaporisateur ambré chocolat - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71D4-kc2yvL.jpg",
       "posicion": 6,
-      "alt": "Vaporisateur ambré chocolat - vista 6"
+      "alt": "Vaporisateur ambré chocolat - vue 6"
     }
   ],
   "precio": null,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0FGGKFW82",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

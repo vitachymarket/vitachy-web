@@ -26,32 +26,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71kWtRmvdwL.jpg",
       "posicion": 1,
-      "alt": "Distributeur double - vista 1"
+      "alt": "Distributeur double - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71xpD2bqbBL.jpg",
       "posicion": 2,
-      "alt": "Distributeur double - vista 2"
+      "alt": "Distributeur double - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71-gSgDwQXL.jpg",
       "posicion": 3,
-      "alt": "Distributeur double - vista 3"
+      "alt": "Distributeur double - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71j+g7BnAKL.jpg",
       "posicion": 4,
-      "alt": "Distributeur double - vista 4"
+      "alt": "Distributeur double - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71STrFOEh3L.jpg",
       "posicion": 5,
-      "alt": "Distributeur double - vista 5"
+      "alt": "Distributeur double - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/710mFFCzRmL.jpg",
       "posicion": 6,
-      "alt": "Distributeur double - vista 6"
+      "alt": "Distributeur double - vue 6"
     }
   ],
   "precio": null,
@@ -59,5 +59,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0CYR66B4T",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

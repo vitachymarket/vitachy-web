@@ -24,27 +24,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/71MinaIHS3L.jpg",
       "posicion": 1,
-      "alt": "Spülbecken-Organizer 4-in-1 - vista 1"
+      "alt": "Spülbecken-Organizer 4-in-1 - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71Yf7vpMvgL.jpg",
       "posicion": 2,
-      "alt": "Spülbecken-Organizer 4-in-1 - vista 2"
+      "alt": "Spülbecken-Organizer 4-in-1 - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71+RZVuz77L.jpg",
       "posicion": 3,
-      "alt": "Spülbecken-Organizer 4-in-1 - vista 3"
+      "alt": "Spülbecken-Organizer 4-in-1 - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/7130kqjrJWL.jpg",
       "posicion": 4,
-      "alt": "Spülbecken-Organizer 4-in-1 - vista 4"
+      "alt": "Spülbecken-Organizer 4-in-1 - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/716UifAsgtL.jpg",
       "posicion": 5,
-      "alt": "Spülbecken-Organizer 4-in-1 - vista 5"
+      "alt": "Spülbecken-Organizer 4-in-1 - Ansicht 5"
     }
   ],
   "precio": 23.09,
@@ -52,5 +52,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FHBK19YQ",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

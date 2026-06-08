@@ -21,7 +21,9 @@
   "product": {
     "price_caption_prefix": "Prezzo su amazon",
     "description": "Descrizione",
-    "related_eyebrow_prefix": "Anche in"
+    "related_eyebrow_prefix": "Anche in",
+    "out_of_stock_badge": "Temporaneamente esaurito",
+    "out_of_stock_help": "Questo articolo non è disponibile al momento su Amazon. Verifica la disponibilità direttamente sulla scheda prodotto."
   },
   "estancias": {
     "cocina": {

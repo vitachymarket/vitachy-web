@@ -17,39 +17,34 @@
   "descripcion_html": "<p>&lt;b&gt;Transformez votre routine avec élégance et durabilité grâce au pack Vitachy.&lt;/b&gt; &lt;br&gt;&lt;br&gt; Vous en avez assez des bouteilles en plastique fragiles qui se cassent et nuisent à l'environnement ? Découvrez l'alternative écologique et stylée. Nos pulvérisateurs en verre ambré de 500 ml sont conçus pour ceux qui recherchent la performance professionnelle alliée à un design moderne. &lt;br&gt;&lt;br&gt; &lt;b&gt;Pourquoi choisir les pulvérisateurs Vitachy ?&lt;/b&gt; &lt;br&gt;&lt;br&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;🛡️ Protection Maximale :&lt;/b&gt; Contrairement aux bouteilles classiques, les nôtres incluent deux bases en silicone premium (Bleu et Eucalyptus). Elles protègent le verre des chocs et assurent une stabilité parfaite, même sur des surfaces humides ou glissantes.&lt;/li&gt; &lt;li&gt;&lt;b&gt;🌿 Préservation par le Verre Ambré :&lt;/b&gt; Le verre ambré de haute qualité filtre les rayons UV nocifs. C'est la solution idéale pour conserver l'efficacité de vos huiles essentielles et de vos produits ménagers faits maison (DIY) sensibles à la lumière.&lt;/li&gt; &lt;li&gt;&lt;b&gt;💧 Contrôle de Pulvérisation Total :&lt;/b&gt; Notre tête de spray ergonomique offre 3 modes réglables : une brume fine pour vos plantes, un jet puissant pour le nettoyage en profondeur, et une position de verrouillage pour éviter toute fuite accidentelle.&lt;/li&gt; &lt;li&gt;&lt;b&gt;🚫 Étanchéité Garantie :&lt;/b&gt; Dites adieu aux fuites désagréables. Chaque embout est doté d'un joint de précision assurant une étanchéité parfaite, pour une expérience propre et sans gaspillage de produit.&lt;/li&gt; &lt;li&gt;&lt;b&gt;🏷️ Organisation Stylée :&lt;/b&gt; Le kit comprend des étiquettes ardoise élégantes et un marqueur blanc. Identifiez vos mélanges en un coup d'œil et apportez une touche décorative à votre cuisine, salle de bain ou jardin.&lt;/li&gt; &lt;/ul&gt; &lt;br&gt; &lt;b&gt;Un usage polyvalent pour toute la maison :&lt;/b&gt; &lt;br&gt; Que ce soit pour l'arrosage de vos plantes d'intérieur, la création de vos propres nettoyants naturels, le repassage du linge ou même le soin de vos animaux, ces flacons réutilisables répondent à tous vos besoins. &lt;br&gt;&lt;br&gt; &lt;b&gt;Le pack contient :&lt;/b&gt; &lt;br&gt; 2x Bouteilles en verre ambré (500ml), 2x Bases en silicone (Bleu &amp; Eucalyptus), 2x Têtes de pulvérisation, 4x Étiquettes ardoise et 1x Marqueur. &lt;br&gt;&lt;br&gt; &lt;b&gt;Passez au zéro déchet dès aujourd'hui avec Vitachy et redonnez du style à votre intérieur !&lt;/b&gt;</p>",
   "imagenes": [
     {
-      "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71zwCgdQzwL.jpg",
       "posicion": 0,
       "alt": "Vaporisateur bleu et eucalyptus"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71Ibhs8Zn1L.jpg",
+      "url": "https://m.media-amazon.com/images/I/719MA+ERMoL.jpg",
       "posicion": 1,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 1"
+      "alt": "Vaporisateur bleu et eucalyptus - vue 1"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81Q0Ht7FQiL.jpg",
+      "url": "https://m.media-amazon.com/images/I/81YZxuU4jYL.jpg",
       "posicion": 2,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 2"
+      "alt": "Vaporisateur bleu et eucalyptus - vue 2"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71X7lLYZwLL.jpg",
       "posicion": 3,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 3"
+      "alt": "Vaporisateur bleu et eucalyptus - vue 3"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81X-VMWum2L.jpg",
       "posicion": 4,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 4"
+      "alt": "Vaporisateur bleu et eucalyptus - vue 4"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
+      "url": "https://m.media-amazon.com/images/I/81cxpwcUgBL.jpg",
       "posicion": 5,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 5"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/71D4-kc2yvL.jpg",
-      "posicion": 6,
-      "alt": "Vaporisateur bleu et eucalyptus - vista 6"
+      "alt": "Vaporisateur bleu et eucalyptus - vue 5"
     }
   ],
   "precio": null,
@@ -57,5 +52,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0FGGKRFX1",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": false
 }

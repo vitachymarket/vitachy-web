@@ -27,27 +27,27 @@
     {
       "url": "https://m.media-amazon.com/images/I/61XCicbxQBL.jpg",
       "posicion": 1,
-      "alt": "Pack de 3 distributeurs douche bleus - vista 1"
+      "alt": "Pack de 3 distributeurs douche bleus - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71Ug2c+aB1L.jpg",
       "posicion": 2,
-      "alt": "Pack de 3 distributeurs douche bleus - vista 2"
+      "alt": "Pack de 3 distributeurs douche bleus - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61EQM+XAYcL.jpg",
       "posicion": 3,
-      "alt": "Pack de 3 distributeurs douche bleus - vista 3"
+      "alt": "Pack de 3 distributeurs douche bleus - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81Z2R11gqVL.jpg",
       "posicion": 4,
-      "alt": "Pack de 3 distributeurs douche bleus - vista 4"
+      "alt": "Pack de 3 distributeurs douche bleus - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/718SnssW5yL.jpg",
       "posicion": 5,
-      "alt": "Pack de 3 distributeurs douche bleus - vista 5"
+      "alt": "Pack de 3 distributeurs douche bleus - vue 5"
     }
   ],
   "precio": null,
@@ -55,5 +55,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0F9ZXHY7P",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }

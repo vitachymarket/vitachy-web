@@ -24,32 +24,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71kcd2JktLL.jpg",
       "posicion": 1,
-      "alt": "Vaporisateur saumon - vista 1"
+      "alt": "Vaporisateur saumon - vue 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81oGJc3ADkL.jpg",
       "posicion": 2,
-      "alt": "Vaporisateur saumon - vista 2"
+      "alt": "Vaporisateur saumon - vue 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81hyRP2Qf+L.jpg",
       "posicion": 3,
-      "alt": "Vaporisateur saumon - vista 3"
+      "alt": "Vaporisateur saumon - vue 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81ytRx0XRtL.jpg",
       "posicion": 4,
-      "alt": "Vaporisateur saumon - vista 4"
+      "alt": "Vaporisateur saumon - vue 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81N569HVF7L.jpg",
       "posicion": 5,
-      "alt": "Vaporisateur saumon - vista 5"
+      "alt": "Vaporisateur saumon - vue 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81tHDyA1C-L.jpg",
       "posicion": 6,
-      "alt": "Vaporisateur saumon - vista 6"
+      "alt": "Vaporisateur saumon - vue 6"
     }
   ],
   "precio": null,
@@ -57,5 +57,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0DWLKHXWG",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": false
 }

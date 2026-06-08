@@ -21,7 +21,9 @@
   "product": {
     "price_caption_prefix": "Price on amazon",
     "description": "Description",
-    "related_eyebrow_prefix": "More from"
+    "related_eyebrow_prefix": "More from",
+    "out_of_stock_badge": "Temporarily out of stock",
+    "out_of_stock_help": "This item is currently unavailable on Amazon. Check availability directly on the listing."
   },
   "estancias": {
     "cocina": {

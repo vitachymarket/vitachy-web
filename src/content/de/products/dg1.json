@@ -25,32 +25,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/81YKUJBX55L.jpg",
       "posicion": 1,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 1"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 1"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71C9AOtRoIL.jpg",
       "posicion": 2,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 2"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 2"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71bjNdfnrcL.jpg",
       "posicion": 3,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 3"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 3"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71DaVAPPAeL.jpg",
       "posicion": 4,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 4"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 4"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61rpMInVU5L.jpg",
       "posicion": 5,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 5"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 5"
     },
     {
       "url": "https://m.media-amazon.com/images/I/612e+ocZQCL.jpg",
       "posicion": 6,
-      "alt": "Set mit 3 schwarzen Duschspendern - vista 6"
+      "alt": "Set mit 3 schwarzen Duschspendern - Ansicht 6"
     }
   ],
   "precio": 21.99,
@@ -58,5 +58,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0F4FZ1DGK",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07"
+  "actualizado": "2026-06-07",
+  "en_stock": true
 }
