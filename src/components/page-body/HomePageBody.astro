@@ -18,7 +18,7 @@ const allProducts = await getCollection('products', ({ id }) => id.startsWith(`$
 const products = allProducts.map((p) => p.data).sort((a, b) => a.orden - b.orden);
 
 const heroImage = {
-  url: '/imgs/familia.jpg',
+  url: '/imgs/familia.webp',
   alt: 'Familia disfrutando de una ensalada con la aceitera Vitachy',
 };
 
@@ -35,9 +35,9 @@ const destacados = (() => {
 })();
 
 const rooms: Array<{ key: EstanciaSlug; image: { url: string; alt: string } }> = [
-  { key: 'cocina', image: { url: '/imgs/cocina.jpg', alt: ui.estancias.cocina.title } },
-  { key: 'bano',   image: { url: '/imgs/bano.jpg',   alt: ui.estancias.bano.title } },
-  { key: 'hogar',  image: { url: '/imgs/hogar.jpg',  alt: ui.estancias.hogar.title } },
+  { key: 'cocina', image: { url: '/imgs/cocina.webp', alt: ui.estancias.cocina.title } },
+  { key: 'bano',   image: { url: '/imgs/bano.webp',   alt: ui.estancias.bano.title } },
+  { key: 'hogar',  image: { url: '/imgs/hogar.webp',  alt: ui.estancias.hogar.title } },
 ];
 
 const lifestyle = {
@@ -96,8 +96,8 @@ const organisationJsonLd = {
         <img
           src={heroImage.url}
           alt={heroImage.alt}
-          width="1200"
-          height="1200"
+          width="1000"
+          height="1000"
           loading="eager"
           fetchpriority="high"
           decoding="async"
@@ -115,8 +115,8 @@ const organisationJsonLd = {
             <img
               src={room.image.url}
               alt={room.image.alt}
-              width="1000"
-              height="1000"
+              width="800"
+              height="800"
               loading="lazy"
               decoding="async"
               class="h-full w-full object-cover transition-transform duration-[350ms] group-hover:scale-[1.04]"
