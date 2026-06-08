@@ -17,14 +17,10 @@ const ui = getUi(lang);
 const allProducts = await getCollection('products', ({ id }) => id.startsWith(`${lang}/`));
 const products = allProducts.map((p) => p.data).sort((a, b) => a.orden - b.orden);
 
-const byCode = (code: string) => products.find((p) => p.codigo === code);
-const mainOf = (code: string) => {
-  const p = byCode(code);
-  const img = p?.imagenes.find((i) => i.posicion === 0) ?? p?.imagenes[0];
-  return img ? { url: img.url, alt: img.alt } : null;
+const heroImage = {
+  url: '/imgs/familia.jpg',
+  alt: 'Familia disfrutando de una ensalada con la aceitera Vitachy',
 };
-
-const heroImage = mainOf('DA1');
 
 const destacados = (() => {
   const seen = new Set<string>();
@@ -38,10 +34,10 @@ const destacados = (() => {
   return out;
 })();
 
-const rooms: Array<{ key: EstanciaSlug; image: { url: string; alt: string } | null }> = [
-  { key: 'cocina', image: mainOf('DC1') },
-  { key: 'bano',   image: mainOf('DB1') },
-  { key: 'hogar',  image: mainOf('P2A') },
+const rooms: Array<{ key: EstanciaSlug; image: { url: string; alt: string } }> = [
+  { key: 'cocina', image: { url: '/imgs/cocina.jpg', alt: ui.estancias.cocina.title } },
+  { key: 'bano',   image: { url: '/imgs/bano.jpg',   alt: ui.estancias.bano.title } },
+  { key: 'hogar',  image: { url: '/imgs/hogar.jpg',  alt: ui.estancias.hogar.title } },
 ];
 
 const lifestyle = {
@@ -96,19 +92,17 @@ const organisationJsonLd = {
           </a>
         </div>
       </div>
-      <div class="aspect-square bg-white border border-line rounded-2xl overflow-hidden">
-        {heroImage && (
-          <img
-            src={resizedAmazonImage(heroImage.url, 800)}
-            alt={heroImage.alt}
-            width="800"
-            height="800"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-            class="h-full w-full object-contain"
-          />
-        )}
+      <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
+        <img
+          src={heroImage.url}
+          alt={heroImage.alt}
+          width="1200"
+          height="1200"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          class="h-full w-full object-cover"
+        />
       </div>
     </div>
   </section>
@@ -118,19 +112,15 @@ const organisationJsonLd = {
       {rooms.map((room) => (
         <a href={estanciaUrl(room.key, lang)} class="group block">
           <div class="aspect-square bg-paper-warm border border-line rounded-2xl overflow-hidden">
-            {room.image ? (
-              <img
-                src={resizedAmazonImage(room.image.url, 600)}
-                alt={room.image.alt}
-                width="600"
-                height="600"
-                loading="lazy"
-                decoding="async"
-                class="h-full w-full object-contain transition-transform duration-[350ms] group-hover:scale-[1.04]"
-              />
-            ) : (
-              <div class="h-full w-full flex items-center justify-center text-ink-soft text-sm">{ui.estancias[room.key].title}</div>
-            )}
+            <img
+              src={room.image.url}
+              alt={room.image.alt}
+              width="1000"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover transition-transform duration-[350ms] group-hover:scale-[1.04]"
+            />
           </div>
           <h3 class="display mt-4 text-lg font-semibold">{ui.estancias[room.key].title}</h3>
           <p class="mt-1 text-sm text-ink-soft">{ui.estancias[room.key].subclaim_home}</p>
