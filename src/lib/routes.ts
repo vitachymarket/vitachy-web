@@ -256,6 +256,18 @@ export function hreflangFor(
   return out;
 }
 
+export const AMAZON_STORE_URLS: Record<Locale, string> = {
+  es: 'https://www.amazon.es/stores/Vitachy/page/CBF49205-FC68-489C-B110-0A76A07BE7BC',
+  it: 'https://www.amazon.it/stores/Vitachy/page/1673BA08-8705-4779-8219-8CB72C8F5AB2',
+  fr: 'https://www.amazon.fr/stores/Vitachy/page/5914157A-C733-464F-ABBA-10FAFE4483F6',
+  en: 'https://www.amazon.co.uk/s?k=Vitachy',
+  de: 'https://www.amazon.de/s?k=Vitachy',
+};
+
+export function amazonStoreUrl(lang: Locale): string {
+  return AMAZON_STORE_URLS[lang];
+}
+
 export const LEGAL_URLS: Record<Locale, { legal: string; privacy: string; cookies: string; contact: string }> = {
   es: { legal: '/aviso-legal/',          privacy: '/politica-privacidad/',         cookies: '/politica-cookies/',     contact: '/contacto/' },
   en: { legal: '/en/legal-notice/',      privacy: '/en/privacy-policy/',           cookies: '/en/cookie-policy/',     contact: '/en/contact/' },

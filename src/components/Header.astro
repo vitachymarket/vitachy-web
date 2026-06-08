@@ -6,6 +6,7 @@ import {
   aboutUrl,
   homeUrl,
   familyUrl,
+  amazonStoreUrl,
   ESTANCIAS,
   type EstanciaSlug,
 } from '../lib/routes';
@@ -70,7 +71,7 @@ const estancias = (Object.keys(ESTANCIAS) as EstanciaSlug[]).map((key) => {
   };
 });
 
-const amazonStore = 'https://www.amazon.es/stores/Vitachy/page/';
+const amazonStore = amazonStoreUrl(lang);
 ---
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center gap-6">
