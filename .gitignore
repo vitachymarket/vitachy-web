@@ -150,3 +150,8 @@ vite.config.ts.timestamp-*
 
 # Docs internos (contienen IP/puerto del backend; repo es publico)
 docs/
+
+# Capturas sueltas en la raiz (debug screenshots, no son assets del sitio)
+/image.png
+/screenshot*.png
+/Captura*.png
