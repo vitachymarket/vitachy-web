@@ -66,8 +66,22 @@ export function cleanBullet(raw: string): CleanedBullet {
 
 const ALLOWED_TAGS = ['p', 'ul', 'ol', 'li', 'strong', 'em', 'br', 'h3'];
 
+const ENCODED_TAG = /&lt;\/?[a-z][a-z0-9]*\s*&gt;/i;
+
+function decodeEntities(html: string): string {
+  return html
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&');
+}
+
 export function cleanDescriptionHtml(raw: string): string {
-  return sanitizeHtml(raw, {
+  const input = ENCODED_TAG.test(raw) ? decodeEntities(raw) : raw;
+  return sanitizeHtml(input, {
     allowedTags: ALLOWED_TAGS,
     allowedAttributes: {},
     disallowedTagsMode: 'discard',
