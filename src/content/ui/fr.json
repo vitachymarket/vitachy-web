@@ -77,6 +77,27 @@
     "hub_intro": "Trouvez les instructions, l'entretien et les réponses pour votre produit Vitachy. Choisissez le vôtre ci-dessous.",
     "item_cta": "Voir les instructions"
   },
+  "newsletter": {
+    "title": "Newsletter Vitachy",
+    "hub_title": "Conseils et nouveautés pour votre maison",
+    "intro": "Recevez les nouveautés, des conseils d'entretien et des promotions ponctuelles. Pas de spam.",
+    "placeholder": "votre@email.com",
+    "cta": "S'abonner",
+    "consent_pre": "J'ai lu et j'accepte la ",
+    "consent_link": "politique de confidentialité",
+    "consent_post": " et je consens au traitement de mes données pour recevoir les communications marketing de Vitachy.",
+    "consent_required_message": "Veuillez cocher cette case pour vous abonner.",
+    "error_consent": "Pour vous abonner, vous devez accepter la politique de confidentialité.",
+    "error_email": "L'adresse e-mail ne semble pas valide.",
+    "error_turnstile": "Nous n'avons pas pu vérifier que vous êtes une personne. Rechargez la page et réessayez.",
+    "error_send": "Nous n'avons pas pu finaliser l'abonnement. Réessayez plus tard.",
+    "pending_title": "Vérifiez votre courrier.",
+    "pending_body": "Nous vous avons envoyé un email pour confirmer votre abonnement. Cliquez sur le lien et c'est fait. Si vous ne le voyez pas, consultez vos spams.",
+    "pending_expired": "Ce lien a expiré. Abonnez-vous à nouveau pour en recevoir un autre.",
+    "pending_error": "Un problème est survenu lors de la confirmation de votre abonnement. Réessayez plus tard.",
+    "confirmed_title": "Vous êtes abonné(e).",
+    "confirmed_body": "Merci d'avoir confirmé. Vous allez commencer à recevoir nos nouvelles. Vous pouvez vous désabonner en un clic depuis n'importe quel email."
+  },
   "legal_pages": {
     "legal_notice": "Mentions légales",
     "privacy_policy": "Politique de confidentialité",

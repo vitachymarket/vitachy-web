@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import { homeUrl, NEWSLETTER_URLS } from '../../lib/routes';
+import { getUi } from '../../lib/i18n';
+import type { Locale } from '../../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+  status: 'pending' | 'confirmed';
+}
+const { lang, status } = Astro.props;
+const ui = getUi(lang);
+
+const title = status === 'confirmed' ? ui.newsletter.confirmed_title : ui.newsletter.pending_title;
+const body = status === 'confirmed' ? ui.newsletter.confirmed_body : ui.newsletter.pending_body;
+const path = status === 'confirmed' ? NEWSLETTER_URLS[lang].confirmed : NEWSLETTER_URLS[lang].pending;
+---
+<Base
+  title={`${title} — Vitachy`}
+  description={body}
+  lang={lang}
+  noindex={true}
+>
+  <article class="max-w-2xl mx-auto px-5 pt-16 md:pt-24 pb-24">
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+      {ui.newsletter.title}
+    </p>
+    <h1 class="display mt-3 text-3xl md:text-[2.25rem] font-bold leading-tight">
+      {title}
+    </h1>
+    <p class="mt-5 text-lg leading-[1.65] text-ink-soft">
+      {body}
+    </p>
+
+    <div data-status-error class="mt-6 hidden rounded-2xl border border-line bg-paper-warm p-5">
+      <p data-status-error-text class="text-ink-soft leading-[1.55]"></p>
+    </div>
+
+    <a
+      href={homeUrl(lang)}
+      class="mt-10 inline-flex items-center rounded-full border-[1.5px] border-ink text-ink px-6 py-2.5 font-semibold hover:bg-ink hover:text-white transition-colors"
+    >
+      {ui.cta.go_home}
+    </a>
+  </article>
+
+  <script is:inline define:vars={{
+    msgExpired: ui.newsletter.pending_expired,
+    msgError: ui.newsletter.pending_error,
+  }}>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const err = params.get('err');
+      if (!err) return;
+      const box = document.querySelector('[data-status-error]');
+      const txt = document.querySelector('[data-status-error-text]');
+      if (!box || !txt) return;
+      const messages = { expired: msgExpired, send: msgError };
+      txt.textContent = messages[err] || msgError;
+      box.classList.remove('hidden');
+    })();
+  </script>
+</Base>

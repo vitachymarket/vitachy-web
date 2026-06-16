@@ -77,6 +77,27 @@
     "hub_intro": "Anleitungen, Pflegehinweise und Antworten zu Ihrem Vitachy-Produkt. Wählen Sie Ihres unten aus.",
     "item_cta": "Anleitung ansehen"
   },
+  "newsletter": {
+    "title": "Vitachy-Newsletter",
+    "hub_title": "Tipps und Neuigkeiten für Ihr Zuhause",
+    "intro": "Erhalten Sie Neuigkeiten, Pflegetipps und gelegentliche Rabatte. Kein Spam.",
+    "placeholder": "ihre@email.de",
+    "cta": "Abonnieren",
+    "consent_pre": "Ich habe die ",
+    "consent_link": "Datenschutzerklärung",
+    "consent_post": " gelesen und akzeptiere die Verarbeitung meiner Daten zum Empfang von Marketing-Mitteilungen von Vitachy.",
+    "consent_required_message": "Bitte aktivieren Sie dieses Kontrollkästchen, um sich anzumelden.",
+    "error_consent": "Sie müssen die Datenschutzerklärung akzeptieren, um sich anzumelden.",
+    "error_email": "Die E-Mail-Adresse scheint nicht gültig zu sein.",
+    "error_turnstile": "Wir konnten nicht bestätigen, dass Sie eine Person sind. Bitte Seite neu laden und nochmal versuchen.",
+    "error_send": "Wir konnten die Anmeldung nicht abschließen. Bitte später erneut versuchen.",
+    "pending_title": "Prüfen Sie Ihr Postfach.",
+    "pending_body": "Wir haben Ihnen eine E-Mail zur Bestätigung des Abonnements gesendet. Klicken Sie auf den Link, um es abzuschließen. Falls Sie sie nicht sehen, prüfen Sie Ihren Spam-Ordner.",
+    "pending_expired": "Dieser Link ist abgelaufen. Melden Sie sich erneut an, um einen neuen zu erhalten.",
+    "pending_error": "Bei der Bestätigung ist etwas schiefgegangen. Bitte später erneut versuchen.",
+    "confirmed_title": "Sie sind dabei.",
+    "confirmed_body": "Danke für die Bestätigung. Sie erhalten ab sofort unsere Updates. Sie können sich mit einem Klick aus jeder E-Mail abmelden."
+  },
   "legal_pages": {
     "legal_notice": "Impressum",
     "privacy_policy": "Datenschutzerklärung",

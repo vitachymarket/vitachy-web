@@ -2,6 +2,7 @@
 import type { Locale } from '../lib/marketplaces';
 import { familyUrl, aboutUrl, supportUrl } from '../lib/routes';
 import { getUi, getFamilies } from '../lib/i18n';
+import NewsletterForm from './NewsletterForm.astro';
 
 interface Props {
   lang?: Locale;
@@ -36,6 +37,9 @@ const lp = legalPrefixes[lang];
       <p class="mt-4 text-sm text-ink-soft max-w-xs">
         {ui.footer.tagline}
       </p>
+      <div class="mt-6">
+        <NewsletterForm lang={lang} variant="footer" />
+      </div>
       <p class="mt-6 text-xs text-ink-soft leading-relaxed">
         VITACHY SPAIN SL · B55399679<br />
         Palma de Mallorca · Terrassa

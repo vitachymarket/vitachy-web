@@ -77,6 +77,27 @@
     "hub_intro": "Find instructions, care tips and answers for your Vitachy product. Pick yours below.",
     "item_cta": "View instructions"
   },
+  "newsletter": {
+    "title": "Vitachy newsletter",
+    "hub_title": "Tips and updates for your home",
+    "intro": "Get product news, care tips and occasional discounts. No spam.",
+    "placeholder": "your@email.com",
+    "cta": "Subscribe",
+    "consent_pre": "I have read and accept the ",
+    "consent_link": "privacy policy",
+    "consent_post": " and consent to my data being processed to receive marketing communications from Vitachy.",
+    "consent_required_message": "Please tick this box to subscribe.",
+    "error_consent": "You must accept the privacy policy to subscribe.",
+    "error_email": "The email address doesn't look valid.",
+    "error_turnstile": "We couldn't verify you're a person. Refresh the page and try again.",
+    "error_send": "We couldn't complete the subscription. Please try again later.",
+    "pending_title": "Check your email.",
+    "pending_body": "We've sent you an email to confirm your subscription. Click the link in it and you're in. If you can't find it, check your spam folder.",
+    "pending_expired": "That link has expired. Subscribe again to receive a new one.",
+    "pending_error": "Something went wrong confirming your subscription. Please try again later.",
+    "confirmed_title": "You're in.",
+    "confirmed_body": "Thanks for confirming. You'll start receiving our updates. You can unsubscribe in one click from any email."
+  },
   "legal_pages": {
     "legal_notice": "Legal notice",
     "privacy_policy": "Privacy policy",

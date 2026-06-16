@@ -1,0 +1,119 @@
+---
+import { LEGAL_URLS } from '../lib/routes';
+import { getUi } from '../lib/i18n';
+import type { Locale } from '../lib/marketplaces';
+
+interface Props {
+  lang: Locale;
+  variant?: 'footer' | 'block';
+}
+const { lang, variant = 'block' } = Astro.props;
+const ui = getUi(lang);
+
+const TURNSTILE_SITE_KEY = '0x4AAAAAADgP8v7IolKcnuE-';
+const action = `/api/subscribe?lang=${lang}`;
+const privacyHref = LEGAL_URLS[lang].privacy;
+---
+{variant === 'footer' ? (
+  <div class="newsletter-host">
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft mb-3">
+      {ui.newsletter.title}
+    </p>
+    <p class="text-sm text-ink-soft leading-[1.5] mb-3 max-w-xs">{ui.newsletter.intro}</p>
+    <div data-newsletter-error class="hidden mb-3 rounded-md bg-paper border border-line px-3 py-2 text-xs text-ink leading-[1.5]"></div>
+    <form method="POST" action={action} class="newsletter-form grid gap-2">
+      <div class="flex gap-2">
+        <input type="email" name="email" required maxlength="160" placeholder={ui.newsletter.placeholder} autocomplete="email"
+          class="newsletter-email flex-1 min-w-0 rounded-full border border-line bg-white px-4 py-2 text-sm text-ink focus:border-ink focus:outline-none" />
+        <button type="submit" class="rounded-full bg-ink text-white px-4 py-2 text-sm font-semibold hover:bg-[var(--accent-deep)] transition-colors whitespace-nowrap">
+          {ui.newsletter.cta}
+        </button>
+      </div>
+      <label class="flex items-start gap-2 text-xs leading-[1.5] text-ink-soft cursor-pointer">
+        <input type="checkbox" name="consentimiento" value="si" required class="mt-0.5 h-3.5 w-3.5 accent-[var(--ink)]" />
+        <span>
+          {ui.newsletter.consent_pre}
+          <a href={privacyHref} class="underline hover:text-ink">{ui.newsletter.consent_link}</a>
+          {ui.newsletter.consent_post}
+        </span>
+      </label>
+      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-size="invisible"></div>
+    </form>
+  </div>
+) : (
+  <div class="newsletter-host rounded-2xl border border-line bg-white p-6 md:p-8 max-w-2xl">
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
+      {ui.newsletter.title}
+    </p>
+    <h3 class="display mt-2 text-xl md:text-2xl font-bold leading-tight">{ui.newsletter.hub_title}</h3>
+    <p class="mt-3 text-base text-ink-soft leading-[1.55]">{ui.newsletter.intro}</p>
+    <div data-newsletter-error class="hidden mt-4 rounded-md bg-paper-warm border border-line px-3 py-2 text-sm text-ink leading-[1.5]"></div>
+    <form method="POST" action={action} class="newsletter-form mt-5 grid gap-4">
+      <div class="grid gap-3 sm:grid-cols-[1fr_auto]">
+        <input type="email" name="email" required maxlength="160" placeholder={ui.newsletter.placeholder} autocomplete="email"
+          class="newsletter-email rounded-full border border-line bg-paper px-5 py-3 text-ink focus:border-ink focus:outline-none" />
+        <button type="submit" class="rounded-full bg-ink text-white px-6 py-3 font-semibold hover:bg-[var(--accent-deep)] transition-colors">
+          {ui.newsletter.cta}
+        </button>
+      </div>
+      <label class="flex items-start gap-3 text-sm leading-[1.5] text-ink-soft cursor-pointer">
+        <input type="checkbox" name="consentimiento" value="si" required class="mt-0.5 h-4 w-4 accent-[var(--ink)]" />
+        <span>
+          {ui.newsletter.consent_pre}
+          <a href={privacyHref} class="underline hover:text-ink">{ui.newsletter.consent_link}</a>
+          {ui.newsletter.consent_post}
+        </span>
+      </label>
+      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-size="invisible"></div>
+    </form>
+  </div>
+)}
+
+<script is:inline define:vars={{
+  msgConsent: ui.newsletter.error_consent,
+  msgEmail: ui.newsletter.error_email,
+  msgTurnstile: ui.newsletter.error_turnstile,
+  msgSend: ui.newsletter.error_send,
+  consentRequired: ui.newsletter.consent_required_message,
+}}>
+  (function () {
+    const hosts = document.querySelectorAll('.newsletter-host');
+    if (!hosts.length) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const err = params.get('subscribe_err');
+    if (err) {
+      const messages = { consent: msgConsent, email: msgEmail, turnstile: msgTurnstile, send: msgSend };
+      const text = messages[err] || msgSend;
+      hosts.forEach((host) => {
+        const box = host.querySelector('[data-newsletter-error]');
+        if (box) { box.textContent = text; box.classList.remove('hidden'); }
+      });
+    }
+
+    hosts.forEach((host) => {
+      const consent = host.querySelector('input[name="consentimiento"]');
+      if (consent) {
+        consent.addEventListener('invalid', () => consent.setCustomValidity(consentRequired));
+        consent.addEventListener('change', () => consent.setCustomValidity(''));
+      }
+    });
+
+    let loaded = false;
+    function loadTurnstile() {
+      if (loaded || window.turnstile || document.querySelector('script[data-turnstile-loader]')) {
+        loaded = true; return;
+      }
+      loaded = true;
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      s.async = true;
+      s.defer = true;
+      s.setAttribute('data-turnstile-loader', '1');
+      document.head.appendChild(s);
+    }
+    document.querySelectorAll('.newsletter-email').forEach((el) => {
+      el.addEventListener('focus', loadTurnstile, { once: true });
+    });
+  })();
+</script>

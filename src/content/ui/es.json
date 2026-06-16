@@ -77,6 +77,27 @@
     "hub_intro": "Encuentra instrucciones, mantenimiento y respuestas para tu producto Vitachy. Selecciona el tuyo a continuación.",
     "item_cta": "Ver instrucciones"
   },
+  "newsletter": {
+    "title": "Newsletter Vitachy",
+    "hub_title": "Avisos y consejos para tu hogar",
+    "intro": "Recibe novedades, consejos de mantenimiento y descuentos puntuales. Sin spam.",
+    "placeholder": "tu@email.com",
+    "cta": "Suscribirme",
+    "consent_pre": "He leído y acepto la ",
+    "consent_link": "política de privacidad",
+    "consent_post": " y consiento al tratamiento de mis datos para recibir comunicaciones comerciales de Vitachy.",
+    "consent_required_message": "Disculpe, tiene que seleccionar esta casilla para suscribirse.",
+    "error_consent": "Para suscribirte tienes que aceptar la política de privacidad.",
+    "error_email": "El correo electrónico no parece válido.",
+    "error_turnstile": "No hemos podido verificar que seas una persona. Refresca la página y vuelve a intentarlo.",
+    "error_send": "No hemos podido completar la suscripción. Inténtalo más tarde.",
+    "pending_title": "Revisa tu correo.",
+    "pending_body": "Te hemos enviado un email para confirmar la suscripción. Pulsa el enlace y entrarás en la lista. Si no lo ves, mira en spam.",
+    "pending_expired": "Ese enlace ha caducado. Pide otro suscribiéndote de nuevo.",
+    "pending_error": "Algo no fue bien al confirmar la suscripción. Vuelve a intentarlo más tarde.",
+    "confirmed_title": "Listo, estás dentro.",
+    "confirmed_body": "Gracias por confirmar la suscripción. A partir de ahora recibirás nuestros avisos. Puedes darte de baja con un clic desde cualquier email."
+  },
   "legal_pages": {
     "legal_notice": "Aviso legal",
     "privacy_policy": "Política de privacidad",

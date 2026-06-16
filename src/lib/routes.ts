@@ -286,6 +286,14 @@ export function amazonStoreUrl(lang: Locale): string {
   return AMAZON_STORE_URLS[lang];
 }
 
+export const NEWSLETTER_URLS: Record<Locale, { pending: string; confirmed: string }> = {
+  es: { pending: '/suscripcion-pendiente/',    confirmed: '/suscripcion-confirmada/' },
+  en: { pending: '/en/subscription-pending/',  confirmed: '/en/subscription-confirmed/' },
+  fr: { pending: '/fr/abonnement-en-attente/', confirmed: '/fr/abonnement-confirme/' },
+  it: { pending: '/it/iscrizione-in-attesa/',  confirmed: '/it/iscrizione-confermata/' },
+  de: { pending: '/de/anmeldung-ausstehend/',  confirmed: '/de/anmeldung-bestaetigt/' },
+};
+
 export const LEGAL_URLS: Record<Locale, { legal: string; privacy: string; cookies: string; contact: string }> = {
   es: { legal: '/aviso-legal/',          privacy: '/politica-privacidad/',         cookies: '/politica-cookies/',     contact: '/contacto/' },
   en: { legal: '/en/legal-notice/',      privacy: '/en/privacy-policy/',           cookies: '/en/cookie-policy/',     contact: '/en/contact/' },
