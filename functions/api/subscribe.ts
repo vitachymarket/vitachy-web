@@ -138,6 +138,19 @@ export async function onRequestPost(context: Context): Promise<Response> {
   }
   if (!verifyOk) return redirectBack('turnstile');
 
+  if (!env.RESEND_AUDIENCE_ID) {
+    console.error('[subscribe] Missing RESEND_AUDIENCE_ID env var');
+    return redirectBack('send');
+  }
+  if (!env.RESEND_API_KEY) {
+    console.error('[subscribe] Missing RESEND_API_KEY env var');
+    return redirectBack('send');
+  }
+  if (!env.SUBSCRIBE_TOKEN_SECRET) {
+    console.error('[subscribe] Missing SUBSCRIBE_TOKEN_SECRET env var');
+    return redirectBack('send');
+  }
+
   try {
     const res = await fetch(`https://api.resend.com/audiences/${env.RESEND_AUDIENCE_ID}/contacts`, {
       method: 'POST',
@@ -148,9 +161,12 @@ export async function onRequestPost(context: Context): Promise<Response> {
       body: JSON.stringify({ email, unsubscribed: true }),
     });
     if (!res.ok && res.status !== 409) {
+      const body = await res.text();
+      console.error('[subscribe] Resend contacts.create failed', res.status, body);
       return redirectBack('send');
     }
-  } catch {
+  } catch (e) {
+    console.error('[subscribe] Resend contacts.create threw', e);
     return redirectBack('send');
   }
 
@@ -192,8 +208,13 @@ export async function onRequestPost(context: Context): Promise<Response> {
         text,
       }),
     });
-    if (!sendRes.ok) return redirectBack('send');
-  } catch {
+    if (!sendRes.ok) {
+      const body = await sendRes.text();
+      console.error('[subscribe] Resend emails.send failed', sendRes.status, body);
+      return redirectBack('send');
+    }
+  } catch (e) {
+    console.error('[subscribe] Resend emails.send threw', e);
     return redirectBack('send');
   }
 

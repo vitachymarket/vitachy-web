@@ -26,7 +26,13 @@ const privacyHref = LEGAL_URLS[lang].privacy;
       <p class="mt-4 text-base md:text-lg text-ink-soft leading-[1.55] max-w-xl mx-auto">
         {ui.newsletter.intro}
       </p>
-      <div data-newsletter-error class="hidden mt-5 rounded-md bg-white border border-line px-3 py-2 text-sm text-ink leading-[1.5] text-left max-w-xl mx-auto"></div>
+      <div data-newsletter-error class="hidden mt-5 rounded-xl bg-white border-2 border-[#c0392b] px-4 py-3 text-base text-[#7d1f15] leading-[1.5] text-left max-w-xl mx-auto font-medium flex items-start gap-3">
+        <svg aria-hidden="true" viewBox="0 0 20 20" class="mt-0.5 h-5 w-5 flex-none text-[#c0392b]" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="10" cy="10" r="8" />
+          <path d="M10 6v4m0 3h.01" stroke-linecap="round" />
+        </svg>
+        <span data-newsletter-error-text></span>
+      </div>
       <form method="POST" action={action} class="newsletter-form mt-6 grid gap-4 max-w-xl mx-auto">
         <div class="grid gap-3 sm:grid-cols-[1fr_auto]">
           <input type="email" name="email" required maxlength="160" placeholder={ui.newsletter.placeholder} autocomplete="email"
@@ -54,7 +60,13 @@ const privacyHref = LEGAL_URLS[lang].privacy;
     </p>
     <h3 class="display mt-2 text-xl md:text-2xl font-bold leading-tight">{ui.newsletter.hub_title}</h3>
     <p class="mt-3 text-base text-ink-soft leading-[1.55]">{ui.newsletter.intro}</p>
-    <div data-newsletter-error class="hidden mt-4 rounded-md bg-paper-warm border border-line px-3 py-2 text-sm text-ink leading-[1.5]"></div>
+    <div data-newsletter-error class="hidden mt-4 rounded-xl bg-white border-2 border-[#c0392b] px-4 py-3 text-base text-[#7d1f15] leading-[1.5] font-medium flex items-start gap-3">
+      <svg aria-hidden="true" viewBox="0 0 20 20" class="mt-0.5 h-5 w-5 flex-none text-[#c0392b]" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="10" cy="10" r="8" />
+        <path d="M10 6v4m0 3h.01" stroke-linecap="round" />
+      </svg>
+      <span data-newsletter-error-text></span>
+    </div>
     <form method="POST" action={action} class="newsletter-form mt-5 grid gap-4">
       <div class="grid gap-3 sm:grid-cols-[1fr_auto]">
         <input type="email" name="email" required maxlength="160" placeholder={ui.newsletter.placeholder} autocomplete="email"
@@ -103,8 +115,15 @@ const privacyHref = LEGAL_URLS[lang].privacy;
       const text = messages[err] || msgSend;
       hosts.forEach((host) => {
         const box = host.querySelector('[data-newsletter-error]');
-        if (box) { box.textContent = text; box.classList.remove('hidden'); }
+        const txt = host.querySelector('[data-newsletter-error-text]');
+        if (box && txt) { txt.textContent = text; box.classList.remove('hidden'); }
       });
+      const first = hosts[0];
+      if (first) {
+        requestAnimationFrame(() => {
+          first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      }
     }
 
     hosts.forEach((host) => {
