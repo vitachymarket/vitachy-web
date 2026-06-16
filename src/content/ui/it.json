@@ -23,7 +23,10 @@
     "description": "Descrizione",
     "related_eyebrow_prefix": "Anche in",
     "out_of_stock_badge": "Temporaneamente esaurito",
-    "out_of_stock_help": "Questo articolo non è disponibile al momento su Amazon. Verifica la disponibilità direttamente sulla scheda prodotto."
+    "out_of_stock_help": "Questo articolo non è disponibile al momento su Amazon. Verifica la disponibilità direttamente sulla scheda prodotto.",
+    "instructions_title": "Istruzioni e manutenzione",
+    "faq_title": "Domande frequenti",
+    "download_pdf": "Scarica le istruzioni (PDF)"
   },
   "estancias": {
     "cocina": {

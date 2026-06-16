@@ -34,6 +34,9 @@ interface ProductData {
   total_resenas: number | null;
   actualizado: string;
   en_stock?: boolean;
+  instrucciones_pdf?: string;
+  mantenimiento_html?: string;
+  faq?: Array<{ pregunta: string; respuesta: string }>;
 }
 
 interface Props {
@@ -55,6 +58,10 @@ const estanciaHref = estanciaUrl(estanciaKey, lang);
 const cleanedBullets = product.bullets.map((b) => cleanBullet(b));
 const cleanedDescription = cleanDescriptionHtml(product.descripcion_html);
 const descriptionText = cleanedDescription.replace(/<[^>]+>/g, '').trim();
+
+const cleanedMantenimiento = product.mantenimiento_html ? cleanDescriptionHtml(product.mantenimiento_html) : '';
+const faqItems = product.faq ?? [];
+const hasInstructions = !!(product.instrucciones_pdf || cleanedMantenimiento || faqItems.length > 0);
 
 const priceText = product.precio !== null ? formatPrice(product.precio, lang, product.currency) : null;
 const mainImage = product.imagenes.find((i) => i.posicion === 0) ?? product.imagenes[0];
@@ -206,6 +213,51 @@ const priceCaption = `${ui.product.price_caption_prefix}.${mp.tld}`;
           {ui.product.description}
         </h2>
         <div class="prose prose-ink max-w-none text-ink-soft leading-[1.65]" set:html={cleanedDescription} />
+      </div>
+    </section>
+  )}
+
+  {hasInstructions && (
+    <section id="instrucciones" class="bg-paper scroll-mt-24">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 grid gap-10 md:grid-cols-[1fr_2fr]">
+        <h2 class="display text-2xl md:text-3xl font-bold leading-tight">
+          {ui.product.instructions_title}
+        </h2>
+        <div class="space-y-8">
+          {product.instrucciones_pdf && (
+            <a
+              href={`/instrucciones/${product.instrucciones_pdf}`}
+              class="inline-flex items-center gap-3 rounded-full border-[1.5px] border-ink text-ink px-6 py-3 font-semibold hover:bg-ink hover:text-white transition-colors"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 3v4a1 1 0 0 0 1 1h4M5 3h9l5 5v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 11v6m-3-3l3 3 3-3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              {ui.product.download_pdf}
+            </a>
+          )}
+          {cleanedMantenimiento && (
+            <div class="prose prose-ink max-w-none text-ink-soft leading-[1.65]" set:html={cleanedMantenimiento} />
+          )}
+          {faqItems.length > 0 && (
+            <div>
+              <h3 class="display text-xl font-semibold mb-4">{ui.product.faq_title}</h3>
+              <div class="border-t border-line">
+                {faqItems.map((item) => (
+                  <details class="group border-b border-line py-4">
+                    <summary class="flex cursor-pointer items-start justify-between gap-4 font-semibold text-ink list-none [&::-webkit-details-marker]:hidden">
+                      <span>{item.pregunta}</span>
+                      <svg aria-hidden="true" class="mt-1 h-5 w-5 flex-none text-ink-soft transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 8l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </summary>
+                    <p class="mt-3 text-ink-soft leading-[1.6]">{item.respuesta}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )}

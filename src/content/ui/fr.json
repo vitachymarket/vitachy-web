@@ -23,7 +23,10 @@
     "description": "Description",
     "related_eyebrow_prefix": "Aussi dans",
     "out_of_stock_badge": "Rupture de stock temporaire",
-    "out_of_stock_help": "Cet article n'est pas disponible actuellement sur Amazon. Vérifiez la disponibilité directement sur la fiche produit."
+    "out_of_stock_help": "Cet article n'est pas disponible actuellement sur Amazon. Vérifiez la disponibilité directement sur la fiche produit.",
+    "instructions_title": "Instructions et entretien",
+    "faq_title": "Questions fréquentes",
+    "download_pdf": "Télécharger les instructions (PDF)"
   },
   "estancias": {
     "cocina": {

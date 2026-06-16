@@ -26,6 +26,16 @@ const productSchema = z.object({
   total_resenas: z.number().nullable(),
   actualizado: z.string(),
   en_stock: z.boolean().default(true),
+  instrucciones_pdf: z.string().optional(),
+  mantenimiento_html: z.string().optional(),
+  faq: z
+    .array(
+      z.object({
+        pregunta: z.string(),
+        respuesta: z.string(),
+      }),
+    )
+    .optional(),
   _placeholder: z.boolean().optional(),
   _revision_tono: z.boolean().optional(),
 });

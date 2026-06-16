@@ -23,7 +23,10 @@
     "description": "Beschreibung",
     "related_eyebrow_prefix": "Mehr aus",
     "out_of_stock_badge": "Vorübergehend ausverkauft",
-    "out_of_stock_help": "Dieser Artikel ist derzeit bei Amazon nicht verfügbar. Bitte prüfen Sie die Verfügbarkeit direkt im Listing."
+    "out_of_stock_help": "Dieser Artikel ist derzeit bei Amazon nicht verfügbar. Bitte prüfen Sie die Verfügbarkeit direkt im Listing.",
+    "instructions_title": "Anleitung und Pflege",
+    "faq_title": "Häufige Fragen",
+    "download_pdf": "Anleitung herunterladen (PDF)"
   },
   "estancias": {
     "cocina": {
