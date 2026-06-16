@@ -68,7 +68,14 @@
     "tagline": "Ogni goccia conta. Design domestico che dura, ricariche che fanno risparmiare, oggetti che vale la pena tenere.",
     "catalog": "Catalogo",
     "legal": "Legale",
+    "support": "Assistenza",
     "made_in": "Fatto in Spagna"
+  },
+  "support": {
+    "title": "Assistenza",
+    "hub_title": "Centro assistenza",
+    "hub_intro": "Trova istruzioni, manutenzione e risposte per il tuo prodotto Vitachy. Seleziona il tuo qui sotto.",
+    "item_cta": "Vedi le istruzioni"
   },
   "legal_pages": {
     "legal_notice": "Note legali",

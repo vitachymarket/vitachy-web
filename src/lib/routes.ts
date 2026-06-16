@@ -249,6 +249,20 @@ export function estanciaUrl(slug: EstanciaSlug, lang: Locale): string {
   return `${langPrefix(lang)}/${ROUTE_PREFIXES[lang].estancia}/${localised}/`;
 }
 
+export const SUPPORT_SLUG_BY_LANG: Record<Locale, string> = {
+  es: 'soporte',
+  en: 'support',
+  fr: 'assistance',
+  it: 'assistenza',
+  de: 'support',
+};
+
+export const SUPPORT_LANDING_URL = '/soporte/';
+
+export function supportUrl(lang: Locale): string {
+  return `/${lang}/${SUPPORT_SLUG_BY_LANG[lang]}/`;
+}
+
 export function hreflangFor(
   build: (lang: Locale) => string,
 ): Array<{ hreflang: string; href: string }> {

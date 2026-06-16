@@ -68,7 +68,14 @@
     "tagline": "Cada gota cuenta. Diseño doméstico que dura, recargas que ahorran, objetos que valen la pena cuidar.",
     "catalog": "Catálogo",
     "legal": "Legal",
+    "support": "Soporte",
     "made_in": "Hecho en España"
+  },
+  "support": {
+    "title": "Soporte",
+    "hub_title": "Centro de soporte",
+    "hub_intro": "Encuentra instrucciones, mantenimiento y respuestas para tu producto Vitachy. Selecciona el tuyo a continuación.",
+    "item_cta": "Ver instrucciones"
   },
   "legal_pages": {
     "legal_notice": "Aviso legal",

@@ -68,7 +68,14 @@
     "tagline": "Jeder Tropfen zählt. Langlebiges Design fürs Zuhause, Nachfüllungen, die sparen, Dinge, die man behalten möchte.",
     "catalog": "Katalog",
     "legal": "Rechtliches",
+    "support": "Support",
     "made_in": "Hergestellt in Spanien"
+  },
+  "support": {
+    "title": "Support",
+    "hub_title": "Support-Center",
+    "hub_intro": "Anleitungen, Pflegehinweise und Antworten zu Ihrem Vitachy-Produkt. Wählen Sie Ihres unten aus.",
+    "item_cta": "Anleitung ansehen"
   },
   "legal_pages": {
     "legal_notice": "Impressum",

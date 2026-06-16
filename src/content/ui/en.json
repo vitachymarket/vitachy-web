@@ -68,7 +68,14 @@
     "tagline": "Every drop matters. Long-lasting home design, refills that save, objects worth caring for.",
     "catalog": "Catalogue",
     "legal": "Legal",
+    "support": "Support",
     "made_in": "Made in Spain"
+  },
+  "support": {
+    "title": "Support",
+    "hub_title": "Support centre",
+    "hub_intro": "Find instructions, care tips and answers for your Vitachy product. Pick yours below.",
+    "item_cta": "View instructions"
   },
   "legal_pages": {
     "legal_notice": "Legal notice",
