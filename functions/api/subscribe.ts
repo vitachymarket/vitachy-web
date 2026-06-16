@@ -23,7 +23,7 @@ const PENDING_PATHS: Record<Lang, string> = {
 };
 
 const SUBJECTS: Record<Lang, string> = {
-  es: 'Confirma tu suscripción a Vitachy',
+  es: 'Confirme su suscripción a Vitachy',
   en: 'Confirm your Vitachy subscription',
   fr: 'Confirmez votre abonnement Vitachy',
   it: 'Conferma la tua iscrizione a Vitachy',
@@ -31,7 +31,7 @@ const SUBJECTS: Record<Lang, string> = {
 };
 
 const INTRO: Record<Lang, string> = {
-  es: 'Has solicitado recibir comunicaciones de Vitachy. Pulsa el botón para confirmar tu suscripción.',
+  es: 'Ha solicitado recibir comunicaciones de Vitachy. Pulse el botón para confirmar su suscripción.',
   en: 'You requested to receive communications from Vitachy. Click the button to confirm your subscription.',
   fr: 'Vous avez demandé à recevoir des communications de Vitachy. Cliquez sur le bouton pour confirmer votre abonnement.',
   it: 'Hai richiesto di ricevere comunicazioni da Vitachy. Clicca sul pulsante per confermare la tua iscrizione.',
@@ -47,7 +47,7 @@ const CTA: Record<Lang, string> = {
 };
 
 const FOOT: Record<Lang, string> = {
-  es: 'El enlace caduca en 7 días. Si no has solicitado esta suscripción, ignora este mensaje.',
+  es: 'El enlace caduca en 7 días. Si no ha solicitado esta suscripción, ignore este mensaje.',
   en: 'The link expires in 7 days. If you did not request this subscription, please ignore this email.',
   fr: 'Le lien expire dans 7 jours. Si vous n’avez pas demandé cet abonnement, ignorez ce message.',
   it: 'Il link scade in 7 giorni. Se non hai richiesto questa iscrizione, ignora questo messaggio.',
@@ -158,7 +158,11 @@ export async function onRequestPost(context: Context): Promise<Response> {
         Authorization: `Bearer ${env.RESEND_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, unsubscribed: true }),
+      body: JSON.stringify({
+        email,
+        first_name: lang.toUpperCase(),
+        unsubscribed: true,
+      }),
     });
     if (!res.ok && res.status !== 409) {
       const body = await res.text();
