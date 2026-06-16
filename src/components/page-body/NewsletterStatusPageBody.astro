@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { homeUrl, NEWSLETTER_URLS } from '../../lib/routes';
+import { homeUrl } from '../../lib/routes';
 import { getUi } from '../../lib/i18n';
 import type { Locale } from '../../lib/marketplaces';
 
@@ -13,13 +13,13 @@ const ui = getUi(lang);
 
 const title = status === 'confirmed' ? ui.newsletter.confirmed_title : ui.newsletter.pending_title;
 const body = status === 'confirmed' ? ui.newsletter.confirmed_body : ui.newsletter.pending_body;
-const path = status === 'confirmed' ? NEWSLETTER_URLS[lang].confirmed : NEWSLETTER_URLS[lang].pending;
 ---
 <Base
   title={`${title} — Vitachy`}
   description={body}
   lang={lang}
   noindex={true}
+  noNewsletter={true}
 >
   <article class="max-w-2xl mx-auto px-5 pt-16 md:pt-24 pb-24">
     <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
