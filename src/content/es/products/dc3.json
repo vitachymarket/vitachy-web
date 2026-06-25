@@ -1,5 +1,6 @@
 {
   "_placeholder": true,
+  "_revision_tono": false,
   "asin": "B0F6YMX6NP",
   "codigo": "DC3",
   "familia": "dispensadores-cocina",
@@ -14,44 +15,44 @@
     "PRESENTACIÓN: se sirve en una caja y protegido con un plástico.",
     "AHORRO: la dosificación de jabón es siempre la misma. El ahorro de jabón de lavavajillas y de jabón de manos es substancial."
   ],
-  "descripcion_html": "<p>Set de limpieza para el fregadero que combina un dispensador de jabón de lavavajillas por presión, un dispensador de jabón de manos y un organizador para colocar la bayeta y el estropajo, todo en uno. Fabricado con plásticos técnicos y un soporte de acero inoxidable que le confieren gran resistencia y durabilidad.</p>",
+  "descripcion_html": "Set de limpieza para el fregadero que combina un dispensadorde jabón de lavavajillas por presión, un dispensador de jabón para manos, y un organizador para colocar la bayeta y el estropajo, todo en uno. El producto está fabricado con la unión de varios tipos de plásticos técnicos y un soporte de acero inoxidable que le confieren gran resistencia y durabilidad. La superficie no pierde color y no se raya fácilmente. Soporta todo tipo de agentes químicos. Depósito de lavavajillas: 350ml Depósito de para jabón de manos: 350ml Peso del producto: 305grs Dimensiones: 17x10x17,5 cms",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/81OBGQ5FQfL.jpg",
       "posicion": 0,
-      "alt": "Dispensador con bayeta"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71APsbuglkL.jpg",
       "posicion": 1,
-      "alt": "Dispensador con bayeta - vista 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71kshgjF8uL.jpg",
       "posicion": 2,
-      "alt": "Dispensador con bayeta - vista 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71V3wgtbAQL.jpg",
       "posicion": 3,
-      "alt": "Dispensador con bayeta - vista 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71yWsDw1wjL.jpg",
       "posicion": 4,
-      "alt": "Dispensador con bayeta - vista 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71HTgX4zlBL.jpg",
       "posicion": 5,
-      "alt": "Dispensador con bayeta - vista 5"
+      "alt": "PT05"
     }
   ],
   "precio": 16.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0F6YMX6NP",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 4.7,
+  "total_resenas": 58,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

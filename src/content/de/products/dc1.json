@@ -15,42 +15,42 @@
     "Kapazität: Ausgestattet mit zwei unabhängigen Behältern von 350 ml, die die Verwendung verschiedener Arten von Flüssigseife je nach Bedarf ermöglichen.",
     "Effizienz: Das praktische und funktionale Design erleichtert das Waschen und spart Zeit und Mühe."
   ],
-  "descripcion_html": "<p>Doppelseifenspender und Organizer für Küche und Bad. Mit zwei 350 ml Tanks und zwei hinteren Aufbewahrungslöchern. Vollständig zerlegbar für die Reinigung. Füllt sich mit Seife ohne Demontage. Schnellentleerender Flüssigkeitsauffangbehälter.</p>",
+  "descripcion_html": "Doppelseifenspender und Organizer für Küche und Bad. Mit zwei 350 ml Tanks und zwei hinteren Aufbewahrungslöchern. Vollständig zerlegbar für die Reinigung. Füllt sich mit Seife ohne Demontage. Schnellentleerender Flüssigkeitsauffangbehälter.",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/71u3KlWEm+L.jpg",
       "posicion": 0,
-      "alt": "Doppelter Seifenspender"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/719+ioJedrL.jpg",
       "posicion": 1,
-      "alt": "Doppelter Seifenspender - Ansicht 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71aYLGTfBIL.jpg",
       "posicion": 2,
-      "alt": "Doppelter Seifenspender - Ansicht 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71LrwMbEWYL.jpg",
       "posicion": 3,
-      "alt": "Doppelter Seifenspender - Ansicht 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71PfcFITyhL.jpg",
       "posicion": 4,
-      "alt": "Doppelter Seifenspender - Ansicht 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71S34X-0kiL.jpg",
       "posicion": 5,
-      "alt": "Doppelter Seifenspender - Ansicht 5"
+      "alt": "PT05"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71gOsqSP-PL.jpg",
       "posicion": 6,
-      "alt": "Doppelter Seifenspender - Ansicht 6"
+      "alt": "PT06"
     }
   ],
   "precio": 18.99,
@@ -58,6 +58,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0CYR66B4T",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

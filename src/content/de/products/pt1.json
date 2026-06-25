@@ -14,32 +14,32 @@
     "Maße: Jede Pillendose hat die Maße von 21,9 cm (L) x 5,2 cm (B) x 2,3 cm (H) und ein Gewicht von 51 Gramm.",
     "Robust: Die Pillendosen halten Stürzen und Stößen problemlos stand, da sie aus flexiblem und nicht sprödem Kunststoff bestehen."
   ],
-  "descripcion_html": "<p>Produktbeschreibung &lt;p&gt;Organisieren Sie Ihre Medikamente mit diesem praktischen 2er-Pack hochwertiger Pillendosen, die auf Komfort, Sicherheit und Haltbarkeit ausgelegt sind. Enthält eine weiße und eine schwarze Pillendose, beide mit transparenten Fächern für eine einfache Betrachtung. Perfekt für den täglichen Gebrauch, Reisen oder zum Mitnehmen in der Handtasche. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Lieferumfang: Enthält 2 leicht zu öffnende Kunststoff-Pillendosen, eine in Weiß und eine in Schwarz, mit transparenten Fächern, die es ermöglichen, das Innere der einzelnen zu sehen. &lt;/li&gt;&lt;li&gt;Große Kapazität: Jedes Fach bietet Platz für bis zu 12 große Tabletten, ideal für die Organisation Ihrer Medikamente oder Nahrungsergänzungsmittel. &lt;/li&gt;&lt;li&gt;Sicher: Hergestellt aus PP (Polypropylen), einem inerten Kunststoff, ungiftig und lebensmittelecht, weit verbreitet in der Lebensmittelindustrie. &lt;/li&gt;&lt;li&gt;Maße: Jede Pillendose misst 21,9 cm (L) x 5,2 cm (B) x 2,3 cm (H) und wiegt nur 51 Gramm, perfekt zum Mitnehmen. &lt;/li&gt;&lt;li&gt;Robust: Hergestellt aus flexiblem und nicht sprödem Kunststoff, widerstehen diese Pillendosen Stürzen und Stößen und sorgen für eine lange Lebensdauer. &lt;/li&gt;&lt;/ul&gt;</p>",
+  "descripcion_html": "Produktbeschreibung <p>Organisieren Sie Ihre Medikamente mit diesem praktischen 2er-Pack hochwertiger Pillendosen, die auf Komfort, Sicherheit und Haltbarkeit ausgelegt sind. Enthält eine weiße und eine schwarze Pillendose, beide mit transparenten Fächern für eine einfache Betrachtung. Perfekt für den täglichen Gebrauch, Reisen oder zum Mitnehmen in der Handtasche. </p><ul><li>Lieferumfang: Enthält 2 leicht zu öffnende Kunststoff-Pillendosen, eine in Weiß und eine in Schwarz, mit transparenten Fächern, die es ermöglichen, das Innere der einzelnen zu sehen. </li><li>Große Kapazität: Jedes Fach bietet Platz für bis zu 12 große Tabletten, ideal für die Organisation Ihrer Medikamente oder Nahrungsergänzungsmittel. </li><li>Sicher: Hergestellt aus PP (Polypropylen), einem inerten Kunststoff, ungiftig und lebensmittelecht, weit verbreitet in der Lebensmittelindustrie. </li><li>Maße: Jede Pillendose misst 21,9 cm (L) x 5,2 cm (B) x 2,3 cm (H) und wiegt nur 51 Gramm, perfekt zum Mitnehmen. </li><li>Robust: Hergestellt aus flexiblem und nicht sprödem Kunststoff, widerstehen diese Pillendosen Stürzen und Stößen und sorgen für eine lange Lebensdauer. </li></ul>",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/51YPrZMXrNL.jpg",
       "posicion": 0,
-      "alt": "Wochen-Tablettenbox, 2er-Set"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61gcthRsJXL.jpg",
       "posicion": 1,
-      "alt": "Wochen-Tablettenbox, 2er-Set - Ansicht 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/718C5PH394L.jpg",
       "posicion": 2,
-      "alt": "Wochen-Tablettenbox, 2er-Set - Ansicht 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61KHtx+7DiL.jpg",
       "posicion": 3,
-      "alt": "Wochen-Tablettenbox, 2er-Set - Ansicht 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81JwfpteIeL.jpg",
       "posicion": 4,
-      "alt": "Wochen-Tablettenbox, 2er-Set - Ansicht 4"
+      "alt": "PT04"
     }
   ],
   "precio": 10.99,
@@ -47,6 +47,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FGG7LS85",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

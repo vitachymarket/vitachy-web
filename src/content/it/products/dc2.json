@@ -14,49 +14,49 @@
     "Grande capacità di 450 ml, dimentica i riempitivi costanti. Il suo serbatoio ad alta capacità raddoppia quello della concorrenza, consentendo di risparmiare sapone grazie al suo dosaggio preciso ed efficiente.",
     "MATERIALI AD ALTA RESISTENZA: Realizzato in HIPS e PP per uso alimentare, resistente agli urti e agli agenti chimici. Completamente smontabile in pochi secondi per una pulizia profonda e veloce."
   ],
-  "descripcion_html": "<p>Dispenser di sapone per lavastoviglie e organizer per lavelli. Viene utilizzato con una mano, premendo la parte superiore del portasapone con una mano.</p>",
+  "descripcion_html": "Dispenser di sapone per lavastoviglie e organizer per lavelli. Viene utilizzato con una mano, premendo la parte superiore del portasapone con una mano.",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/61Dj8usheIL.jpg",
       "posicion": 0,
-      "alt": "Dispenser sapone con vassoio"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71h4doXBG7L.jpg",
       "posicion": 1,
-      "alt": "Dispenser sapone con vassoio - vista 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71zrUn7oiXL.jpg",
       "posicion": 2,
-      "alt": "Dispenser sapone con vassoio - vista 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/715KP+V+swL.jpg",
       "posicion": 3,
-      "alt": "Dispenser sapone con vassoio - vista 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71LQ1m17f7L.jpg",
       "posicion": 4,
-      "alt": "Dispenser sapone con vassoio - vista 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71NH91AY-vL.jpg",
       "posicion": 5,
-      "alt": "Dispenser sapone con vassoio - vista 5"
+      "alt": "PT05"
     },
     {
       "url": "https://m.media-amazon.com/images/I/710wq476ZKL.jpg",
       "posicion": 6,
-      "alt": "Dispenser sapone con vassoio - vista 6"
+      "alt": "PT06"
     }
   ],
   "precio": 12.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.it/dp/B0DCLH4G9J",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 4.7,
+  "total_resenas": 54,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

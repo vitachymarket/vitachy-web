@@ -14,44 +14,49 @@
     "🚫 DISEÑO HERMÉTICO 100% SIN GOTEO: Equipados con una junta interna de precisión, nuestros pulverizadores garantizan un sellado perfecto. Di adiós a las fugas y al desperdicio de producto; su gatillo suave está diseñado para un uso intensivo y duradero.",
     "🏷️ SET COMPLETO PARA ORGANIZAR TU HOGAR: Recibe 2 botellas de 500ml listas para usar, acompañadas de etiquetas de pizarra y rotulador. Organiza tus preparados de limpieza DIY, cuidado de mascotas o jardín con un estilo profesional, elegante y ordenado."
   ],
-  "descripcion_html": "<p>2 pulverizadores de vidrio ámbar de 500ml con base de silicona extraíble y bomba con 2 modos de pulverización. Ideal para pulverizar cualquier tipo de líquido con base agua o aceite. Perfecto para limpieza, jardinería y cuidado de mascotas. Girando la boquilla puede cambiar entre modo concentrado o atomización.</p>",
+  "descripcion_html": "<p><strong>2 Pulverizadores de Vidrio de 500ml</strong> con base de silicona extraíble y bomba con <strong>2 modos de pulverización</strong>. </p> <p><strong>Usos:</strong></p> <ul> <li>Ideal para pulverizar cualquier tipo de líquido con base agua o aceite.</li> <li>Perfecto para <em>limpieza, jardinería y el cuidado de mascotas</em>.</li> </ul> <p><strong>2 Modos de Pulverización:</strong> Girando la boquilla del pulverizador, puedes cambiar entre modo <em>concentrado</em> o <em>atomización difusa</em>, adaptándose a tus necesidades específicas.</p> <p><strong>Resistente:</strong> Su base de silicona proporciona una gran adherencia a superficies, incluso mojadas, evitando roturas por impacto y caídas accidentales. </p> <p><strong>No gotea</strong>: Al contrario que otros pulverizadores de vidrio, el cabezal tiene una junta que encaja perfectamente en el cuello de la botella, evitando cualquier tipo de goteo. </p> <p><strong>Presentación:</strong> El producto llega en una elegante caja con los pulverizadores en una bolsa de burbujas para una protección óptima durante el transporte.</p> <p><strong>Elegante y Funcional:</strong> Además de su practicidad, estos pulverizadores añaden un toque de sofisticación a cualquier espacio de trabajo u hogar.</p>",
   "imagenes": [
     {
-      "url": "https://m.media-amazon.com/images/I/71zwCgdQzwL.jpg",
+      "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
       "posicion": 0,
-      "alt": "Pulverizador azul y eucalipto"
+      "alt": "MAIN"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71Z17emkkeL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71YwQhV5xlL.jpg",
       "posicion": 1,
-      "alt": "Pulverizador azul y eucalipto - vista 1"
+      "alt": "PT01"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81QZfqKIzzL.jpg",
+      "url": "https://m.media-amazon.com/images/I/713naiAJTqL.jpg",
       "posicion": 2,
-      "alt": "Pulverizador azul y eucalipto - vista 2"
+      "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71X7lLYZwLL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71RmHl8A4mL.jpg",
       "posicion": 3,
-      "alt": "Pulverizador azul y eucalipto - vista 3"
+      "alt": "PT03"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81X-VMWum2L.jpg",
+      "url": "https://m.media-amazon.com/images/I/71vE1F+KR2L.jpg",
       "posicion": 4,
-      "alt": "Pulverizador azul y eucalipto - vista 4"
+      "alt": "PT04"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81cxpwcUgBL.jpg",
+      "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Pulverizador azul y eucalipto - vista 5"
+      "alt": "PT05"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71aziE9ifFL.jpg",
+      "posicion": 6,
+      "alt": "PT06"
     }
   ],
   "precio": 16.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FGGKRFX1",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 3.9,
+  "total_resenas": 23,
+  "actualizado": "2026-06-26",
   "en_stock": false
 }

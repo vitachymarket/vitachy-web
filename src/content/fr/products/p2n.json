@@ -15,49 +15,49 @@
     "PAS DE FUITE : Contrairement à d’autres pulvérisateurs en verre, la tête est équipée d’un joint qui s’adapte parfaitement au goulot de la bouteille, empêchant tout goutte-à-goutte.",
     "PRÉSENTATION : Le produit est livré dans une boîte avec les pulvérisateurs protégés par un moulage en mousse."
   ],
-  "descripcion_html": "<p>&lt;p&gt;2 vaporisateurs en verre de 500 ml avec base en silicone amovible et pompe avec 2 modes de pulvérisation. &lt;/p&gt;&lt;p&gt;Utilisations : &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Idéal pour pulvériser tout type de liquide à base d'eau ou d'huile. &lt;/li&gt;&lt;li&gt;Parfait pour le nettoyage, le jardinage et le soin des animaux. &lt;/li&gt;&lt;li&gt;Les pulvérisateurs sont également une excellente solution pour se rafraîchir par temps chaud. &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;2 modes de pulvérisation : en tournant la buse du pulvérisateur, vous pouvez basculer entre le mode concentré ou l'atomisation diffuse, en fonction de vos besoins spécifiques. &lt;/p&gt;&lt;p&gt;Robuste : sa base en silicone offre une excellente adhérence sur les surfaces, même mouillées, évitant les chocs et les chutes accidentelles. &lt;/p&gt;&lt;p&gt;Ne goutte pas : contrairement à d'autres pulvérisateurs de verre, la tête dispose d'un joint qui s'adapte parfaitement au goulot de la bouteille, évitant tout type de goutte. &lt;/p&gt;&lt;p&gt;Présentation : le produit est livré dans une boîte élégante avec les pulvérisateurs dans un sac à bulles pour une protection optimale pendant le transport. La boîte contient également 4 étiquettes pour tableau noir et 1 marqueur. &lt;/p&gt;&lt;p&gt;Élégant et fonctionnel : en plus de leur praticité, ces pulvérisateurs ajoutent une touche de sophistication à n'importe quel espace de travail ou maison. &lt;/p&gt;</p>",
+  "descripcion_html": "<p>2 vaporisateurs en verre de 500 ml avec base en silicone amovible et pompe avec 2 modes de pulvérisation. </p><p>Utilisations : </p><ul><li>Idéal pour pulvériser tout type de liquide à base d'eau ou d'huile. </li><li>Parfait pour le nettoyage, le jardinage et le soin des animaux. </li><li>Les pulvérisateurs sont également une excellente solution pour se rafraîchir par temps chaud. </li></ul><p>2 modes de pulvérisation : en tournant la buse du pulvérisateur, vous pouvez basculer entre le mode concentré ou l'atomisation diffuse, en fonction de vos besoins spécifiques. </p><p>Robuste : sa base en silicone offre une excellente adhérence sur les surfaces, même mouillées, évitant les chocs et les chutes accidentelles. </p><p>Ne goutte pas : contrairement à d'autres pulvérisateurs de verre, la tête dispose d'un joint qui s'adapte parfaitement au goulot de la bouteille, évitant tout type de goutte. </p><p>Présentation : le produit est livré dans une boîte élégante avec les pulvérisateurs dans un sac à bulles pour une protection optimale pendant le transport. La boîte contient également 4 étiquettes pour tableau noir et 1 marqueur. </p><p>Élégant et fonctionnel : en plus de leur praticité, ces pulvérisateurs ajoutent une touche de sophistication à n'importe quel espace de travail ou maison. </p>",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
       "posicion": 0,
-      "alt": "Vaporisateur ambré chocolat"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71Ibhs8Zn1L.jpg",
       "posicion": 1,
-      "alt": "Vaporisateur ambré chocolat - vue 1"
+      "alt": "PT01"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81Q0Ht7FQiL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71M00aI9CIL.jpg",
       "posicion": 2,
-      "alt": "Vaporisateur ambré chocolat - vue 2"
+      "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81x0oRa11tL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71RmHl8A4mL.jpg",
       "posicion": 3,
-      "alt": "Vaporisateur ambré chocolat - vue 3"
+      "alt": "PT03"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81VuC7sz85L.jpg",
+      "url": "https://m.media-amazon.com/images/I/71vE1F+KR2L.jpg",
       "posicion": 4,
-      "alt": "Vaporisateur ambré chocolat - vue 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
       "posicion": 5,
-      "alt": "Vaporisateur ambré chocolat - vue 5"
+      "alt": "PT05"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71D4-kc2yvL.jpg",
       "posicion": 6,
-      "alt": "Vaporisateur ambré chocolat - vue 6"
+      "alt": "PT06"
     }
   ],
-  "precio": null,
+  "precio": 19.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0FGGKFW82",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 3.9,
+  "total_resenas": 21,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

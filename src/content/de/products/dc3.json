@@ -14,37 +14,37 @@
     "Leicht zu reinigen: Das Produkt lässt sich leicht mit den Händen auf- und abbauen. Es kann schnell vollständig gereinigt werden.",
     "Präsentation: Wird in einer Box geliefert und mit einem Kunststoff geschützt."
   ],
-  "descripcion_html": "<p>Das Spülbecken-Reinigungsset kombiniert einen Hochdruckreiniger-Seifenspender, einen Handseifenspender und einen Organizer zum Anbringen von Spültuch und Scheuerschwamm in einem. Das Produkt wird mit der Verbindung verschiedener Arten von technischen Kunststoffen und einer Halterung aus Edelstahl hergestellt, die ihm große Festigkeit und Haltbarkeit verleihen. Die Oberfläche verblasst nicht und ist nicht leicht zu zerkratzen. Widersteht allen Arten von Chemikalien. Spülmaschinentank: 350 ml, Behälter für Handseife: 350 ml, Produktgewicht: 305 g, Maße: 17 x 10 x 17,5 cm</p>",
+  "descripcion_html": "Das Spülbecken-Reinigungsset kombiniert einen Hochdruckreiniger-Seifenspender, einen Handseifenspender und einen Organizer zum Anbringen von Spültuch und Scheuerschwamm in einem. Das Produkt wird mit der Verbindung verschiedener Arten von technischen Kunststoffen und einer Halterung aus Edelstahl hergestellt, die ihm große Festigkeit und Haltbarkeit verleihen. Die Oberfläche verblasst nicht und ist nicht leicht zu zerkratzen. Widersteht allen Arten von Chemikalien. Spülmaschinentank: 350 ml, Behälter für Handseife: 350 ml, Produktgewicht: 305 g, Maße: 17 x 10 x 17,5 cm",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/81OBGQ5FQfL.jpg",
       "posicion": 0,
-      "alt": "Seifenspender mit Tuchhalter"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/711Yo2ZrGqL.jpg",
       "posicion": 1,
-      "alt": "Seifenspender mit Tuchhalter - Ansicht 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71bDS9B2zyL.jpg",
       "posicion": 2,
-      "alt": "Seifenspender mit Tuchhalter - Ansicht 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71FKhN64W2L.jpg",
       "posicion": 3,
-      "alt": "Seifenspender mit Tuchhalter - Ansicht 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71a2yaizEHL.jpg",
       "posicion": 4,
-      "alt": "Seifenspender mit Tuchhalter - Ansicht 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71JpPGJW0FL.jpg",
       "posicion": 5,
-      "alt": "Seifenspender mit Tuchhalter - Ansicht 5"
+      "alt": "PT05"
     }
   ],
   "precio": 22.22,
@@ -52,6 +52,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0F6YMX6NP",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

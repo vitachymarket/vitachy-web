@@ -15,44 +15,44 @@
     "Présentation : livré dans une boîte et protégé par un plastique.",
     "Économie : le dosage du savon est toujours le même. L'économie de savon pour lave-vaisselle et de savon pour les mains est substantielle."
   ],
-  "descripcion_html": "<p>Set de nettoyage pour l'évier qui combine un distributeur de savon pour lave-vaisselle à pression, un distributeur de savon pour les mains, et un organisateur pour placer le chiffon et l'éponge, le tout en un. Le produit est fabriqué avec l'union de plusieurs types de plastiques techniques et un support en acier inoxydable qui lui confèrent une grande résistance et durabilité. La surface ne se décolore pas et ne se raye pas facilement. Supporte tous les types d'agents chimiques. Réservoir de lave-vaisselle : 350 ml. Réservoir pour savon pour les mains : 350 ml. Poids du produit : 305 g. Dimensions : 17 x 10 x 17,5 cm</p>",
+  "descripcion_html": "Set de nettoyage pour l'évier qui combine un distributeur de savon pour lave-vaisselle à pression, un distributeur de savon pour les mains, et un organisateur pour placer le chiffon et l'éponge, le tout en un. Le produit est fabriqué avec l'union de plusieurs types de plastiques techniques et un support en acier inoxydable qui lui confèrent une grande résistance et durabilité. La surface ne se décolore pas et ne se raye pas facilement. Supporte tous les types d'agents chimiques. Réservoir de lave-vaisselle : 350 ml. Réservoir pour savon pour les mains : 350 ml. Poids du produit : 305 g. Dimensions : 17 x 10 x 17,5 cm",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/81OBGQ5FQfL.jpg",
       "posicion": 0,
-      "alt": "Distributeur avec chiffon"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71uhVN9+PxL.jpg",
       "posicion": 1,
-      "alt": "Distributeur avec chiffon - vue 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71u5Wj7xcnL.jpg",
       "posicion": 2,
-      "alt": "Distributeur avec chiffon - vue 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71eCqexEa8L.jpg",
       "posicion": 3,
-      "alt": "Distributeur avec chiffon - vue 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71w0wtdg8GL.jpg",
       "posicion": 4,
-      "alt": "Distributeur avec chiffon - vue 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71uxNEg2XmL.jpg",
       "posicion": 5,
-      "alt": "Distributeur avec chiffon - vue 5"
+      "alt": "PT05"
     }
   ],
-  "precio": null,
+  "precio": 19.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0F6YMX6NP",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 4.5,
+  "total_resenas": 59,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

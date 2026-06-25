@@ -14,49 +14,49 @@
     "📦 CAPACITÉ EXTRA GRANDE DE 15OZ : Passez moins de temps à remplir. Le réservoir de 450 ml peut contenir deux fois plus que les distributeurs standard, tandis que la pompe de précision empêche le gaspillage de savon et vous permet d'économiser de l'argent.",
     "💪 DURABLE & FACILEMENT NETTOYABLE : Fabriqué en HIPS résistant aux chocs élevés et PP résistant aux produits chimiques. L'ensemble de l'unité se démonte facilement pour un nettoyage en profondeur, assurant un environnement hygiénique pour vos plats."
   ],
-  "descripcion_html": "<p>Distributeur de savon pour lave-vaisselle et organisateur d'évier. S'utilise d'une main, en appuyant sur le dessus du porte-savon avec une main.</p>",
+  "descripcion_html": "Distributeur de savon pour lave-vaisselle et organisateur d'évier. S'utilise d'une main, en appuyant sur le dessus du porte-savon avec une main.",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/61Dj8usheIL.jpg",
       "posicion": 0,
-      "alt": "Distributeur avec bac"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/712q+DjCeoL.jpg",
       "posicion": 1,
-      "alt": "Distributeur avec bac - vue 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71L6C8giyDL.jpg",
       "posicion": 2,
-      "alt": "Distributeur avec bac - vue 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71hrmBUzulL.jpg",
       "posicion": 3,
-      "alt": "Distributeur avec bac - vue 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71pTDXQ95ML.jpg",
       "posicion": 4,
-      "alt": "Distributeur avec bac - vue 4"
+      "alt": "PT04"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71eWnNJBCVL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71Cvpc4HUtL.jpg",
       "posicion": 5,
-      "alt": "Distributeur avec bac - vue 5"
+      "alt": "PT05"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71DkmTQgQnL.jpg",
       "posicion": 6,
-      "alt": "Distributeur avec bac - vue 6"
+      "alt": "PT06"
     }
   ],
-  "precio": null,
+  "precio": 13.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0DCLH4G9J",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 4.7,
+  "total_resenas": 53,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

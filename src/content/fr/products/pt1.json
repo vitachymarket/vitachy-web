@@ -14,39 +14,39 @@
     "Dimensions : chaque pilulier mesure 21,9 cm (longueur) x 5,2 cm (largeur) x 2,3 cm (hauteur) et un poids de 51 grammes.",
     "Robuste : les piluliers résistent aux chutes et aux chocs sans problème car ils sont fabriqués en plastique souple et non cassant."
   ],
-  "descripcion_html": "<p>Description du produit : &lt;p&gt;Organisez vos médicaments avec ce lot pratique de 2 piluliers de haute qualité, conçus pour offrir confort, sécurité et durabilité. Comprend un pilulier blanc et un pilulier noir, tous deux avec des compartiments transparents pour une visualisation facile. Parfait pour un usage quotidien, voyage ou sac à main. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Contenu : comprend 2 piluliers en plastique à ouverture facile, un blanc et un noir, avec des compartiments transparents qui permettent de voir à l'intérieur de chacun. &lt;/li&gt;&lt;li&gt;Grande capacité : chaque compartiment peut contenir jusqu'à 12 comprimés de grande taille, idéal pour organiser vos médicaments ou suppléments. &lt;/li&gt;&lt;li&gt;Sûr : fabriqué en polypropylène (polypropylène), un plastique inerte, non toxique et de qualité alimentaire, largement utilisé dans l'industrie alimentaire. &lt;/li&gt;&lt;li&gt;Dimensions : chaque pilulier mesure 21,9 cm (longueur) x 5,2 cm (largeur) x 2,3 cm (hauteur) et ne pèse que 51 g, parfait pour l'emporter partout. &lt;/li&gt;&lt;li&gt;Robuste : fabriqués en plastique souple et non cassant, ces piluliers résistent aux chutes et aux chocs, garantissant une longue durée de vie. &lt;/li&gt;&lt;/ul&gt;</p>",
+  "descripcion_html": "Description du produit : <p>Organisez vos médicaments avec ce lot pratique de 2 piluliers de haute qualité, conçus pour offrir confort, sécurité et durabilité. Comprend un pilulier blanc et un pilulier noir, tous deux avec des compartiments transparents pour une visualisation facile. Parfait pour un usage quotidien, voyage ou sac à main. </p><ul><li>Contenu : comprend 2 piluliers en plastique à ouverture facile, un blanc et un noir, avec des compartiments transparents qui permettent de voir à l'intérieur de chacun. </li><li>Grande capacité : chaque compartiment peut contenir jusqu'à 12 comprimés de grande taille, idéal pour organiser vos médicaments ou suppléments. </li><li>Sûr : fabriqué en polypropylène (polypropylène), un plastique inerte, non toxique et de qualité alimentaire, largement utilisé dans l'industrie alimentaire. </li><li>Dimensions : chaque pilulier mesure 21,9 cm (longueur) x 5,2 cm (largeur) x 2,3 cm (hauteur) et ne pèse que 51 g, parfait pour l'emporter partout. </li><li>Robuste : fabriqués en plastique souple et non cassant, ces piluliers résistent aux chutes et aux chocs, garantissant une longue durée de vie. </li></ul>",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/51YPrZMXrNL.jpg",
       "posicion": 0,
-      "alt": "Pilulier hebdomadaire, lot de 2"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61VKHYMsnML.jpg",
       "posicion": 1,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vue 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71vEjMC9noL.jpg",
       "posicion": 2,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vue 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61r6WE8BNIL.jpg",
       "posicion": 3,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vue 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81wyYI5ndaL.jpg",
       "posicion": 4,
-      "alt": "Pilulier hebdomadaire, lot de 2 - vue 4"
+      "alt": "PT04"
     }
   ],
   "precio": 8.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0FGG7LS85",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 4.2,
+  "total_resenas": 15,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

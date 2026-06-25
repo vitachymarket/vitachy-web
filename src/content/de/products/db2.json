@@ -14,42 +14,42 @@
     "Hohe Qualität: Jede Komponente wurde einzeln ausgewählt, um die beste Version auf dem Markt zu erhalten. Wir haben die beste Flasche, die beste Silikonbasis und die beste Seifenpumpe ausgewählt.",
     "Präsentation: Das Produkt wird in einer Schachtel mit Glasflaschen geliefert, die durch eine Luftpolsterfolie geschützt sind."
   ],
-  "descripcion_html": "<p>Produktbeschreibung &lt;p&gt;Erhöhen Sie die Ästhetik und Funktionalität Ihres Hauses oder Geschäfts mit diesem 2er-Pack Seifenspender aus bernsteinfarbenem Glas. Mit elegantem Design und hochwertigen Materialien sind diese Spender perfekt für jeden Raum, von Badezimmern und Küchen bis hin zu professionellen Umgebungen. Inklusive Edelstahlpumpen und Silikonfüße für Haltbarkeit und Sicherheit. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Lieferumfang: Inklusive 2 Spender aus bernsteinfarbenem Glas mit 500 cm³ Fassungsvermögen, mit schwarz lackierter Edelstahlpumpe, abnehmbarem Silikonboden und 6 wasserfesten Etiketten mit hohem Kontrast. &lt;/li&gt;&lt;li&gt;Verwendung: Ideal für alle Arten von Flüssigseifen. Das raffinierte Design ist perfekt für Badezimmer, Küche oder Geschäft und bringt einen Hauch von Eleganz. &lt;/li&gt;&lt;li&gt;Robust: Die Silikonbasis bietet eine starke Haftung auf nassen Oberflächen und schützt vor Bruch durch versehentliche Stöße oder Stürze. &lt;/li&gt;&lt;li&gt;Hohe Qualität: Jede Komponente (Flasche, Silikonbasis und Pumpe) wurde sorgfältig ausgewählt, um die beste Qualität auf dem Markt zu bieten und Haltbarkeit und Funktionalität zu gewährleisten. &lt;/li&gt;&lt;li&gt;Präsentation: Wird in einer Schutzbox geliefert, mit Glasflaschen verpackt in einer Luftpolsterfolie, um Ihre Sicherheit während des Transports zu gewährleisten. &lt;/li&gt;&lt;/ul&gt;</p>",
+  "descripcion_html": "Produktbeschreibung <p>Erhöhen Sie die Ästhetik und Funktionalität Ihres Hauses oder Geschäfts mit diesem 2er-Pack Seifenspender aus bernsteinfarbenem Glas. Mit elegantem Design und hochwertigen Materialien sind diese Spender perfekt für jeden Raum, von Badezimmern und Küchen bis hin zu professionellen Umgebungen. Inklusive Edelstahlpumpen und Silikonfüße für Haltbarkeit und Sicherheit. </p><ul><li>Lieferumfang: Inklusive 2 Spender aus bernsteinfarbenem Glas mit 500 cm³ Fassungsvermögen, mit schwarz lackierter Edelstahlpumpe, abnehmbarem Silikonboden und 6 wasserfesten Etiketten mit hohem Kontrast. </li><li>Verwendung: Ideal für alle Arten von Flüssigseifen. Das raffinierte Design ist perfekt für Badezimmer, Küche oder Geschäft und bringt einen Hauch von Eleganz. </li><li>Robust: Die Silikonbasis bietet eine starke Haftung auf nassen Oberflächen und schützt vor Bruch durch versehentliche Stöße oder Stürze. </li><li>Hohe Qualität: Jede Komponente (Flasche, Silikonbasis und Pumpe) wurde sorgfältig ausgewählt, um die beste Qualität auf dem Markt zu bieten und Haltbarkeit und Funktionalität zu gewährleisten. </li><li>Präsentation: Wird in einer Schutzbox geliefert, mit Glasflaschen verpackt in einer Luftpolsterfolie, um Ihre Sicherheit während des Transports zu gewährleisten. </li></ul>",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/712jhdr-7xL.jpg",
       "posicion": 0,
-      "alt": "Amberglas-Seifenspender, 2er-Set"
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71rGxAf+-LL.jpg",
       "posicion": 1,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 1"
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/714CDSP2z8L.jpg",
       "posicion": 2,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 2"
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61qGM1PO9qL.jpg",
       "posicion": 3,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 3"
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81H5HVY-zFL.jpg",
       "posicion": 4,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 4"
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/61MiaSQV11L.jpg",
       "posicion": 5,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 5"
+      "alt": "PT05"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71dekC0gmXL.jpg",
       "posicion": 6,
-      "alt": "Amberglas-Seifenspender, 2er-Set - Ansicht 6"
+      "alt": "PT06"
     }
   ],
   "precio": 21.99,
@@ -57,6 +57,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FGJMVJ54",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "actualizado": "2026-06-26",
   "en_stock": true
 }

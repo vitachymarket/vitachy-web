@@ -1,5 +1,6 @@
 {
   "_placeholder": true,
+  "_revision_tono": false,
   "asin": "B0FGJMVJ54",
   "codigo": "DB2",
   "familia": "dispensadores-bano",
@@ -13,19 +14,19 @@
     "ALTA CALIDAD: cada componente ha sido seleccionado individualmente para obtener la mejor versión del mercado. Hemos seleccionado la mejor botella, la mejor base de silicona y la mejor bomba de jabón.",
     "PRESENTACIÓN: el producto se sirve dentro de una caja con las botellas de vidrio protegidas con una bolsa de burbujas."
   ],
-  "descripcion_html": "<p>Eleva la estética y funcionalidad de tu hogar o negocio con este pack de 2 dispensadores de jabón de vidrio ámbar. Con un diseño elegante y materiales de alta calidad, estos dispensadores son perfectos para cualquier espacio, desde baños y cocinas hasta entornos profesionales. Incluyen bombas de acero inoxidable y bases de silicona.</p>",
+  "descripcion_html": "<h2>Descripción del producto</h2> <p>Eleva la estética y funcionalidad de tu hogar o negocio con este <b>pack de 2 dispensadores de jabón de vidrio ámbar</b>. Con un diseño elegante y materiales de alta calidad, estos dispensadores son perfectos para cualquier espacio, desde baños y cocinas hasta entornos profesionales. Incluyen bombas de acero inoxidable y bases de silicona para mayor durabilidad y seguridad.</p> <ul> <li><b>CONTENIDO:</b> Incluye 2 dispensadores de vidrio ámbar de <b>500 cm³</b> de capacidad, con bomba de acero inoxidable lacada en negro, base de silicona extraíble y <b>6 etiquetas impermeables</b> de alto contraste.</li> <li><b>USOS:</b> Ideal para dispensar todo tipo de jabones líquidos. Su diseño sofisticado es perfecto para baños, cocinas o negocios, aportando un toque de elegancia.</li> <li><b>RESISTENTE:</b> La base de silicona proporciona gran adherencia a superficies, incluso mojadas, y protege contra roturas por impactos o caídas accidentales.</li> <li><b>ALTA CALIDAD:</b> Cada componente (botella, base de silicona y bomba) ha sido cuidadosamente seleccionado para ofrecer la <b>mejor calidad del mercado</b>, garantizando durabilidad y funcionalidad.</li> <li><b>PRESENTACIÓN:</b> Se entrega en una caja protectora con las botellas de vidrio envueltas en una bolsa de burbujas para garantizar su seguridad durante el transporte.</li> </ul>",
   "imagenes": [
     {
       "url": "https://m.media-amazon.com/images/I/712jhdr-7xL.jpg",
       "posicion": 0,
-      "alt": "Pack de 2 dispensadores ámbar"
+      "alt": ""
     }
   ],
   "precio": 17.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0FGJMVJ54",
-  "rating": null,
-  "total_resenas": null,
-  "actualizado": "2026-06-07",
+  "rating": 5.0,
+  "total_resenas": 3,
+  "actualizado": "2026-06-26",
   "en_stock": true
 }
