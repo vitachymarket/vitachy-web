@@ -32,7 +32,7 @@
       "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81hyRP2Qf+L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81lCSerhvkL.jpg",
       "posicion": 3,
       "alt": "PT03"
     },
@@ -55,8 +55,8 @@
   "precio": 17.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0DWLKHXWG?maas=maas_adg_988B638E6B30AEFA117B613AD01ABF85_afap_abs&ref_=aa_maas&tag=maas",
-  "rating": 4.0,
-  "total_resenas": 27,
-  "actualizado": "2026-07-05",
+  "rating": 3.6,
+  "total_resenas": 6,
+  "actualizado": "2026-07-07",
   "en_stock": false
 }
