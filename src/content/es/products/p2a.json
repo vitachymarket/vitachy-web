@@ -17,39 +17,34 @@
   "descripcion_html": "<p><strong>2 Pulverizadores de Vidrio de 500ml</strong> con base de silicona extraíble y bomba con <strong>2 modos de pulverización</strong>. </p> <p><strong>Usos:</strong></p> <ul> <li>Ideal para pulverizar cualquier tipo de líquido con base agua o aceite.</li> <li>Perfecto para <em>limpieza, jardinería y el cuidado de mascotas</em>.</li> </ul> <p><strong>2 Modos de Pulverización:</strong> Girando la boquilla del pulverizador, puedes cambiar entre modo <em>concentrado</em> o <em>atomización difusa</em>, adaptándose a tus necesidades específicas.</p> <p><strong>Resistente:</strong> Su base de silicona proporciona una gran adherencia a superficies, incluso mojadas, evitando roturas por impacto y caídas accidentales. </p> <p><strong>No gotea</strong>: Al contrario que otros pulverizadores de vidrio, el cabezal tiene una junta que encaja perfectamente en el cuello de la botella, evitando cualquier tipo de goteo. </p> <p><strong>Presentación:</strong> El producto llega en una elegante caja con los pulverizadores en una bolsa de burbujas para una protección óptima durante el transporte.</p> <p><strong>Elegante y Funcional:</strong> Además de su practicidad, estos pulverizadores añaden un toque de sofisticación a cualquier espacio de trabajo u hogar.</p>",
   "imagenes": [
     {
-      "url": "https://m.media-amazon.com/images/I/61lh+uZG2aL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71zwCgdQzwL.jpg",
       "posicion": 0,
-      "alt": "MAIN"
+      "alt": ""
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71YwQhV5xlL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71Z17emkkeL.jpg",
       "posicion": 1,
-      "alt": "PT01"
+      "alt": ""
     },
     {
-      "url": "https://m.media-amazon.com/images/I/713naiAJTqL.jpg",
+      "url": "https://m.media-amazon.com/images/I/81QZfqKIzzL.jpg",
       "posicion": 2,
-      "alt": "PT02"
+      "alt": ""
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71RmHl8A4mL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71X7lLYZwLL.jpg",
       "posicion": 3,
-      "alt": "PT03"
+      "alt": ""
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71vE1F+KR2L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81X-VMWum2L.jpg",
       "posicion": 4,
-      "alt": "PT04"
+      "alt": ""
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81YuB9-FlUL.jpg",
+      "url": "https://m.media-amazon.com/images/I/81cxpwcUgBL.jpg",
       "posicion": 5,
-      "alt": "PT05"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/71aziE9ifFL.jpg",
-      "posicion": 6,
-      "alt": "PT06"
+      "alt": ""
     }
   ],
   "precio": 16.99,
@@ -57,6 +52,6 @@
   "amazon_url": "https://www.amazon.es/dp/B0FGGKRFX1?maas=maas_adg_4A4F78467D9EF77BEFD63167BEC5EE14_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 3.8,
   "total_resenas": 24,
-  "actualizado": "2026-07-07",
+  "actualizado": "2026-07-14",
   "en_stock": false
 }
