@@ -5,7 +5,7 @@
   "codigo": "DB2",
   "familia": "dispensadores-bano",
   "orden": 12,
-  "titulo": "VITACHY 2 Seifenspender für Bad, Küche, Dusche, bernsteinfarbenes Glas, 500 ml, Silikonbasis, Schwarz, Dosierspender aus Edelstahl",
+  "titulo": "Vitachy 2 x Seifenspender, bernsteinfarbenes Glas, 500 ml, Silikonbasis, Schwarz",
   "nombre_corto": "Amberglas-Seifenspender, 2er-Set",
   "bullets": [
     "Lieferumfang: 2 Spender aus bernsteinfarbenem Glas mit 500 ml Fassungsvermögen mit abnehmbarem Silikonboden und schwarz lackierter Edelstahlpumpe. 6 x kontrastreiche wasserdichte Etiketten.",
@@ -57,6 +57,6 @@
   "amazon_url": "https://www.amazon.de/dp/B0FGJMVJ54?maas=maas_adg_59C8E7357B85884E24E8A55F616EECAE_afap_abs&ref_=aa_maas&tag=maas",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-07-14",
-  "en_stock": true
+  "actualizado": "2026-09-01",
+  "en_stock": false
 }

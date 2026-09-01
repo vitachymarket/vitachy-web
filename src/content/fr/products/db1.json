@@ -5,16 +5,14 @@
   "codigo": "DB1",
   "familia": "dispensadores-bano",
   "orden": 6,
-  "titulo": "VITACHY. Distributeur Savon Salle de Bain en Céramique Pure Soap. Doseur Décoratif de Savon Liquide avec Réservoir de 350ml. Corps Émaillé Blanc et Pompe Chromée Dorée. Hand Soap Dispenser",
+  "titulo": "Vitachy Distributeur Savon Céramique Blanc et Doré 350ml - Salle de Bain",
   "nombre_corto": "Distributeur céramique Pure Soap",
   "bullets": [
-    "BEAU ET DURABLE: ce distributeur est exactement comme sur la photo. Il est facile à nettoyer et reste comme neuf pendant des années.",
-    "POUR TOUTE LA FAMILLE: très facile à utiliser, il ne nécessite pas beaucoup de force et offre une bonne stabilité.",
-    "RECHARGEABLE: le distributeur est livré vide. Pour le remplir, il suffit de dévisser la pompe et de remplir le réservoir avec du savon liquide.",
-    "CAPACITÉ: le réservoir a une capacité de 350 ml de savon liquide et chaque pression délivre 2 ml (175 pressions avec le réservoir plein).",
-    "NE GOUTTE PAS: la distribution de savon est toujours la même et ne goutte jamais.",
-    "NETTOYAGE: le produit se monte et se démonte facilement à la main. Il est composé de 2 pièces : le réservoir en céramique émaillée et la pompe doseuse chromée dorée.",
-    "PRÉSENTATION: vous le recevrez chez vous enveloppé dans un sac à bulles protecteur et dans une jolie boîte."
+    "🏺 ÉLÉGANCE VINTAGE ARTISANALE : distributeur de savon en céramique émaillée blanche avec pompe en DORÉ MAT. Son design imite un pain de savon artisanal avec l'inscription « Pure Soap » en relief, pour une touche chic et méditerranéenne dans la salle de bain ou la cuisine.",
+    "💧 POMPE EN ABS DORÉ MAT QUI NE ROUILLE PAS : la pompe est en ABS haute résistance finition doré mat (ce n'est pas du métal). C'est précisément pour cela qu'elle ne rouille pas et ne se pique pas au contact de l'eau et du savon, et qu'elle garde son ton chaleureux. Dose 2 ml par pression, sans goutte.",
+    "🌿 VÉRITABLE CÉRAMIQUE ÉMAILLÉE, RECHARGEABLE : le corps est en céramique émaillée authentique : lourde, stable et facile à nettoyer, elle garde son éclat comme au premier jour. Rechargeable à volonté, il réduit les emballages à usage unique.",
+    "👐 350 ML POUR LES MAINS, LA CUISINE ET LA SALLE DE BAIN : avec un réservoir de 350 ml, parfait comme distributeur de savon pour les mains, de liquide vaisselle ou de lotion corporelle. Sa base large assure une grande stabilité et permet une utilisation d'une seule main, même par les enfants.",
+    "📦 EMBALLAGE PROTECTEUR : le produit est livré dans une boîte en carton rigide et enveloppé de papier bulle, afin que la pièce en céramique vous parvienne en parfait état."
   ],
   "descripcion_html": "<p>Ce distributeur de savon à mains décoratif et élégant est l’ajout parfait pour toute salle de bain. Avec un corps en céramique émaillée blanche et une pompe chromée dorée, ce distributeur est non seulement fonctionnel, mais aussi un magnifique élément décoratif. Le design reproduit les mots <strong>PURE SOAP</strong> et a la forme classique d’un pain de savon de Marseille.</p> <ul> <li><strong>Beau et Durable :</strong> Ce distributeur est exactement comme sur la photo. Il est facile à nettoyer et reste comme neuf pendant des années.</li> <li><strong>Pour Toute la Famille :</strong> Très facile à utiliser, il ne nécessite pas beaucoup de force et offre une bonne stabilité, ce qui le rend idéal pour tous les membres de la famille.</li> <li><strong>Rechargeable :</strong> Le distributeur est livré vide. Pour le remplir, il suffit de dévisser la pompe et de remplir le réservoir avec du savon liquide.</li> <li><strong>Capacité :</strong> Le réservoir a une capacité de 350 ml de savon liquide et chaque pression délivre 2 ml, offrant jusqu’à 175 pressions avec le réservoir plein.</li> <li><strong>Ne Goutte Pas :</strong> La distribution de savon est toujours la même et ne goutte jamais, gardant votre salle de bain propre et ordonnée.</li> <li><strong>Nettoyage :</strong> Le produit se monte et se démonte facilement à la main. Il est composé de deux pièces : le réservoir en céramique émaillée et la pompe doseuse chromée dorée.</li> </ul> <p>Ce distributeur de savon allie fonctionnalité et style, devenant un accessoire indispensable pour toute salle de bain. Son design élégant et sa durabilité garantissent qu’il sera une pièce appréciée pendant de nombreuses années.</p>",
   "imagenes": [
@@ -29,7 +27,7 @@
       "alt": "PT01"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71XPfNRusBL.jpg",
+      "url": "https://m.media-amazon.com/images/I/718hkpVhPXL.jpg",
       "posicion": 2,
       "alt": "PT02"
     },
@@ -58,7 +56,7 @@
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0DV6KWBJV?maas=maas_adg_988B638E6B30AEFA117B613AD01ABF85_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 4.8,
-  "total_resenas": 46,
-  "actualizado": "2026-07-14",
+  "total_resenas": 48,
+  "actualizado": "2026-09-01",
   "en_stock": true
 }

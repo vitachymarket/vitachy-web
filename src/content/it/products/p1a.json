@@ -5,7 +5,7 @@
   "codigo": "P1A",
   "familia": "pulverizadores",
   "orden": 14,
-  "titulo": "Vitachy Set da 2 Spruzzino in Vetro 500ml con Base in Silicone Antiscivolo - Bottiglia Spray Vetro con Testina Rinforzata e Ugello a 3 Posizioni per Pulizia e Piante - Grigio/Blu",
+  "titulo": "Vitachy Spruzzino Vetro 500ml x2 Base Silicone Antiscivolo Grigio-Blu",
   "nombre_corto": "Flacone spray blu e grigio",
   "bullets": [
     "🛡️ MASSIMA STABILITÀ E PROTEZIONE: La base in silicone rimovibile protegge il vetro dagli urti e garantisce una presa sicura su ogni superficie, evitando cadute accidentali in cucina o bagno.",
@@ -32,7 +32,7 @@
       "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81xJs8vIQ2L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81CP9U+NUrL.jpg",
       "posicion": 3,
       "alt": "PT03"
     },
@@ -55,8 +55,8 @@
   "precio": 17.95,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.it/dp/B0DWLKJYLY?maas=maas_adg_0BC7B21502DF667657B9FE0F95D1B3D4_afap_abs&ref_=aa_maas&tag=maas",
-  "rating": 4.0,
-  "total_resenas": 27,
-  "actualizado": "2026-07-14",
-  "en_stock": true
+  "rating": 4.2,
+  "total_resenas": 31,
+  "actualizado": "2026-09-01",
+  "en_stock": false
 }

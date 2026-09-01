@@ -5,7 +5,7 @@
   "codigo": "DC3",
   "familia": "dispensadores-cocina",
   "orden": 3,
-  "titulo": "VITACHY Soap Dispenser for Kitchen Black, Sink Organizer with Dispenser for Dishwashers and Hands",
+  "titulo": "Vitachy Soap Dish Kitchen Dispenser Dishwasher – Scrubber and Cloth",
   "nombre_corto": "Soap dispenser with cloth holder",
   "bullets": [
     "MULTIFUNCTIONAL: 350 ml pressure washer soap dispenser, 350 ml hand soap dispenser, storage space for the sponge, and drying holder for the cloth.",
@@ -47,11 +47,11 @@
       "alt": "PT05"
     }
   ],
-  "precio": 16.2,
+  "precio": 16.25,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.co.uk/dp/B0F6YMX6NP?maas=maas_adg_7C174A7536891B89426476AB2CE3F307_afap_abs&ref_=aa_maas&tag=maas",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-07-14",
-  "en_stock": true
+  "actualizado": "2026-09-01",
+  "en_stock": false
 }

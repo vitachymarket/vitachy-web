@@ -5,7 +5,7 @@
   "codigo": "DA1",
   "familia": "aceiteras",
   "orden": 7,
-  "titulo": "Vitachy Vaporisateur Huile et Vinaigrier 2 en 1 (470ml) - Bouteille Verre avec Base Silicone Antichoc - Spray Huile Cuisine pour Air Fryer, Salade et Barbecue - Huilier Antifuite",
+  "titulo": "Vitachy Vaporisateur et Huilier 2 en 1 - Spray Huile Cuisine - Verre 470ml",
   "nombre_corto": "Huilier spray 2-en-1",
   "bullets": [
     "🔄 SYSTÈME DOUBLE ACTION 2 EN 1 : Ne choisissez plus entre vaporiser et verser. Passez instantanément d'une brume fine idéale pour l'Air Fryer à un filet continu pour vos salades. Un gain de place intelligent pour une cuisine organisée.",
@@ -37,7 +37,7 @@
       "alt": "PT03"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71dumma3x9L.jpg",
+      "url": "https://m.media-amazon.com/images/I/71BU2D6huQL.jpg",
       "posicion": 4,
       "alt": "PT04"
     },
@@ -57,6 +57,6 @@
   "amazon_url": "https://www.amazon.fr/dp/B0FG1HXX9D?maas=maas_adg_988B638E6B30AEFA117B613AD01ABF85_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 4.0,
   "total_resenas": 41,
-  "actualizado": "2026-07-14",
+  "actualizado": "2026-09-01",
   "en_stock": true
 }

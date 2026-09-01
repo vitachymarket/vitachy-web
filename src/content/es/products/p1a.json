@@ -5,7 +5,7 @@
   "codigo": "P1A",
   "familia": "pulverizadores",
   "orden": 14,
-  "titulo": "Vitachy Pack 2 Pulverizadores de Vidrio 500ml con Base de Silicona Antideslizante Botella Spray de Cristal con Cabezal Reforzado Boquilla 3 Posiciones para Limpieza y Plantas - Gris/Azul",
+  "titulo": "Vitachy Pulverizador Cristal 500ml x2 Silicona Antideslizante Gris-Azul",
   "nombre_corto": "Pulverizador azul y gris",
   "bullets": [
     "🛡️ MÁXIMA RESISTENCIA Y AGARRE: Nuestras botellas de vidrio cuentan con una base de silicona extraíble que protege contra impactos y evita deslizamientos en superficies mojadas. ¡Adiós a las roturas accidentales!",
@@ -32,7 +32,7 @@
       "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81xJs8vIQ2L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81CP9U+NUrL.jpg",
       "posicion": 3,
       "alt": "PT03"
     },
@@ -47,7 +47,7 @@
       "alt": "PT05"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71iqMw3hjvL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71gTuKI1fNL.jpg",
       "posicion": 6,
       "alt": "PT06"
     }
@@ -55,8 +55,8 @@
   "precio": 16.99,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.es/dp/B0DWLKJYLY?maas=maas_adg_4A4F78467D9EF77BEFD63167BEC5EE14_afap_abs&ref_=aa_maas&tag=maas",
-  "rating": 4.1,
-  "total_resenas": 28,
-  "actualizado": "2026-07-14",
-  "en_stock": true
+  "rating": 4.2,
+  "total_resenas": 32,
+  "actualizado": "2026-09-01",
+  "en_stock": false
 }
