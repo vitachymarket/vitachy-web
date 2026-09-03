@@ -48,11 +48,11 @@
       "alt": "PT05"
     }
   ],
-  "precio": 17.95,
+  "precio": 18.45,
   "currency": "EUR",
   "amazon_url": "https://www.amazon.fr/dp/B0F6YMX6NP?maas=maas_adg_988B638E6B30AEFA117B613AD01ABF85_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 4.5,
   "total_resenas": 70,
-  "actualizado": "2026-09-02",
-  "en_stock": false
+  "actualizado": "2026-09-03",
+  "en_stock": true
 }
