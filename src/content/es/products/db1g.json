@@ -1,12 +1,12 @@
 {
-  "_placeholder": true,
-  "_revision_tono": true,
-  "asin": "B0DV6KWBJV",
-  "codigo": "DB1",
-  "familia": "dispensadores-bano",
-  "orden": 6,
-  "titulo": "Vitachy Dispensador Jabón Cerámica 350ml - Pure Soap Baño (Blanco y Dorado)",
-  "nombre_corto": "Dispensador Pure Soap",
+  "_placeholder": false,
+  "_revision_tono": false,
+  "asin": "B0HHXWZTXW",
+  "codigo": "DB1g",
+  "familia": "dispensadores-de-bano",
+  "orden": 25,
+  "titulo": "Vitachy Dispensador Jabón Cerámica 350ml - Pure Soap Baño (Gris y Dorado)",
+  "nombre_corto": "",
   "bullets": [
     "🏺 ELEGANCIA VINTAGE ARTESANAL: Dosificador de cerámica esmaltada blanca con bomba en DORADO MATE. Su diseño emula una pastilla de jabón artesanal con la inscripción «Pure Soap» en relieve, aportando un toque chic y mediterráneo a tu baño o tu cocina.",
     "💧 BOMBA DE ABS DORADO MATE QUE NO SE OXIDA: La bomba está fabricada en ABS de alta resistencia con acabado dorado mate (no es metal). Precisamente por eso no se oxida ni se pica con el agua y el jabón, y conserva su tono cálido con el uso diario. Dosifica 2 ml por pulsación, sin goteos.",
@@ -17,46 +17,16 @@
   "descripcion_html": "<p>Este elegante dispensador de jabón de manos decorativo es la adición perfecta para cualquier baño. Con un cuerpo de cerámica esmaltada en blanco y una bomba cromada en oro, este dispensador no solo es funcional, sino también un hermoso elemento decorativo. El diseño reproduce las palabras <strong>PURE SOAP</strong> y tiene la forma clásica de una pastilla de jabón de Marsella.</p> <ul> <li><strong>Hermoso y Duradero:</strong> Este dispensador es exactamente como aparece en la foto. Es fácilmente limpiable y se conserva como nuevo durante años.</li> <li><strong>Para Toda la Familia:</strong> Muy fácil de utilizar, no requiere mucha fuerza y tiene una buena estabilidad, lo que lo hace ideal para todos los miembros de la familia.</li> <li><strong>Rellenable:</strong> El dispensador se sirve vacío. Para rellenarlo, simplemente desenrosca la bomba y llena el depósito con jabón líquido.</li> <li><strong>Capacidad:</strong> El depósito tiene una capacidad de 350ml de jabón líquido y en cada descarga sirve 2ml, proporcionando hasta 175 descargas con el depósito lleno.</li> <li><strong>No Gotea:</strong> La dosificación de jabón es siempre la misma y no gotea nunca, manteniendo tu baño limpio y ordenado.</li> <li><strong>Limpieza:</strong> El producto se monta y se desmonta fácilmente con las manos. Consta de dos piezas: el depósito de cerámica esmaltada y la bomba dosificadora cromada en oro.</li> </ul> <p>Este dispensador de jabón combina funcionalidad y estilo, convirtiéndose en un accesorio imprescindible para cualquier baño. Su diseño elegante y su durabilidad aseguran que será una pieza apreciada durante muchos años.</p>",
   "imagenes": [
     {
-      "url": "https://m.media-amazon.com/images/I/618RdJp391L.jpg",
+      "url": "https://m.media-amazon.com/images/I/319VTwiTrRL.jpg",
       "posicion": 0,
       "alt": "MAIN"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/71Z2RuPrsqL.jpg",
-      "posicion": 1,
-      "alt": "PT01"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/718sntkrrEL.jpg",
-      "posicion": 2,
-      "alt": "PT02"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/61uliJsjXSL.jpg",
-      "posicion": 3,
-      "alt": "PT03"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/81CDOqV8pEL.jpg",
-      "posicion": 4,
-      "alt": "PT04"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/61Ovw9VHPJL.jpg",
-      "posicion": 5,
-      "alt": "PT05"
-    },
-    {
-      "url": "https://m.media-amazon.com/images/I/71i9C6iuSmL.jpg",
-      "posicion": 6,
-      "alt": "PT06"
     }
   ],
   "precio": 13.95,
   "currency": "EUR",
-  "amazon_url": "https://www.amazon.es/dp/B0DV6KWBJV?maas=maas_adg_4A4F78467D9EF77BEFD63167BEC5EE14_afap_abs&ref_=aa_maas&tag=maas",
-  "rating": 4.8,
-  "total_resenas": 51,
+  "amazon_url": "https://www.amazon.es/dp/B0HHXWZTXW?maas=maas_adg_4A4F78467D9EF77BEFD63167BEC5EE14_afap_abs&ref_=aa_maas&tag=maas",
+  "rating": null,
+  "total_resenas": 0,
   "actualizado": "2026-09-06",
-  "en_stock": true
+  "en_stock": false
 }
