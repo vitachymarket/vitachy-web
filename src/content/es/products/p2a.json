@@ -19,32 +19,32 @@
     {
       "url": "https://m.media-amazon.com/images/I/71zwCgdQzwL.jpg",
       "posicion": 0,
-      "alt": ""
+      "alt": "MAIN"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71Z17emkkeL.jpg",
       "posicion": 1,
-      "alt": ""
+      "alt": "PT01"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81QZfqKIzzL.jpg",
       "posicion": 2,
-      "alt": ""
+      "alt": "PT02"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71X7lLYZwLL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71d12uLgsrL.jpg",
       "posicion": 3,
-      "alt": ""
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81X-VMWum2L.jpg",
       "posicion": 4,
-      "alt": ""
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81cxpwcUgBL.jpg",
       "posicion": 5,
-      "alt": ""
+      "alt": "PT05"
     }
   ],
   "precio": 16.95,
@@ -52,6 +52,6 @@
   "amazon_url": "https://www.amazon.es/dp/B0FGGKRFX1?maas=maas_adg_4A4F78467D9EF77BEFD63167BEC5EE14_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 3.7,
   "total_resenas": 26,
-  "actualizado": "2026-10-03",
+  "actualizado": "2026-10-04",
   "en_stock": false
 }

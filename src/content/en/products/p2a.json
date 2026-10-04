@@ -19,39 +19,39 @@
     {
       "url": "https://m.media-amazon.com/images/I/71zwCgdQzwL.jpg",
       "posicion": 0,
-      "alt": ""
+      "alt": "MAIN"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71Z17emkkeL.jpg",
+      "url": "https://m.media-amazon.com/images/I/71olzrHHv0L.jpg",
       "posicion": 1,
-      "alt": ""
+      "alt": "PT01"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/81QZfqKIzzL.jpg",
+      "url": "https://m.media-amazon.com/images/I/811l4Yx2f7L.jpg",
       "posicion": 2,
-      "alt": ""
+      "alt": "PT02"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71X7lLYZwLL.jpg",
       "posicion": 3,
-      "alt": ""
+      "alt": "PT03"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81X-VMWum2L.jpg",
       "posicion": 4,
-      "alt": ""
+      "alt": "PT04"
     },
     {
       "url": "https://m.media-amazon.com/images/I/81cxpwcUgBL.jpg",
       "posicion": 5,
-      "alt": ""
+      "alt": "PT05"
     }
   ],
-  "precio": 14.38,
+  "precio": 16.2,
   "currency": "GBP",
   "amazon_url": "https://www.amazon.co.uk/dp/B0FGGKRFX1?maas=maas_adg_7C174A7536891B89426476AB2CE3F307_afap_abs&ref_=aa_maas&tag=maas",
   "rating": null,
   "total_resenas": null,
-  "actualizado": "2026-10-03",
+  "actualizado": "2026-10-04",
   "en_stock": false
 }
