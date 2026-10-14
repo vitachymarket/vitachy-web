@@ -23,12 +23,12 @@
       "alt": "MAIN"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/71olzrHHv0L.jpg",
+      "url": "https://m.media-amazon.com/images/I/71JwIz-EmEL.jpg",
       "posicion": 1,
       "alt": "PT01"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/811l4Yx2f7L.jpg",
+      "url": "https://m.media-amazon.com/images/I/81xl9ZH91eL.jpg",
       "posicion": 2,
       "alt": "PT02"
     },
@@ -53,6 +53,6 @@
   "amazon_url": "https://www.amazon.it/dp/B0FGGKRFX1?maas=maas_adg_0BC7B21502DF667657B9FE0F95D1B3D4_afap_abs&ref_=aa_maas&tag=maas",
   "rating": 3.7,
   "total_resenas": 24,
-  "actualizado": "2026-10-13",
+  "actualizado": "2026-10-14",
   "en_stock": true
 }
